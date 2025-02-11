@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
       {/* Explore Popular Courese Section  */}
-      <section className="py-16">
+      <section className="pt-28">
         <div className="container mx-auto px-6 lg:max-w-[1170px]">
           <h1 className="text-primary text-5xl text-center font-semibold mb-8">
             Explore Popular Courses
