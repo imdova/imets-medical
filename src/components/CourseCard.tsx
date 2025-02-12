@@ -17,12 +17,11 @@ type CardProps = {
   title: string;
   rating: number;
   instructor: Instructor;
-  lessons: number;
-  time: string;
+  lectures: number;
+  lecture_date: string;
+  lecture_Method: string;
   status: string;
   students: number;
-  price: number;
-  description: string;
 };
 
 const CourseCard: React.FC<CardProps> = ({
@@ -30,8 +29,9 @@ const CourseCard: React.FC<CardProps> = ({
   image,
   title,
   rating,
-  lessons,
-  time,
+  lectures,
+  lecture_date,
+  lecture_Method,
   students,
   status,
 }) => {
@@ -73,11 +73,13 @@ const CourseCard: React.FC<CardProps> = ({
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2 mb-3 w-full">
             <div className="flex gap-2">
               <BookOpen className="text-secondary" size={18} />
-              <span className="text-sm text-secondary">{lessons} Lessons</span>
+              <span className="text-sm text-secondary">
+                {lectures} Lectures
+              </span>
             </div>
             <div className="flex gap-2">
               <Clock className="text-secondary" size={18} />
-              <span className="text-sm text-secondary">{time}</span>
+              <span className="text-sm text-secondary">{lecture_date}</span>
             </div>
             <div className="flex gap-2">
               <GraduationCap className="text-secondary" size={18} />
@@ -85,12 +87,16 @@ const CourseCard: React.FC<CardProps> = ({
                 {students} Students
               </span>
             </div>
+            <div className="flex gap-2">
+              <GraduationCap className="text-secondary" size={18} />
+              <span className="text-sm text-secondary">{lecture_Method}</span>
+            </div>
           </div>
         </Link>
         <div className="flex justify-center w-full mb-3">
           <Link
             href={`courses/${id}`}
-            className="flex items-center justify-center w-3/4 p-2 px-4 gap-2 text-white bg-orange-primary hover:bg-black rounded-lg text-xs">
+            className="flex items-center justify-center w-3/4 p-2 px-4 gap-2 text-white bg-orange-primary hover:bg-black rounded-lg text-xs link-smooth">
             Enroll
           </Link>
         </div>

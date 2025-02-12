@@ -183,12 +183,11 @@ export default function Home() {
                   title={course.title}
                   rating={course.rating}
                   instructor={course.instructor}
-                  lessons={course.lessons}
-                  time={course.time}
+                  lectures={course.lectures}
+                  lecture_date={course.lecture_date}
                   students={course.students}
                   status={course.status}
-                  price={course.price}
-                  description={course.description}
+                  lecture_Method={course.lecture_Method}
                 />
               ))}
             </div>
@@ -224,21 +223,21 @@ export default function Home() {
               </p>
               <ul>
                 <li className="flex gap-3 mb-4">
-                  <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
+                  <span className="flex justify-center items-center w-12 h-12  bg-[#F8BC2426] rounded-full text-orange-primary">
                     <BookText size={18} />
                   </span>
-                  <div>
+                  <div className="w-[230px]">
                     <h2 className="text-lg font-semibold">Online Course</h2>
                     <p className="text-sm text-secondary">
                       Attend from anywhere with Live Lectures!
                     </p>
                   </div>
                 </li>
-                <li className="flex gap-3 mb-4">
-                  <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
+                <li className="flex gap-4 mb-4">
+                  <span className="flex justify-center items-center w-12 h-12  bg-[#F8BC2426] rounded-full text-orange-primary">
                     <TrendingUp size={18} />
                   </span>
-                  <div>
+                  <div className="w-[230px]">
                     <h2 className="text-lg font-semibold">
                       Upgrade Personal skill
                     </h2>
@@ -252,7 +251,7 @@ export default function Home() {
                   <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
                     <Album size={18} />
                   </span>
-                  <div>
+                  <div className="w-[230px]">
                     <h2 className="text-lg font-semibold">Certifications</h2>
                     <p className="text-sm text-secondary">
                       Take your career to unique heights in this competitive job
