@@ -35,12 +35,6 @@ const CourseCard: React.FC<CardProps> = ({
   students,
   status,
 }) => {
-  const [cartIsActive, setCartIsActive] = useState(false);
-  const [alert, setAlert] = useState<{
-    message: string;
-    type: "success" | "error";
-  } | null>(null);
-
   return (
     <>
       {/* Course Card */}
