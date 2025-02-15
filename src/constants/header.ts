@@ -5,7 +5,7 @@ export const commonLinks = [
   },
   {
     title: "About us",
-    url: "#",
+    url: "/about-us",
   },
   {
     title: "Courses",
