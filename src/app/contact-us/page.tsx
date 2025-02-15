@@ -44,7 +44,7 @@ export default function CountactUsPage() {
       {/* contact information and contact form  */}
       <section className="py-16">
         <div className="container mx-auto px-6 lg:max-w-[1170px]">
-          <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col lg:flex-row gap-8">
             <div className="w-full">
               <h2 className="text-3xl font-bold text-primary mb-3">
                 We would love to hear from you
