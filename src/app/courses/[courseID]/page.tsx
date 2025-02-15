@@ -104,7 +104,7 @@ export default function SingleCourse({ params }: SingleCourseProps) {
           <div className="flex flex-col lg:flex-row gap-4 pb-6">
             <div className="w-full">
               <YouTubePlayer
-                videoUrl={"https://www.youtube.com/watch?v=fNchGLMf7Ak"}
+                videoUrl={"https://www.youtube.com/watch?v=R9-6cBqzczo"}
                 priority={true}
               />
             </div>
