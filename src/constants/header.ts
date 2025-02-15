@@ -17,7 +17,7 @@ export const commonLinks = [
   },
   {
     title: "Contact us",
-    url: "#",
+    url: "/contact-us",
   },
   {
     title: "Blogs",
