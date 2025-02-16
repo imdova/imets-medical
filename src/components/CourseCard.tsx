@@ -3,28 +3,8 @@ import Image from "next/image";
 import Rating from "./Rating";
 import { BookOpen, Clock, GraduationCap } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 
-type Instructor = {
-  id: string | number;
-  image: string;
-  name: string;
-};
-
-type CardProps = {
-  id: string;
-  image: string;
-  title: string;
-  rating: number;
-  instructor: Instructor;
-  lectures: number;
-  lecture_date: string;
-  lecture_Method: string;
-  status: string;
-  students: number;
-};
-
-const CourseCard: React.FC<CardProps> = ({
+const CourseCard: React.FC<CourseType> = ({
   id,
   image,
   title,
@@ -34,12 +14,13 @@ const CourseCard: React.FC<CardProps> = ({
   lecture_Method,
   students,
   status,
+  slug,
 }) => {
   return (
     <>
       {/* Course Card */}
       <div className="relative p-5 border rounded-lg">
-        <Link href={`courses/${id}`}>
+        <Link href={`courses/${slug}`}>
           {status === "BestSeller" && (
             <span className="absolute top-7 left-7 flex items-center gap-3 px-3 py-2 rounded-full bg-primary text-white">
               <span className="text-xs ">Best Seller</span>
@@ -89,8 +70,9 @@ const CourseCard: React.FC<CardProps> = ({
         </Link>
         <div className="flex justify-center w-full mb-3">
           <Link
-            href={`courses/${id}`}
-            className="flex items-center justify-center w-3/4 p-2 px-4 gap-2 text-white bg-orange-primary hover:bg-black rounded-lg text-xs link-smooth">
+            href={`courses/${slug}`}
+            className="flex items-center justify-center w-3/4 p-2 px-4 gap-2 text-white bg-orange-primary hover:bg-black rounded-lg text-xs link-smooth"
+          >
             Enroll
           </Link>
         </div>

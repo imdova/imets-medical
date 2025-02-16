@@ -1,72 +1,82 @@
 "use client";
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
 
 interface YouTubePlayerProps {
   videoUrl: string;
+  thumbnailUrl?: string;
   priority?: boolean;
+  autoPlay?: boolean; // New prop to control autoplay
 }
 
 const YouTubePlayer: React.FC<YouTubePlayerProps> = ({
   videoUrl,
-  priority,
+  thumbnailUrl: initialThumbnailUrl,
+  priority = false,
+  autoPlay = false, // Default to false if not provided
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Extract YouTube video ID
-  const videoId = useMemo(() => {
+  // Extract video ID more robustly
+  const videoId = React.useMemo(() => {
     try {
       const url = new URL(videoUrl);
-      let id = url.searchParams.get("v"); // Standard YouTube URL (e.g., ?v=VIDEO_ID)
-
-      if (!id) {
-        // Handle direct embed or shortened URLs
-        const paths = url.pathname.split("/");
-        id = paths[paths.length - 1]; // Extract the last segment as video ID
-      }
-
-      return id;
+      return (
+        url.searchParams.get("v") ||
+        url.pathname.replace("/embed/", "").replace("/watch?v=", "")
+      );
     } catch {
       return null;
     }
   }, [videoUrl]);
 
+  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+  const thumbnailUrl =
+    initialThumbnailUrl ||
+    `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+
+  useEffect(() => {
+    if (autoPlay) {
+      setIsPlaying(true);
+    }
+  }, [autoPlay]);
+
   if (!videoId) {
-    return <div className="text-red-500">Invalid YouTube URL</div>;
+    return <div>Invalid YouTube URL</div>;
   }
 
-  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0`;
-  const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
-
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-md">
+    <div className="relative h-full w-full overflow-hidden rounded-lg">
       {!isPlaying ? (
         <div
-          className="relative cursor-pointer group h-full"
-          onClick={() => setIsPlaying(true)}>
+          className="group absolute inset-0 cursor-pointer"
+          onClick={() => setIsPlaying(true)}
+        >
           <Image
             src={thumbnailUrl}
-            alt="YouTube video thumbnail"
+            alt={"youtube video"}
             width={450}
             height={450}
+            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             priority={priority}
-            className="w-full h-full object-cover "
+            className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 transition-all group-hover:bg-opacity-50">
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 transition-all group-hover:bg-opacity-30">
             <Play
               size={64}
-              className="text-white opacity-80 transition-opacity group-hover:opacity-100"
+              color="white"
+              className="opacity-80 transition-opacity group-hover:opacity-100"
             />
           </div>
         </div>
       ) : (
         <iframe
-          src={embedUrl}
+          src={`${embedUrl}?autoplay=1&modestbranding=1&rel=0`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="relative left-0 top-0 w-full h-full"
+          className="absolute left-0 top-0 h-full w-full"
         />
       )}
     </div>

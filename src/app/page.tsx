@@ -14,11 +14,12 @@ import {
   Video,
 } from "lucide-react";
 import { useState } from "react";
-import { Courses } from "@/constants/courses.data";
+import { coursesList } from "@/constants/courses.data";
 import CourseCard from "@/components/CourseCard";
 import Link from "next/link";
 import { News } from "@/constants/news.data";
 import NewsCard from "@/components/NewsCard";
+import { categories } from "@/constants/categories";
 
 export default function Home() {
   const [filter, setFilter] = useState<
@@ -32,8 +33,8 @@ export default function Home() {
 
   const filteredCourses =
     filter === "All"
-      ? Courses
-      : Courses.filter((course) => course.type === filter);
+      ? coursesList
+      : coursesList.filter((course) => course.type === filter);
   return (
     <>
       {/* Section Landing Page */}
@@ -125,23 +126,18 @@ export default function Home() {
       <section className="pt-28">
         <div className="container mx-auto px-6 lg:max-w-[1170px]">
           <h1 className="text-primary text-5xl text-center font-semibold mb-8">
-            Explore Popular Courses
+            Explore Popular coursesList
           </h1>
           <div className="p-6">
             <div className="flex justify-between items-center flex-col gap-2 lg:flex-row mb-8">
               <Link
                 className="w-fit text-white bg-primary px-4 py-1 rounded-full  text-center "
-                href={""}>
+                href={""}
+              >
                 Search
               </Link>
               <div className="flex flex-col w-full lg:w-fit lg:flex-row gap-2 ">
-                {[
-                  "All",
-                  "Healthcare Quality",
-                  "Infection Control",
-                  "Hospital Management",
-                  "HR Management",
-                ].map((category) => (
+                {categories.map((category) => (
                   <button
                     key={category}
                     onClick={() =>
@@ -159,7 +155,8 @@ export default function Home() {
                       filter === category
                         ? "bg-primary text-white"
                         : "bg-gray-200"
-                    }`}>
+                    }`}
+                  >
                     {category}
                   </button>
                 ))}
@@ -176,19 +173,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredCourses.map((course) => (
-                <CourseCard
-                  key={course.id}
-                  id={course.id}
-                  image={course.image}
-                  title={course.title}
-                  rating={course.rating}
-                  instructor={course.instructor}
-                  lectures={course.lectures}
-                  lecture_date={course.lecture_date}
-                  students={course.students}
-                  status={course.status}
-                  lecture_Method={course.lecture_Method}
-                />
+                <CourseCard key={course.id} {...course} />
               ))}
             </div>
           </div>

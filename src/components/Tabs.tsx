@@ -16,23 +16,24 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   return (
     <div className="w-full">
       {/* Tab Buttons */}
-      <div className="flex flex-wrap  gap-2 mb-7">
+      <div className="mb-7 flex flex-wrap gap-2">
         {tabs.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`px-8 transition-all duration-300 py-2 rounded-full  text-center ${
+            className={`rounded-full px-4 py-2 text-center transition-all duration-300 ${
               activeTab === index
-                ? "text-white bg-orange-primary font-semibold"
-                : "text-gray-600 bg-[#eee]"
-            }`}>
+                ? "bg-primary font-semibold text-white"
+                : "bg-[#eee] text-gray-600"
+            }`}
+          >
             {tab.label}
           </button>
         ))}
       </div>
 
       {/* Tab Content */}
-      <div className="!p-6">{tabs[activeTab].content}</div>
+      <div>{tabs[activeTab].content}</div>
     </div>
   );
 };

@@ -16,15 +16,16 @@ const ModulesAccordion: React.FC<ModulesProps> = ({ modules }) => {
   };
 
   return (
-    <div className=" mt-6">
+    <div className="mt-6">
       {modules.map((module) => (
-        <div key={module.id} className="mb-4 border rounded-lg overflow-hidden">
+        <div key={module.id} className="mb-4 overflow-hidden rounded-lg border">
           <button
             onClick={() => toggleModule(module.id)}
-            className="w-full text-left bg-primary text-white p-4 font-semibold flex justify-between gap-2 flex-col md:flex-row">
+            className="flex w-full flex-row justify-between gap-2 bg-primary p-4 text-left font-semibold text-white"
+          >
             <span className="text-sm md:text-lg">{`Module ${module.id}: ${module.title}`}</span>
-            <div className="flex gap-2 items-center">
-              <span className="text-sm md:text-lg">
+            <div className="flex w-fit items-center gap-2">
+              <span className="text-nowrap text-sm md:text-lg">
                 {module.lessons.length} Lessons
               </span>
               {openModule === module.id ? (
@@ -41,11 +42,12 @@ const ModulesAccordion: React.FC<ModulesProps> = ({ modules }) => {
                   {module.lessons.map((lesson) => (
                     <li key={lesson.id}>
                       <Link
-                        className="flex justify-between p-2 mb-2 rounded-md hover:bg-[#f8f8f8] link-smooth"
-                        href={lesson.url}>
-                        <div className="flex gap-2 items-center ">
+                        className="link-smooth flex justify-between rounded-md p-2 hover:bg-[#f8f8f8]"
+                        href={lesson.url}
+                      >
+                        <div className="flex items-center gap-2">
                           <div className="w-8">
-                            <span className="flex justify-center items-center w-8 h-8 bg-orange-100 text-orange-primary rounded-full">
+                            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-100 text-orange-primary">
                               <PlayIcon size={12} />
                             </span>
                           </div>
@@ -54,7 +56,7 @@ const ModulesAccordion: React.FC<ModulesProps> = ({ modules }) => {
                           </span>
                         </div>
                         {lesson.preview && (
-                          <span className="hidden md:flex gap-2 items-center text-orange-primary border border-orange-primary rounded-md py-1 px-2 ">
+                          <span className="hidden items-center gap-2 rounded-md border border-orange-primary px-2 py-1 text-orange-primary md:flex">
                             <PlayIcon size={12} /> Preview
                           </span>
                         )}

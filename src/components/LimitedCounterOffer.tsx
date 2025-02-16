@@ -33,13 +33,13 @@ const LimitedCounterOffer: React.FC<LimitedCounterOfferProps> = ({
   const { hours, minutes, secs } = formatTime(timeLeft);
 
   return (
-    <div className="m-12 p-4 bg-primary text-white rounded-[50px]">
-      <div className="flex justify-center flex-col items-center lg:flex-row p-4 gap-6 border border-dashed border-orange-primary rounded-[40px] ">
+    <div className="rounded-[50px] bg-primary p-4 text-white md:m-12">
+      <div className="flex flex-col items-center justify-center gap-6 rounded-[40px] border border-dashed border-orange-primary p-4 lg:flex-row">
         <div>
           <Image src={OfferImg} alt="Offer Img" />
         </div>
         <div className="max-w-[400px]">
-          <div className="text-sm mt-2 flex justify-center gap-2 mb-3 ">
+          <div className="mb-3 mt-2 flex justify-center gap-2 text-sm">
             <div className="text-center">
               <p className="text-2xl font-bold">
                 {hours.toString().padStart(2, "0")}
@@ -52,18 +52,20 @@ const LimitedCounterOffer: React.FC<LimitedCounterOfferProps> = ({
               </p>
               <p className="text-xs">Minutes</p>
             </div>
-            <div className="text-center">
+            <div className="text-center text-orange-primary">
               <p className="text-2xl font-bold">
                 {secs.toString().padStart(2, "0")}
               </p>
               <p className="text-xs">Seconds</p>
             </div>
           </div>
-          <h2 className="text-2xl text-center font-bold">
-            Don't miss this offer! 50% Discount for only {count} Hours
+          <h2 className="text-center text-2xl font-bold">
+            Don't miss this offer!{" "}
+            <span className="text-4xl text-orange-primary">50%</span> Discount
+            for only {count} Hours
           </h2>
         </div>
-        <button className="block m-auto px-3 py-2 bg-orange-primary text-white rounded-3xl hover:bg-black link-smooth">
+        <button className="link-smooth m-auto block text-nowrap rounded-3xl bg-orange-primary px-6 py-4 text-xl font-bold text-white hover:bg-black">
           Apply Now
         </button>
       </div>

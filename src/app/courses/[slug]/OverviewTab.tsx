@@ -10,9 +10,9 @@ import {
 
 const OverviewTab: React.FC = () => {
   return (
-    <div className="box-content">
-      <h2 className="text-2xl font-semibold mb-2">Course Description</h2>
-      <p className="text-secondary mb-4">
+    <div className="shadow-none md:shadow-md">
+      <h2 className="mb-2 text-2xl font-semibold">Course Description</h2>
+      <p className="mb-4 text-secondary">
         Becoming CPHQ certified demonstrates to employers and colleagues that
         you know how to manage and advance healthcare Quality and safety.
         Effective preparation for the CPHQ exam is critical to earning the
@@ -20,28 +20,28 @@ const OverviewTab: React.FC = () => {
         the healthcare Quality profession. It covers the following seven
         domains:H
       </p>
-      <h2 className="text-2xl font-semibold mb-2">
+      <h2 className="mb-2 text-2xl font-semibold">
         What you'll learn in this course?
       </h2>
-      <p className="text-secondary mb-4">
+      <p className="mb-4 text-secondary">
         Earning your CPHQ certification is more than just passing an exam—it s
         about showing your commitment to excellence in healthcare. This
         credential not only boosts your professional credibility but also equips
         you with the skills to make a real impact in the healthcare world.
       </p>
       <Accordion items={accordionSliceOne} />
-      <h2 className="text-2xl font-semibold my-3">Curriculum</h2>
+      <h2 className="my-3 mt-8 text-2xl font-semibold">Curriculum</h2>
       <MedulsAccordion modules={modulesData} />
-      <h2 className="text-2xl font-semibold my-3">
+      <h2 className="my-3 text-2xl font-semibold">
         Who can Attend this course?
       </h2>
-      <p className="text-secondary mb-4">
+      <p className="mb-4 text-secondary">
         Earning your CPHQ certification is more than just passing an exam—it s
         about showing your commitment to excellence in healthcare. This
         credential not only boosts your professional credibility but also equips
         you with the skills to make a real impact in the healthcare world.
       </p>
-      <div className="flex flex-col md:flex-row  mb-6">
+      <div className="mb-6 flex flex-col md:flex-row">
         <div className="w-full">
           <Accordion items={accordionSliceTwo} />
         </div>

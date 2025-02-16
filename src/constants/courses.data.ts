@@ -1,28 +1,45 @@
 import { images, reviews, Video } from "./../types/index";
 import { accordionSlices, instractors, medulsAccordion } from "@/types";
 
-export const Courses = [
+/// edit courses
+export const coursesList: CourseType[] = [
+  /// first course
   {
     id: "1",
-    image:
-      "https://img.freepik.com/free-photo/looking-camera-group-people-business-conference-modern-classroom-dayLecture_date_146671-16272.jpg?t=st=1739104096~exp=1739107696~hmac=41a76eca32211ace62c1d62a90303d2b79b26b092c7a70a234a11f62571ab6eb&w=996",
+    slug: "cphq-preparation-course",
+    image: "/images/cicPrep.webp",
     title: "CPHQ Preparation Course",
     rating: 5,
+
     instructor: {
       id: "1",
       name: "DR/ Carlos Maggi",
-      image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
+      image: "/images/cicPrep.webp",
     },
+
     lectures: 10,
     lecture_date: "1 Lecture-Weekly",
     lecture_Method: "Online-Zoom",
     students: 1800,
     status: "BestSeller",
     type: "Healthcare Quality",
+    video: {
+      url: "https://www.youtube.com/watch?v=R9-6cBqzczo",
+    },
+    duration: "12 weeks",
+    languages: "EN - AR",
+    certificate: "International Certificate",
+    form: {
+      groupId: "112928224",
+      redirect:
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+    },
+    startDate: new Date("2022-01-01"),
   },
+  /// second course
   {
     id: "2",
+    slug: "healthcare-quality-management-diploma",
     image:
       "https://img.freepik.com/free-photo/medium-shot-woman-with-headphones-studio_23-2149386582.jpg?t=st=1739104131~exp=1739107731~hmac=74ef27066855e737fb86d6f780ee083fcbeb8a2e71eeaee261342682acf322e1&w=996",
     title: "Healthcare Quality Management Diploma",
@@ -39,9 +56,23 @@ export const Courses = [
     students: 1250,
     status: "",
     type: "Infection Control",
+    video: {
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+      thumbnail:
+        "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+    },
+    duration: "12 weeks",
+    languages: "EN - AR",
+    certificate: "International Certificate",
+    form: {
+      groupId: "112928224",
+      redirect: "/",
+    },
+    startDate: new Date("2022-01-01"),
   },
   {
     id: "3",
+    slug: "cic-preparation-course",
     image:
       "https://img.freepik.com/free-photo/medium-shot-young-people-recording-podcast_23-2149386529.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
     title: "CIC Preparation Course",
@@ -58,9 +89,23 @@ export const Courses = [
     students: 1400,
     status: "BestSeller",
     type: "Marketing Management",
+    video: {
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+      thumbnail:
+        "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+    },
+    duration: "12 weeks",
+    languages: "EN - AR",
+    certificate: "International Certificate",
+    form: {
+      groupId: "112928224",
+      redirect: "/",
+    },
+    startDate: new Date("2022-01-01"),
   },
   {
     id: "4",
+    slug: "infection-prevention-and-control-diploma",
     image:
       "https://img.freepik.com/free-photo/couple-desk-working-together-from-home_23-2149208556.jpg?t=st=1739104160~exp=1739107760~hmac=056166b5c10b1c47cea18b69102388e34a4de670ff8d9d9eca150913639c59a2&w=996",
     title: "Infection Prevention and Control Diploma",
@@ -77,9 +122,23 @@ export const Courses = [
     students: 1100,
     status: "BestSeller",
     type: "Marketing Management",
+    video: {
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+      thumbnail:
+        "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+    },
+    duration: "12 weeks",
+    languages: "EN - AR",
+    certificate: "International Certificate",
+    form: {
+      groupId: "112928224",
+      redirect: "/",
+    },
+    startDate: new Date("2022-01-01"),
   },
   {
     id: "5",
+    slug: "hospital-management-diploma",
     image:
       "https://img.freepik.com/free-photo/couple-desk-working-together-from-home_23-2149208556.jpg?t=st=1739104160~exp=1739107760~hmac=056166b5c10b1c47cea18b69102388e34a4de670ff8d9d9eca150913639c59a2&w=996",
     title: "Hospital Management Diploma",
@@ -96,9 +155,23 @@ export const Courses = [
     students: 1300,
     status: "BestSeller",
     type: "Marketing Management",
+    video: {
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+      thumbnail:
+        "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+    },
+    duration: "12 weeks",
+    languages: "EN - AR",
+    certificate: "International Certificate",
+    form: {
+      groupId: "112928224",
+      redirect: "/",
+    },
+    startDate: new Date("2022-01-01"),
   },
   {
     id: "6",
+    slug: "healthcare-marketing-management-diploma",
     image:
       "https://img.freepik.com/free-photo/couple-desk-working-together-from-home_23-2149208556.jpg?t=st=1739104160~exp=1739107760~hmac=056166b5c10b1c47cea18b69102388e34a4de670ff8d9d9eca150913639c59a2&w=996",
     title: "Healthcare Marketing Management Diploma",
@@ -115,6 +188,19 @@ export const Courses = [
     students: 950,
     status: "BestSeller",
     type: "Marketing Management",
+    video: {
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+      thumbnail:
+        "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+    },
+    duration: "12 weeks",
+    languages: "EN - AR",
+    certificate: "International Certificate",
+    form: {
+      groupId: "112928224",
+      redirect: "/",
+    },
+    startDate: new Date("2022-01-01"),
   },
 ];
 // Accordion Data slice 1

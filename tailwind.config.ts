@@ -21,6 +21,9 @@ export default {
         "main-border": "var(--border-main)",
         "hover-link": "var(--hover-link)",
       },
+      fontFamily: {
+        watad: ["var(--font-watad)"],
+      },
       boxShadow: {
         baseShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
         halfShadow:
