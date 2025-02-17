@@ -9,12 +9,12 @@ export const commonLinks = [
   },
   {
     title: "Courses",
-    url: "#",
+    url: "/courses",
   },
-  {
-    title: "Events",
-    url: "#",
-  },
+  // {
+  //   title: "Events",
+  //   url: "#",
+  // },
   {
     title: "Contact us",
     url: "/contact-us",

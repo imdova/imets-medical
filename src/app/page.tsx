@@ -16,20 +16,13 @@ import {
 import { useState } from "react";
 import { coursesList } from "@/constants/courses.data";
 import CourseCard from "@/components/CourseCard";
-import Link from "next/link";
 import { News } from "@/constants/news.data";
 import NewsCard from "@/components/NewsCard";
 import { categories } from "@/constants/categories";
+import Link from "next/link";
 
 export default function Home() {
-  const [filter, setFilter] = useState<
-    | "All"
-    | "Healthcare Quality"
-    | "Infection Control"
-    | "Hospital Management"
-    | "Marketing Management"
-    | "HR Management"
-  >("All");
+  const [filter, setFilter] = useState<CourseCategoriesType>("All");
 
   const filteredCourses =
     filter === "All"
@@ -38,29 +31,34 @@ export default function Home() {
   return (
     <>
       {/* Section Landing Page */}
-      <section className="relative bg-primary h-[550px]">
-        <div className="container mx-auto px-6 lg:max-w-[1170px] ">
-          <div className="absolute bottom-16 -left-10 w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-primary-900 rounded-full"></div>
-          <div className="absolute flex items-center gap-5 top-1/2 -translate-y-1/2  ">
-            <div className="flex flex-col items-center lg:items-start flex-1">
-              <span className="block w-fit text-primary bg-white px-3 py-2 rounded-full mb-4 text-center lg:text-start ">
+      <section className="relative h-[550px] bg-primary">
+        <div className="container mx-auto px-6 lg:max-w-[1170px]">
+          <div className="absolute -left-10 bottom-16 h-[300px] w-[300px] rounded-full bg-primary-900 md:h-[400px] md:w-[400px]"></div>
+          <div className="absolute top-1/2 flex -translate-y-1/2 items-center gap-5">
+            <div className="flex flex-1 flex-col items-center lg:items-start">
+              <span className="mb-4 block w-fit rounded-full bg-white px-3 py-2 text-center text-primary lg:text-start">
                 15 Years of Exprience
               </span>
-              <h1 className="text-4xl lg:text-6xl text-white font-bold mb-4 text-center lg:text-start ">
+              <h1 className="mb-4 text-center text-4xl font-bold text-white lg:text-start lg:text-6xl">
                 Upgrade your skills and knowledge in Healthcare with our online
                 courses
               </h1>
-              <p className="text-lg text-white mb-4 text-center lg:text-start ">
+              <p className="mb-4 text-center text-lg text-white lg:text-start">
                 IMETS Medical School offers a wide range of expertly designed
                 programs, tailored for professionals in healthcare.
               </p>
-              <SearchFild />
+              <Link
+                href={`/courses`}
+                className="group gap-2 text-nowrap rounded-xl bg-orange-primary px-12 py-3 text-white transition-all duration-150 ease-in-out hover:scale-105 hover:bg-yellow-400"
+              >
+                Explore All Courser
+              </Link>
             </div>
-            <div className="hidden lg:block flex-1">
+            <div className="hidden flex-1 lg:block">
               <div>
-                <div className="rounded-s-full border-8 border-white overflow-hidden">
+                <div className="overflow-hidden rounded-s-full border-8 border-white">
                   <Image
-                    className="object-cover w-full"
+                    className="w-full object-cover"
                     src={Landing_Img}
                     alt="Landing Img"
                   />
@@ -68,53 +66,57 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute hidden xl:block -bottom-12 box-content">
-            <div className="container mx-auto px-6 lg:max-w-[1170px] ">
-              <div className="grid grid-cols-4 gap-5 ">
-                <div className="flex gap-2 flex-1">
-                  <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
-                    <BookText size={18} />
-                  </span>
-                  <div>
-                    <h2 className="text-lg font-semibold">Online Course</h2>
-                    <p className="text-sm text-secondary">
-                      Attend from anywhere with Live Lectures!
-                    </p>
+          <div className="absolute bottom-0 left-1/2 hidden w-full -translate-x-1/2 translate-y-1/2 xl:block">
+            <div className="container mx-auto p-6 lg:max-w-[1170px]">
+              <div className="rounded-xl bg-white p-4 shadow-lg">
+                <div className="grid grid-cols-4 gap-5">
+                  <div className="flex flex-1 gap-2">
+                    <span className="flex h-12 w-12 min-w-12 items-center justify-center rounded-full bg-[#F8BC2426] text-orange-primary">
+                      <BookText size={18} />
+                    </span>
+                    <div>
+                      <h2 className="text-lg font-semibold">Online Course</h2>
+                      <p className="text-sm text-secondary">
+                        Attend from anywhere with Live Lectures!
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex gap-2 flex-1">
-                  <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
-                    <Video size={18} />
-                  </span>
-                  <div>
-                    <h2 className="text-lg font-semibold">
-                      Learn from Experts
-                    </h2>
-                    <p className="text-sm text-secondary">
-                      Learn from Experts in Healthcare Management!
-                    </p>
+                  <div className="flex flex-1 gap-2">
+                    <span className="flex h-12 w-12 min-w-12 items-center justify-center rounded-full bg-[#F8BC2426] text-orange-primary">
+                      <Video size={18} />
+                    </span>
+                    <div>
+                      <h2 className="text-lg font-semibold">
+                        Learn from Experts
+                      </h2>
+                      <p className="text-sm text-secondary">
+                        Learn from Experts in Healthcare Management!
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex gap-2 flex-1">
-                  <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
-                    <Activity size={18} />
-                  </span>
-                  <div>
-                    <h2 className="text-lg font-semibold">Career Monitoring</h2>
-                    <p className="text-sm text-secondary">
-                      Unlock your potential with our !
-                    </p>
+                  <div className="flex flex-1 gap-2">
+                    <span className="flex h-12 w-12 min-w-12 items-center justify-center rounded-full bg-[#F8BC2426] text-orange-primary">
+                      <Activity size={18} />
+                    </span>
+                    <div>
+                      <h2 className="text-lg font-semibold">
+                        Career Monitoring
+                      </h2>
+                      <p className="text-sm text-secondary">
+                        Unlock your potential with our !
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex gap-2 flex-1">
-                  <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
-                    <Album size={18} />
-                  </span>
-                  <div>
-                    <h2 className="text-lg font-semibold">Certificating</h2>
-                    <p className="text-sm text-secondary">
-                      Unlock your potential with International Certificates!
-                    </p>
+                  <div className="flex flex-1 gap-2">
+                    <span className="flex h-12 w-12 min-w-12 items-center justify-center rounded-full bg-[#F8BC2426] text-orange-primary">
+                      <Album size={18} />
+                    </span>
+                    <div>
+                      <h2 className="text-lg font-semibold">Certificating</h2>
+                      <p className="text-sm text-secondary">
+                        Unlock your potential with International Certificates!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -124,34 +126,18 @@ export default function Home() {
       </section>
       {/* Explore Popular Courese Section  */}
       <section className="pt-28">
-        <div className="container mx-auto px-6 lg:max-w-[1170px]">
-          <h1 className="text-primary text-5xl text-center font-semibold mb-8">
-            Explore Popular coursesList
-          </h1>
-          <div className="p-6">
-            <div className="flex justify-between items-center flex-col gap-2 lg:flex-row mb-8">
-              <Link
-                className="w-fit text-white bg-primary px-4 py-1 rounded-full  text-center "
-                href={""}
-              >
-                Search
-              </Link>
-              <div className="flex flex-col w-full lg:w-fit lg:flex-row gap-2 ">
+        <div className="container mx-auto px-4 md:px-6 lg:max-w-[1170px]">
+          <div>
+            <div className="mb-8 flex flex-col items-center justify-between gap-2 lg:flex-row">
+              <h2 className="mb-8 text-nowrap text-5xl font-semibold text-primary lg:mr-8">
+                Popular courses
+              </h2>
+              <div className="flex w-full flex-row flex-wrap gap-2 md:justify-end">
                 {categories.map((category) => (
                   <button
                     key={category}
-                    onClick={() =>
-                      setFilter(
-                        category as
-                          | "All"
-                          | "Healthcare Quality"
-                          | "Infection Control"
-                          | "Hospital Management"
-                          | "Marketing Management"
-                          | "HR Management"
-                      )
-                    }
-                    className={`px-4 py-2 lg:w-[150px] flex-1 text-sm rounded-md  border ${
+                    onClick={() => setFilter(category)}
+                    className={`flex-1 text-nowrap rounded-md border px-4 py-2 text-sm transition-colors duration-500 ${
                       filter === category
                         ? "bg-primary text-white"
                         : "bg-gray-200"
@@ -161,17 +147,9 @@ export default function Home() {
                   </button>
                 ))}
               </div>
-              <div className="flex gap-2">
-                <button className="flex justify-center items-center w-10 h-10 bg-primary text-white rounded-full">
-                  <ChevronLeft size={18} />
-                </button>
-                <button className="flex justify-center items-center w-10 h-10 bg-primary text-white rounded-full">
-                  <ChevronRight size={18} />
-                </button>
-              </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {filteredCourses.map((course) => (
                 <CourseCard key={course.id} {...course} />
               ))}
@@ -182,22 +160,22 @@ export default function Home() {
       {/* About Us Section */}
       <section className="py-16">
         <div className="container mx-auto px-6 lg:max-w-[1170px]">
-          <div className="flex flex-col lg:flex-row items-center gap-5">
-            <div className="w-full ">
+          <div className="flex flex-col items-center gap-5 lg:flex-row">
+            <div className="w-full">
               <Image
-                className="object-cover w-[350px] rounded-full border-2 border-primary p-1 m-auto lg:m-0 "
+                className="m-auto w-[350px] rounded-full border-2 border-primary object-cover p-1 lg:m-0"
                 src={Landing_Img_2}
                 alt="Landing Img"
               />
             </div>
             <div className="w-full">
-              <span className="block text-orange-primary mb-4 font-semibold">
+              <span className="mb-4 block font-semibold text-orange-primary">
                 About IMETS Medical School
               </span>
-              <h1 className="text-5xl font-bold text-primary mb-6 ">
+              <h1 className="mb-6 text-5xl font-bold text-primary">
                 Welcome To IMETS Medical School
               </h1>
-              <p className="text-secondary mb-6">
+              <p className="mb-6 text-secondary">
                 At IMETS Medical School, we are committed to revolutionizing
                 healthcare education by offering cutting-edge, comprehensive,
                 and specialized programs designed to meet the demands of modern
@@ -207,8 +185,8 @@ export default function Home() {
                 grounding needed to excel in an ever-evolving medical landscape.
               </p>
               <ul>
-                <li className="flex gap-3 mb-4">
-                  <span className="flex justify-center items-center w-12 h-12  bg-[#F8BC2426] rounded-full text-orange-primary">
+                <li className="mb-4 flex gap-3">
+                  <span className="flex h-12 w-12 min-w-12 items-center justify-center rounded-full bg-[#F8BC2426] text-orange-primary">
                     <BookText size={18} />
                   </span>
                   <div className="w-[230px]">
@@ -218,8 +196,8 @@ export default function Home() {
                     </p>
                   </div>
                 </li>
-                <li className="flex gap-4 mb-4">
-                  <span className="flex justify-center items-center w-12 h-12  bg-[#F8BC2426] rounded-full text-orange-primary">
+                <li className="mb-4 flex gap-4">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F8BC2426] text-orange-primary">
                     <TrendingUp size={18} />
                   </span>
                   <div className="w-[230px]">
@@ -232,8 +210,8 @@ export default function Home() {
                     </p>
                   </div>
                 </li>
-                <li className="flex gap-3 mb-4">
-                  <span className="flex justify-center items-center w-12 h-12 bg-[#F8BC2426] rounded-full text-orange-primary">
+                <li className="mb-4 flex gap-3">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#F8BC2426] text-orange-primary">
                     <Album size={18} />
                   </span>
                   <div className="w-[230px]">
@@ -251,31 +229,31 @@ export default function Home() {
       </section>
       {/* Blogs and News Section */}
       <section className="h-[1000px]">
-        <div className="flex justify-center items-center relative min-h-[500px] text-white text-center">
+        <div className="relative flex min-h-[500px] items-center justify-center text-center text-white">
           <Image
-            className="absolute top-0 left-0 h-full object-cover brightness-50 "
+            className="absolute left-0 top-0 h-full object-cover brightness-50"
             src={Landing_Img_3}
             alt="Landing Img"
           />
           <div className="container relative mx-auto px-6 lg:max-w-[1170px]">
-            <h1 className="text-4xl mb-4 font-semibold ">
+            <h1 className="mb-4 text-4xl font-semibold">
               Start your learning journey today! Enroll now in our online course
             </h1>
             <p className="mb-6">
               Take your career to unique heights in this competitive job market.
               All the categories you need are here.
             </p>
-            <button className="flex items-center justify-center p-3 rounded-md bg-orange-primary hover:bg-black link-smooth m-auto">
+            <button className="link-smooth m-auto flex items-center justify-center rounded-md bg-orange-primary p-3 hover:bg-black">
               Discover More
             </button>
           </div>
         </div>
         <div className="relative min-h-[300px] bg-orange-primary">
           <div className="container relative mx-auto px-6 lg:max-w-[1170px]">
-            <h1 className="max-w-[350px] text-5xl m-auto text-center font-bold text-white p-5">
+            <h1 className="m-auto max-w-[350px] p-5 text-center text-5xl font-bold text-white">
               Our Latest News & Article
             </h1>
-            <div className="absolute w-full p-3 left-1/2 -translate-x-1/2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+            <div className="absolute left-1/2 grid w-full -translate-x-1/2 grid-cols-1 gap-4 p-3 md:grid-cols-2 lg:grid-cols-3">
               {News?.map((newsItem) => (
                 <NewsCard key={newsItem.id} {...newsItem} />
               ))}

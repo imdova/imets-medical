@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import OfferImg from "@/assets/images/offer.png";
 import Image from "next/image";
 
 interface LimitedCounterOfferProps {
@@ -36,7 +35,7 @@ const LimitedCounterOffer: React.FC<LimitedCounterOfferProps> = ({
     <div className="rounded-[50px] bg-primary p-4 text-white md:m-12">
       <div className="flex flex-col items-center justify-center gap-6 rounded-[40px] border border-dashed border-orange-primary p-4 lg:flex-row">
         <div>
-          <Image src={OfferImg} alt="Offer Img" />
+          <Image src="/fast.svg" width={300} height={90} alt="Offer Img" />
         </div>
         <div className="max-w-[400px]">
           <div className="mb-3 mt-2 flex justify-center gap-2 text-sm">

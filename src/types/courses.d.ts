@@ -1,3 +1,11 @@
+type CourseCategoriesType =
+  | "All"
+  | "Healthcare Quality"
+  | "Infection Control"
+  | "Hospital Management"
+  | "Marketing Management"
+  | "HR Management";
+
 type CourseType = {
   id: string;
   slug: string;
