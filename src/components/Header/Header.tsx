@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import WhatsAppButton from "../UI/WhatsAppButton";
 import { whatsAppData } from "@/constants/whatsApp.data";
+import MobileMenu from "./MobileMenu";
 
 const Header: React.FC<BaseHeaderProps> = () => {
   const isScrolled = useScrollDetection();
@@ -20,6 +21,7 @@ const Header: React.FC<BaseHeaderProps> = () => {
       <div className="absolute h-24 overflow-hidden"></div>
       <div className="container mx-auto px-6 lg:max-w-[1170px]">
         <div className="flex h-[70px] items-center justify-between">
+          <MobileMenu />
           <Link className="relative" href="/">
             <Image src={"/logo.svg"} alt="logo" width={100} height={100} />
           </Link>
@@ -39,7 +41,7 @@ const Header: React.FC<BaseHeaderProps> = () => {
           <div className="flex items-center gap-4">
             <Link
               href="#"
-              className="font-medium text-orange-primary hover:text-primary"
+              className="rounded-xl border border-orange-primary px-4 py-2 font-medium text-orange-primary hover:bg-orange-primary hover:text-white"
             >
               Become Instructor
             </Link>

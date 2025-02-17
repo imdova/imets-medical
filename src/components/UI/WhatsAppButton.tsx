@@ -28,7 +28,6 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
         alt="whats app"
         className="mr-2"
       />
-      <span className="group-hover:underline">Chat</span>
     </a>
   );
 };

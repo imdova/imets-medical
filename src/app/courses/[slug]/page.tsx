@@ -26,8 +26,17 @@ import CourseApply from "@/components/courses/CourseApply";
 import StickyCTA from "@/components/StickyCTA";
 import useGeoInfo from "../../../hooks/useGeoInfo";
 
-const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const { slug } = await params;
+interface SingleCourseProps {
+  params: Promise<{ slug: string }>;
+}
+
+type CoursePost = {
+  title: string;
+  content: string;
+};
+
+export default function SingleCourse({ params }: SingleCourseProps) {
+  const { slug } = use(params);
   const { data, loading } = useGeoInfo();
 
   const course = coursesList.find((x) => x.slug === slug);
@@ -76,7 +85,9 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
             {!loading && (
               <div className="flex items-center gap-2 text-white">
                 <Coins className="text-orange-primary" size={16} />
-                <span>{course.price[data.currency] || course.price.other}</span>
+                <span>
+                  {course.price[data.country_code2] || course.price.other}
+                </span>
               </div>
             )}
             <div className="hidden items-center gap-2 text-white md:flex">
@@ -177,6 +188,4 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       </section>
     </main>
   );
-};
-
-export default Page;
+}

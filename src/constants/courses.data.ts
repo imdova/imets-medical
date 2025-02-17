@@ -17,8 +17,8 @@ export const coursesList: CourseType[] = [
       image: "/images/cicPrep.webp",
     },
     price: {
-      EGP: "2000 EGP",
-      SAR: "1500 SAR",
+      EG: "2000 EGP",
+      SA: "1500 SAR",
       /// add country here
       other: "1500 EGP",
     },
@@ -464,8 +464,8 @@ export const coursesList: CourseType[] = [
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EGP: "2000 EGP",
-      SAR: "1500 SAR",
+      EG: "2000 EGP",
+      SA: "1500 SAR",
       /// add country here
       other: "1500 EGP",
     },
@@ -843,8 +843,8 @@ export const coursesList: CourseType[] = [
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EGP: "2000 EGP",
-      SAR: "1500 SAR",
+      EG: "2000 EGP",
+      SA: "1500 SAR",
       /// add country here
       other: "1500 EGP",
     },
@@ -1222,8 +1222,8 @@ export const coursesList: CourseType[] = [
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EGP: "2000 EGP",
-      SAR: "1500 SAR",
+      EG: "2000 EGP",
+      SA: "1500 SAR",
       /// add country here
       other: "1500 EGP",
     },
@@ -1601,8 +1601,8 @@ export const coursesList: CourseType[] = [
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EGP: "2000 EGP",
-      SAR: "1500 SAR",
+      EG: "2000 EGP",
+      SA: "1500 SAR",
       /// add country here
       other: "1500 EGP",
     },
@@ -1981,8 +1981,8 @@ export const coursesList: CourseType[] = [
     },
     price: {
       /// add currencies here
-      EGP: "2000 EGP",
-      SAR: "1500 SAR",
+      EG: "2000 EGP",
+      SA: "1500 SAR",
 
       /// the default if no currency match
       other: "1500 EGP",

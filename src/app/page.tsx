@@ -235,7 +235,7 @@ export default function Home() {
         </div>
       </section>
       {/* Blogs and News Section */}
-      <section className="h-[1000px]">
+      <section>
         <div className="relative flex min-h-[500px] items-center justify-center text-center text-white">
           <Image
             className="absolute left-0 top-0 h-full object-cover brightness-50"
@@ -255,12 +255,13 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="relative min-h-[300px] bg-orange-primary">
+        <div className="relative mb-8 min-h-[300px]">
+          <div className="absolute left-0 top-0 h-1/2 w-full bg-orange-primary"></div>
           <div className="container relative mx-auto px-6 lg:max-w-[1170px]">
             <h1 className="m-auto max-w-[350px] p-5 text-center text-5xl font-bold text-white">
               Our Latest News & Article
             </h1>
-            <div className="absolute left-1/2 grid w-full -translate-x-1/2 grid-cols-1 gap-4 p-3 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid w-full grid-cols-1 gap-4 p-3 md:grid-cols-2 lg:grid-cols-3">
               {News?.map((newsItem) => (
                 <NewsCard key={newsItem.id} {...newsItem} />
               ))}

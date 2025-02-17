@@ -16,21 +16,21 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
   status,
   slug,
   price,
-  currency,
+  country_code2,
   loading,
 }) => {
   return (
     <>
       {/* Course Card */}
       <div className="relative rounded-lg border p-5">
-        <Link href={`courses/${slug}`}>
+        <Link href={`/courses/${slug}`}>
           {status === "BestSeller" && (
             <span className="absolute left-7 top-7 flex items-center gap-3 rounded-full bg-primary px-3 py-2 text-white">
               <span className="text-xs">Best Seller</span>
             </span>
           )}
 
-          <div className="mb-3 h-40 w-full overflow-hidden rounded-md">
+          <div className="mb-3 h-48 w-full overflow-hidden rounded-md">
             <Image
               className="h-full w-full object-cover"
               src={image}
@@ -40,9 +40,13 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
             />
           </div>
         </Link>
-        <div className="mb-4 grid grid-rows-2">
+        <div className="mb-4 grid-rows-2 md:grid">
           <div className="flex w-full items-center justify-between">
-            <h1 className="mb-3 text-xl font-semibold">{title}</h1>
+            <Link href={`/courses/${slug}`}>
+              <h4 className="mb-3 text-xl font-semibold hover:underline">
+                {title}
+              </h4>
+            </Link>
             <div className="flex flex-col items-center gap-1">
               <Rating rating={rating} size={10} />
               <span className="text-[10px] text-secondary">
@@ -50,7 +54,7 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
               </span>
             </div>
           </div>
-          <div className="mb-3 grid w-full grid-cols-1 gap-3 md:grid-cols-2">
+          <div className="mb-3 grid w-full grid-cols-2 gap-3">
             <div className="flex gap-2">
               <BookOpen className="text-secondary" size={18} />
               <span className="text-sm text-secondary">
@@ -74,16 +78,16 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
           </div>
         </div>
         <div className="flex items-center justify-between">
-          <p className="text-xl font-bold">
-            {loading ? "" : price[currency] || price.other}
-          </p>
           <Link
-            href={`courses/${slug}`}
+            href={`/courses/${slug}`}
             className="group gap-2 self-end text-nowrap rounded-lg bg-orange-primary p-2 px-12 text-white hover:bg-yellow-400"
           >
             Enroll
             <ArrowRight className="mb-1 ml-2 inline-block h-4 w-4 transition-transform duration-300 group-hover:translate-x-4" />
           </Link>
+          <p className="text-xl font-bold">
+            {loading ? "" : price[country_code2] || price.other}
+          </p>
         </div>
       </div>
     </>

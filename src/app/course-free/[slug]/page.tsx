@@ -1,12 +1,8 @@
 "use client";
 import NotFoundPage from "@/app/not-found";
+import { use } from "react";
 import { useState } from "react";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Clock,
-  EllipsisVertical,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, Clock } from "lucide-react";
 import Image from "next/image";
 import PDF from "@/assets/icons/pdf.svg";
 import DOCX from "@/assets/icons/docx.svg";
@@ -17,9 +13,12 @@ import Progress from "@/components/Progress";
 import ProgressTabs from "@/components/ProgressTabs";
 import { freeCoursesList } from "@/constants/courses-free.data";
 import { courseMaterials } from "@/constants/courses.data";
+interface SingleCourseProps {
+  params: Promise<{ slug: string }>;
+}
 
-const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const { slug } = await params;
+export default function OfflineVideo({ params }: SingleCourseProps) {
+  const { slug } = use(params);
   const [currentVideo, setCurrentVideo] = useState(0);
   const course = freeCoursesList.find((x) => x.slug === slug);
   const [question, setQuestion] = useState("");
@@ -332,5 +331,4 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       </div>
     </div>
   );
-};
-export default Page;
+}

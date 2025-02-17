@@ -8,12 +8,21 @@ const useGeoInfo = () => {
   const getGeoInfo = async () => {
     try {
       setLoading(true);
-      const response = await fetch("https://ipapi.co/json/");
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
+
+      // First, get the user's IP address
+      const ipResponse = await fetch("https://api64.ipify.org?format=json");
+      const ipData = await ipResponse.json();
+      const userIP = ipData.ip;
+
+      // Then, use the IP address to fetch location details
+      const geoResponse = await fetch(
+        `https://api.iplocation.net/?ip=${userIP}`,
+      );
+      if (!geoResponse.ok) {
+        throw new Error("Failed to fetch geolocation data");
       }
-      const data = await response.json();
-      setData(data);
+      const geoData = await geoResponse.json();
+      setData(geoData);
     } catch (error) {
       setError("Error fetching geo info");
       console.log("Error fetching geo info:", error);
