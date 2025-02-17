@@ -26,17 +26,8 @@ import CourseApply from "@/components/courses/CourseApply";
 import StickyCTA from "@/components/StickyCTA";
 import useGeoInfo from "../../../hooks/useGeoInfo";
 
-interface SingleCourseProps {
-  params: Promise<{ slug: string }>;
-}
-
-type CoursePost = {
-  title: string;
-  content: string;
-};
-
-export default function SingleCourse({ params }: SingleCourseProps) {
-  const { slug } = use(params);
+const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
   const { data, loading } = useGeoInfo();
 
   const course = coursesList.find((x) => x.slug === slug);
@@ -186,4 +177,6 @@ export default function SingleCourse({ params }: SingleCourseProps) {
       </section>
     </main>
   );
-}
+};
+
+export default Page;

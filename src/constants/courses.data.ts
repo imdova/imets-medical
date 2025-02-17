@@ -2457,3 +2457,21 @@ export const instractorsCardData = [
       "https://img.freepik.com/free-photo/cheerful-woman-doctor-looking-camera_23-2147648684.jpg?t=st=1739465295~exp=1739468895~hmac=631cd17f7d3ec5e92132f0dc0ace3cca4bbfb51ffdd985f4f7d161ca1bfd558a&w=740",
   },
 ];
+
+export const courseMaterials: CourseMaterial[] = [
+  {
+    title: "Introduction to Next.js",
+    fileUrl: "/files/intro-to-nextjs.pdf",
+    fileType: "pdf",
+  },
+  {
+    title: "TypeScript Basics",
+    fileUrl: "/files/typescript-basics.docx",
+    fileType: "docx",
+  },
+  {
+    title: "Tailwind CSS Guide",
+    fileUrl: "/files/tailwind-guide.pdf",
+    fileType: "pdf",
+  },
+];

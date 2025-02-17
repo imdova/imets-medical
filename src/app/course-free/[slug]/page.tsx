@@ -1,6 +1,5 @@
 "use client";
 import NotFoundPage from "@/app/not-found";
-import { use } from "react";
 import { useState } from "react";
 import {
   ChevronLeft,
@@ -17,12 +16,10 @@ import YouTubePlayer from "@/components/YouTubePlayer";
 import Progress from "@/components/Progress";
 import ProgressTabs from "@/components/ProgressTabs";
 import { freeCoursesList } from "@/constants/courses-free.data";
-interface SingleCourseProps {
-  params: Promise<{ slug: string }>;
-}
+import { courseMaterials } from "@/constants/courses.data";
 
-export default function OfflineVideo({ params }: SingleCourseProps) {
-  const { slug } = use(params);
+const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
   const [currentVideo, setCurrentVideo] = useState(0);
   const course = freeCoursesList.find((x) => x.slug === slug);
   const [question, setQuestion] = useState("");
@@ -335,22 +332,5 @@ export default function OfflineVideo({ params }: SingleCourseProps) {
       </div>
     </div>
   );
-}
-
-export const courseMaterials: CourseMaterial[] = [
-  {
-    title: "Introduction to Next.js",
-    fileUrl: "/files/intro-to-nextjs.pdf",
-    fileType: "pdf",
-  },
-  {
-    title: "TypeScript Basics",
-    fileUrl: "/files/typescript-basics.docx",
-    fileType: "docx",
-  },
-  {
-    title: "Tailwind CSS Guide",
-    fileUrl: "/files/tailwind-guide.pdf",
-    fileType: "pdf",
-  },
-];
+};
+export default Page;
