@@ -7,6 +7,8 @@ import {
   Calendar,
   ChartNoAxesColumnIncreasing,
   Clock,
+  Coins,
+  DollarSign,
   GraduationCap,
   Puzzle,
   SquareChartGantt,
@@ -22,6 +24,7 @@ import NotFoundPage from "@/app/not-found";
 import { coursesList } from "@/constants/courses.data";
 import CourseApply from "@/components/courses/CourseApply";
 import StickyCTA from "@/components/StickyCTA";
+import useGeoInfo from "../../../hooks/useGeoInfo";
 
 interface SingleCourseProps {
   params: Promise<{ slug: string }>;
@@ -34,21 +37,22 @@ type CoursePost = {
 
 export default function SingleCourse({ params }: SingleCourseProps) {
   const { slug } = use(params);
+  const { data, loading } = useGeoInfo();
 
   const course = coursesList.find((x) => x.slug === slug);
 
   if (!course) return <NotFoundPage />;
 
   const tabData = [
-    { label: "Overview", content: <OverviewTab /> },
-    { label: "Instructors", content: <InstructorsTab /> },
+    { label: "Overview", content: <OverviewTab {...course} /> },
+    { label: "Instructors", content: <InstructorsTab {...course} /> },
     {
       label: "Reviews",
-      content: <ReviewsTab />,
+      content: <ReviewsTab {...course} />,
     },
     {
       label: "Students",
-      content: <StudentsTab />,
+      content: <StudentsTab {...course} />,
     },
   ];
   return (
@@ -68,13 +72,7 @@ export default function SingleCourse({ params }: SingleCourseProps) {
           <div className="mb-6 flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-2 text-white">
               <Calendar size={16} />
-              <span className="text-sm font-light">
-                {new Date(course.startDate).toLocaleDateString(undefined, {
-                  year: "numeric",
-                  month: "2-digit",
-                  day: "numeric",
-                })}
-              </span>
+              <span className="text-sm font-light">{course.startDate}</span>
             </div>
             <div className="flex items-center gap-2 text-white">
               <GraduationCap size={16} />
@@ -84,6 +82,12 @@ export default function SingleCourse({ params }: SingleCourseProps) {
               <Calendar size={16} />
               <span>{course.lecture_date}</span>
             </div>
+            {!loading && (
+              <div className="flex items-center gap-2 text-white">
+                <Coins className="text-orange-primary" size={16} />
+                <span>{course.price[data.currency] || course.price.other}</span>
+              </div>
+            )}
             <div className="hidden items-center gap-2 text-white md:flex">
               <GraduationCap size={16} />
               <span>{course.students} Students</span>
@@ -92,6 +96,7 @@ export default function SingleCourse({ params }: SingleCourseProps) {
               <Clock size={16} />
               <span>{course.duration}</span>
             </div>
+
             <div className="mt-2 flex flex-col items-center gap-1">
               <Rating rating={4} size={10} />
               <span className="text-[10px] text-orange-primary">

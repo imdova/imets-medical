@@ -20,8 +20,10 @@ import { News } from "@/constants/news.data";
 import NewsCard from "@/components/NewsCard";
 import { categories } from "@/constants/categories";
 import Link from "next/link";
+import useGeoInfo from "@/hooks/useGeoInfo";
 
 export default function Home() {
+  const { data, loading } = useGeoInfo();
   const [filter, setFilter] = useState<CourseCategoriesType>("All");
 
   const filteredCourses =
@@ -151,7 +153,12 @@ export default function Home() {
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {filteredCourses.map((course) => (
-                <CourseCard key={course.id} {...course} />
+                <CourseCard
+                  key={course.id}
+                  {...course}
+                  {...data}
+                  loading={loading}
+                />
               ))}
             </div>
           </div>

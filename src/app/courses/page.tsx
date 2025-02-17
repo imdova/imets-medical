@@ -2,15 +2,18 @@
 import CourseCard from "@/components/CourseCard";
 import { categories } from "@/constants/categories";
 import { coursesList } from "@/constants/courses.data";
+import useGeoInfo from "@/hooks/useGeoInfo";
 import { useState } from "react";
 
 const page = () => {
+  const { data, loading } = useGeoInfo();
   const [filter, setFilter] = useState<CourseCategoriesType>("All");
 
   const filteredCourses =
     filter === "All"
       ? coursesList
       : coursesList.filter((course) => course.type === filter);
+
   return (
     <section className="mb-10 py-5">
       <div className="container mx-auto px-4 md:px-6 lg:max-w-[1170px]">
@@ -38,7 +41,12 @@ const page = () => {
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {filteredCourses.map((course) => (
-              <CourseCard key={course.id} {...course} />
+              <CourseCard
+                key={course.id}
+                {...course}
+                {...data}
+                loading={loading}
+              />
             ))}
           </div>
         </div>

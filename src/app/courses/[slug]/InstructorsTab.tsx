@@ -1,19 +1,18 @@
 import LimitedCounterOffer from "@/components/LimitedCounterOffer";
 import Rating from "@/components/Rating";
-import { InstructorsData } from "@/constants/courses.data";
 import { Album, MapPin, PlayCircle } from "lucide-react";
 import Image from "next/image";
 
-const InstructorsTab: React.FC = () => {
+const InstructorsTab: React.FC<CourseType> = ({ instructors }) => {
   return (
     <div className="box-content">
-      {InstructorsData.map((instructor) => {
+      {instructors.map((instructor) => {
         return (
           <div className="mb-6" key={instructor.id}>
-            <div className="flex gap-6 ">
+            <div className="flex gap-6">
               <div>
                 <Image
-                  className=" object-cover rounded-full"
+                  className="rounded-full object-cover"
                   src={instructor.image}
                   alt="Avater instractor"
                   width={100}
@@ -21,20 +20,20 @@ const InstructorsTab: React.FC = () => {
                 />
               </div>
               <div>
-                <h2 className="text-2xl font-semibold mb-2">
+                <h2 className="mb-2 text-2xl font-semibold">
                   {instructor.name}
                 </h2>
-                <span className="text-secondary mb-6">{instructor.job}</span>
-                <div className="flex flex-wrap items-center gap-4 mb-6">
-                  <div className="flex gap-2 items-center ">
+                <span className="mb-6 text-secondary">{instructor.job}</span>
+                <div className="mb-6 flex flex-wrap items-center gap-4">
+                  <div className="flex items-center gap-2">
                     <Album className="text-orange-primary" size={16} />
                     <span>{instructor.certification}</span>
                   </div>
-                  <div className="flex gap-2 items-center ">
+                  <div className="flex items-center gap-2">
                     <PlayCircle className="text-orange-primary" size={16} />
                     <span>{instructor.experience} Years Experience</span>
                   </div>
-                  <div className="flex gap-2 items-center ">
+                  <div className="flex items-center gap-2">
                     <MapPin className="text-orange-primary" size={16} />
                     <span>{instructor.location}</span>
                   </div>
@@ -47,7 +46,7 @@ const InstructorsTab: React.FC = () => {
                 </div>
               </div>
             </div>
-            <p className="text-secondary leading-6 md:leading-8 p-4">
+            <p className="p-4 leading-6 text-secondary md:leading-8">
               {instructor.content}
             </p>
           </div>

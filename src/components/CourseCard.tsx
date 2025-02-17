@@ -4,7 +4,7 @@ import Rating from "./Rating";
 import { ArrowRight, BookOpen, Clock, GraduationCap } from "lucide-react";
 import Link from "next/link";
 
-const CourseCard: React.FC<CourseType> = ({
+const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
   id,
   image,
   title,
@@ -15,6 +15,9 @@ const CourseCard: React.FC<CourseType> = ({
   students,
   status,
   slug,
+  price,
+  currency,
+  loading,
 }) => {
   return (
     <>
@@ -70,14 +73,18 @@ const CourseCard: React.FC<CourseType> = ({
             </div>
           </div>
         </div>
-
-        <Link
-          href={`courses/${slug}`}
-          className="group gap-2 self-end text-nowrap rounded-lg bg-orange-primary p-2 px-12 text-white hover:bg-yellow-400"
-        >
-          Enroll
-          <ArrowRight className="mb-1 ml-2 inline-block h-4 w-4 transition-transform duration-300 group-hover:translate-x-4" />
-        </Link>
+        <div className="flex items-center justify-between">
+          <p className="text-xl font-bold">
+            {loading ? "" : price[currency] || price.other}
+          </p>
+          <Link
+            href={`courses/${slug}`}
+            className="group gap-2 self-end text-nowrap rounded-lg bg-orange-primary p-2 px-12 text-white hover:bg-yellow-400"
+          >
+            Enroll
+            <ArrowRight className="mb-1 ml-2 inline-block h-4 w-4 transition-transform duration-300 group-hover:translate-x-4" />
+          </Link>
+        </div>
       </div>
     </>
   );
