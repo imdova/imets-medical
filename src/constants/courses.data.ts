@@ -6,30 +6,30 @@ export const coursesList: CourseType[] = [
   {
     id: "1",
     slug: "cphq-preparation-course",
-    image: "/images/cicPrep.webp",
+    image: "/images/cphq.webp",
     title: "CPHQ Preparation Course",
     rating: 5,
 
     /// instructor data
     instructor: {
       id: "1",
-      name: "DR/ Carlos Maggi",
+      name: "DR/ Sara Abdulla",
       image: "/images/cicPrep.webp",
     },
     price: {
-      EG: "2000 EGP",
-      SA: "1500 SAR",
+      EG: "8500 EGP",
+      SA: "1800 SAR",
       /// add country here
-      other: "1500 EGP",
+      other: "17000 EGP",
     },
     lectures: 10,
     lecture_date: "1 Lecture-Weekly",
     lecture_Method: "Online-Zoom",
-    students: 1800,
+    students: 3200,
     status: "BestSeller",
     type: "Healthcare Quality",
     video: {
-      url: "https://www.youtube.com/watch?v=R9-6cBqzczo",
+      url: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
     },
     duration: "12 weeks",
     languages: "EN - AR",
@@ -38,8 +38,8 @@ export const coursesList: CourseType[] = [
     /// here you can add the form id that you want
     form: {
       // name: "",
-      groupId: "112928224",
-      redirect: "/course-free/cphq-preparation-course",
+      groupId: "112929547",
+      redirect: "www.imetsacademy.com",
     },
     //
     //// tab over view
@@ -59,7 +59,7 @@ export const coursesList: CourseType[] = [
         /// start goal
         {
           title:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting",
+            "Understand healthcare quality system.",
           content:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         },
@@ -67,7 +67,7 @@ export const coursesList: CourseType[] = [
         ///
         /// start goal
         {
-          title: "Lorem Ipsum has been the industry's standard dummy",
+          title: "Establish leadership environment.",
           content:
             "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
         },
@@ -75,7 +75,7 @@ export const coursesList: CourseType[] = [
         ///
         /// start goal
         {
-          title: "when an unknown printer took a galley",
+          title: "Monitor, analyze,  and improve performanc.",
           content:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         },
@@ -83,9 +83,19 @@ export const coursesList: CourseType[] = [
         ///
         /// start goal
         {
-          title: "containing Lorem Ipsum passages,",
+          title: "Use statistics to make recommendations.",
           content:
             "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+        },
+        {
+          title: "Recognize accreditation process.",
+          content:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        },
+        {
+          title: "Monitor, analyze,  and improve performanc.",
+          content:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         },
       ],
     },
@@ -95,16 +105,14 @@ export const coursesList: CourseType[] = [
       /// start module
       {
         id: 1,
-        title: "Healthcare Quality Concepts",
+        title: "Introduction to Healthcare Quality",
         lessons: [
-          { id: 1, title: "Quality Leadership and Integration", url: "#" },
-          { id: 2, title: "Patient Safety", url: "#" },
-          {
-            id: 3,
-            title: "Performance and Process Improvement",
-            url: "#",
-            preview: true,
-          },
+          { id: 1, title: "Quality Concepts", url: "#" },
+          { id: 2, title: "Quality Dimensions", url: "#" },
+          { id: 3, title: "System Approach", url: "#" },
+          { id: 4, title: "Managed Care", url: "#" },
+          { id: 5, title: "Integrated Delivery System", url: "#" },
+          
         ],
       },
       /// end module
@@ -116,14 +124,19 @@ export const coursesList: CourseType[] = [
         lessons: [
           {
             id: 1,
-            title: "Population Health and Care Transitions",
+            title: "Leadership versus Management",
             url: "#",
             preview: true,
           },
-          { id: 2, title: "Regulatory and Accreditation", url: "#" },
+          { id: 2, title: "Leadership Styles", url: "#" },
           {
             id: 3,
-            title: "Health Data Analytics",
+            title: "Strategic Management",
+            url: "#",
+          },
+          {
+            id: 4,
+            title: "Organizational Structure",
             url: "#",
           },
         ],
@@ -137,14 +150,14 @@ export const coursesList: CourseType[] = [
         lessons: [
           {
             id: 1,
-            title: "Population Health and Care Transitions",
+            title: "Safety and Just Culture",
             url: "#",
             preview: true,
           },
-          { id: 2, title: "Regulatory and Accreditation", url: "#" },
+          { id: 2, title: "Medical Errors", url: "#" },
           {
             id: 3,
-            title: "Health Data Analytics",
+            title: "Patient Safety Programs",
             url: "#",
           },
         ],
@@ -155,14 +168,24 @@ export const coursesList: CourseType[] = [
         lessons: [
           {
             id: 1,
-            title: "Population Health and Care Transitions",
+            title: "Performance Measurement",
             url: "#",
             preview: true,
           },
-          { id: 2, title: "Regulatory and Accreditation", url: "#" },
+          { id: 2, title: "Performance Improvement Approaches", url: "#" },
           {
             id: 3,
-            title: "Health Data Analytics",
+            title: "Clinical Performance Measurement",
+            url: "#",
+          },
+          {
+            id: 4,
+            title: "Utilization Management",
+            url: "#",
+          },
+          {
+            id: 5,
+            title: "Risk Management",
             url: "#",
           },
         ],
@@ -176,16 +199,11 @@ export const coursesList: CourseType[] = [
         lessons: [
           {
             id: 1,
-            title: "Population Health and Care Transitions",
+            title: "Quality Review and Accountability",
             url: "#",
             preview: true,
           },
-          { id: 2, title: "Regulatory and Accreditation", url: "#" },
-          {
-            id: 3,
-            title: "Health Data Analytics",
-            url: "#",
-          },
+          
         ],
       },
       /// end module
@@ -201,12 +219,7 @@ export const coursesList: CourseType[] = [
             url: "#",
             preview: true,
           },
-          { id: 2, title: "Regulatory and Accreditation", url: "#" },
-          {
-            id: 3,
-            title: "Health Data Analytics",
-            url: "#",
-          },
+          
         ],
       },
       /// end module
@@ -218,16 +231,11 @@ export const coursesList: CourseType[] = [
         lessons: [
           {
             id: 1,
-            title: "Population Health and Care Transitions",
+            title: "Regulatory and Accreditation",
             url: "#",
             preview: true,
           },
-          { id: 2, title: "Regulatory and Accreditation", url: "#" },
-          {
-            id: 3,
-            title: "Health Data Analytics",
-            url: "#",
-          },
+         
         ],
       },
       /// end module
@@ -239,14 +247,19 @@ export const coursesList: CourseType[] = [
         lessons: [
           {
             id: 1,
-            title: "Population Health and Care Transitions",
+            title: "Sampling and Population",
             url: "#",
             preview: true,
           },
-          { id: 2, title: "Regulatory and Accreditation", url: "#" },
+          { id: 2, title: "Basic Statistics", url: "#" },
           {
             id: 3,
-            title: "Health Data Analytics",
+            title: "Display Techniques",
+            url: "#",
+          },
+          {
+            id: 4,
+            title: "Quality Tools",
             url: "#",
           },
         ],
@@ -453,28 +466,27 @@ export const coursesList: CourseType[] = [
   {
     id: "2",
     slug: "healthcare-quality-management-diploma",
-    image:
-      "https://img.freepik.com/free-photo/medium-shot-woman-with-headphones-studio_23-2149386582.jpg?t=st=1739104131~exp=1739107731~hmac=74ef27066855e737fb86d6f780ee083fcbeb8a2e71eeaee261342682acf322e1&w=996",
+    image: "/images/quality diploma.webp",
     title: "Healthcare Quality Management Diploma",
     rating: 5,
     instructor: {
       id: "1",
-      name: "DR/ Carlos Maggi",
+      name: "DR/ Mohamed Hegazy",
       image:
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EG: "2000 EGP",
-      SA: "1500 SAR",
+      EG: "12000 EGP",
+      SA: "2800 SAR",
       /// add country here
-      other: "1500 EGP",
+      other: "24000 EGP",
     },
-    lectures: 13,
-    lecture_date: "3 Lecture-Weekly",
+    lectures: 16,
+    lecture_date: "1 Lecture-Weekly",
     lecture_Method: "Online-Zoom",
     students: 1250,
     status: "",
-    type: "Infection Control",
+    type: "Healthcare Quality",
     video: {
       url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
       thumbnail:
@@ -832,8 +844,7 @@ export const coursesList: CourseType[] = [
   {
     id: "3",
     slug: "cic-preparation-course",
-    image:
-      "https://img.freepik.com/free-photo/medium-shot-young-people-recording-podcast_23-2149386529.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+    image: "/images/cic.webp",
     title: "CIC Preparation Course",
     rating: 5,
     instructor: {
@@ -843,23 +854,23 @@ export const coursesList: CourseType[] = [
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EG: "2000 EGP",
-      SA: "1500 SAR",
+      EG: "8500 EGP",
+      SA: "1800 SAR",
       /// add country here
-      other: "1500 EGP",
+      other: "17000 EGP",
     },
-    lectures: 10,
+    lectures: 16,
     lecture_date: "1 Lecture-Weekly",
     lecture_Method: "Online-Zoom",
     students: 1400,
     status: "BestSeller",
-    type: "Marketing Management",
+    type: "Infection Control",
     video: {
       url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
       thumbnail:
         "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
     },
-    duration: "12 weeks",
+    duration: "4 weeks",
     languages: "EN - AR",
     certificate: "International Certificate",
     form: {
@@ -1210,10 +1221,10 @@ export const coursesList: CourseType[] = [
   /// start course
   {
     id: "4",
-    slug: "infection-prevention-and-control-diploma",
+    slug: "infection-control-diploma",
     image:
-      "https://img.freepik.com/free-photo/couple-desk-working-together-from-home_23-2149208556.jpg?t=st=1739104160~exp=1739107760~hmac=056166b5c10b1c47cea18b69102388e34a4de670ff8d9d9eca150913639c59a2&w=996",
-    title: "Infection Prevention and Control Diploma",
+      "/images/infection.webp",
+    title: "Infection Control Diploma",
     rating: 5,
     instructor: {
       id: "1",
@@ -1222,23 +1233,23 @@ export const coursesList: CourseType[] = [
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EG: "2000 EGP",
-      SA: "1500 SAR",
+      EG: "12000 EGP",
+      SA: "2800 SAR",
       /// add country here
-      other: "1500 EGP",
+      other: "17000 EGP",
     },
-    lectures: 50,
-    lecture_date: "4 Lecture-Weekly",
+    lectures: 18,
+    lecture_date: "1 Lecture-Weekly",
     lecture_Method: "Online-Zoom",
-    students: 1100,
+    students: 1750,
     status: "BestSeller",
-    type: "Marketing Management",
+    type: "Infection Control",
     video: {
       url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
       thumbnail:
         "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
     },
-    duration: "12 weeks",
+    duration: "18 weeks",
     languages: "EN - AR",
     certificate: "International Certificate",
     form: {
@@ -1589,35 +1600,34 @@ export const coursesList: CourseType[] = [
   /// start course
   {
     id: "5",
-    slug: "hospital-management-diploma",
-    image:
-      "https://img.freepik.com/free-photo/couple-desk-working-together-from-home_23-2149208556.jpg?t=st=1739104160~exp=1739107760~hmac=056166b5c10b1c47cea18b69102388e34a4de670ff8d9d9eca150913639c59a2&w=996",
+    slug: "Hospital-Management-Diploma",
+    image: "/images/hospital management.webp",
     title: "Hospital Management Diploma",
     rating: 5,
     instructor: {
       id: "5",
-      name: "DR/ ahmed Maggi",
+      name: "DR/ Hany Eid",
       image:
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
     },
     price: {
-      EG: "2000 EGP",
-      SA: "1500 SAR",
+      EG: "18900 EGP",
+      SA: "3800 SAR",
       /// add country here
-      other: "1500 EGP",
+      other: "38000 EGP",
     },
     lectures: 48,
     lecture_date: "1 Lecture-Weekly",
     lecture_Method: "Online-Zoom",
     students: 1300,
     status: "BestSeller",
-    type: "Marketing Management",
+    type: "Hospital Management",
     video: {
       url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
       thumbnail:
         "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
     },
-    duration: "12 weeks",
+    duration: "12 Monthss",
     languages: "EN - AR",
     certificate: "International Certificate",
     form: {
@@ -1970,9 +1980,9 @@ export const coursesList: CourseType[] = [
     id: "6",
     slug: "healthcare-marketing-management-diploma",
     image:
-      "https://img.freepik.com/free-photo/couple-desk-working-together-from-home_23-2149208556.jpg?t=st=1739104160~exp=1739107760~hmac=056166b5c10b1c47cea18b69102388e34a4de670ff8d9d9eca150913639c59a2&w=996",
+      "/images/marketing.webp",
     title: "Healthcare Marketing Management Diploma",
-    rating: 2,
+    rating: 5,
     instructor: {
       id: "6",
       name: "DR/ ahmed Maggi",
@@ -1981,18 +1991,18 @@ export const coursesList: CourseType[] = [
     },
     price: {
       /// add currencies here
-      EG: "2000 EGP",
-      SA: "1500 SAR",
+      EG: "8500 EGP",
+      SA: "1800 SAR",
 
       /// the default if no currency match
-      other: "1500 EGP",
+      other: "1700 EGP",
     },
     lectures: 8,
     lecture_date: "1 Lecture-Weekly",
     lecture_Method: "Online-Zoom",
     students: 950,
     status: "BestSeller",
-    type: "Marketing Management",
+    type: "Healthcare Manageement",
     video: {
       url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
       thumbnail:
