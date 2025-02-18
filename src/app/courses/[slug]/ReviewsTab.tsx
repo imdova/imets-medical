@@ -82,7 +82,7 @@ const ReviewsTab: React.FC<CourseType> = ({ reviews, videosGrid }) => {
           );
         })}
       </ul>
-      <LimitedCounterOffer initialCount={10} duration={5000} />
+      <LimitedCounterOffer />
     </div>
   );
 };

@@ -43,7 +43,7 @@ const OverviewTab: React.FC<CourseType> = ({
           </div>
         ))}
       </div>
-      <LimitedCounterOffer initialCount={10} duration={5000} />
+      <LimitedCounterOffer />
     </div>
   );
 };

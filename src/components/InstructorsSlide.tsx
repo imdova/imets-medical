@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Share, Share2 } from "lucide-react";
 import Image from "next/image";
-import { instractorsCardData } from "@/constants/courses.data";
+import { instructorsCardData } from "@/constants/instructors";
 
 export default function InstructorsSlide() {
   const [current, setCurrent] = useState(0);
@@ -11,44 +11,47 @@ export default function InstructorsSlide() {
 
   const nextSlide = () => {
     setCurrent(
-      (prev) => (prev + 1) % (instractorsCardData.length - (visibleCards - 1))
+      (prev) => (prev + 1) % (instructorsCardData.length - (visibleCards - 1)),
     );
   };
 
   const prevSlide = () => {
     setCurrent(
       (prev) =>
-        (prev - 1 + (instractorsCardData.length - (visibleCards - 1))) %
-        (instractorsCardData.length - (visibleCards - 1))
+        (prev - 1 + (instructorsCardData.length - (visibleCards - 1))) %
+        (instructorsCardData.length - (visibleCards - 1)),
     );
   };
 
   return (
-    <div className="relative w-full  overflow-hidden rounded-2xl p-4 mb-4">
-      <div className="flex gap-3 justify-end mb-8">
+    <div className="relative mb-4 w-full overflow-hidden rounded-2xl p-4">
+      <div className="mb-8 flex justify-end gap-3">
         <div className="w-10">
           <button
             onClick={prevSlide}
-            className="flex justify-center items-center w-10 h-10 text-orange-primary border border-orange-primary rounded-full hover:bg-orange-primary hover:text-white link-smooth">
+            className="link-smooth flex h-10 w-10 items-center justify-center rounded-full border border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white"
+          >
             <ChevronLeft size={24} />
           </button>
         </div>
         <div className="w-10">
           <button
             onClick={nextSlide}
-            className="flex justify-center items-center w-10 h-10 text-orange-primary border border-orange-primary rounded-full hover:bg-orange-primary hover:text-white link-smooth">
+            className="link-smooth flex h-10 w-10 items-center justify-center rounded-full border border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white"
+          >
             <ChevronRight size={24} />
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full px-4">
-          {instractorsCardData
+      <div className="flex w-full items-center justify-center">
+        <div className="grid w-full grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-4">
+          {instructorsCardData
             .slice(current, current + visibleCards)
             .map((card, index) => (
               <div
                 key={index}
-                className="relative flex flex-col items-start justify-center rounded-2xl w-full">
+                className="relative flex w-full flex-col items-start justify-center rounded-2xl"
+              >
                 <div className="w-full">
                   <Image
                     src={card.image}
@@ -60,7 +63,7 @@ export default function InstructorsSlide() {
                 </div>
                 <h2 className="text-xl font-bold text-primary">{card.name}</h2>
                 <p className="text-orange-primary">{card.job}</p>
-                <button className="absolute right-3 bottom-12 flex justify-center items-center w-12 h-12 bg-orange-primary text-white rounded-md">
+                <button className="absolute bottom-12 right-3 flex h-12 w-12 items-center justify-center rounded-md bg-orange-primary text-white">
                   <Share2 size={18} />
                 </button>
               </div>

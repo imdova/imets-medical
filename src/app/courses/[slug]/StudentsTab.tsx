@@ -54,7 +54,7 @@ const StudentsTab: React.FC<CourseType> = ({ ImagesGrid }) => {
             </div>
           ))}
         </div> */}
-        <LimitedCounterOffer initialCount={10} duration={5000} />
+        <LimitedCounterOffer />
       </div>
     </div>
   );

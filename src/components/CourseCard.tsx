@@ -19,10 +19,11 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
   country_code2,
   loading,
 }) => {
+  const { new: newPrice, old: oldPrice } = price[country_code2] || price.other;
   return (
     <>
       {/* Course Card */}
-      <div className="relative rounded-lg border p-5">
+      <div className="relative w-full min-w-[350px] rounded-lg border p-5">
         <Link href={`/courses/${slug}`}>
           {status === "BestSeller" && (
             <span className="absolute left-7 top-7 flex items-center gap-3 rounded-full bg-primary px-3 py-2 text-white">
@@ -85,9 +86,14 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
             Enroll
             <ArrowRight className="mb-1 ml-2 inline-block h-4 w-4 transition-transform duration-300 group-hover:translate-x-4" />
           </Link>
-          <p className="text-xl font-bold">
-            {loading ? "" : price[country_code2] || price.other}
-          </p>
+          {!loading && (
+            <p>
+              <span className="mr-2 text-sm text-red-600 line-through">
+                {oldPrice}
+              </span>
+              <span className="text-xl font-bold">{newPrice}</span>
+            </p>
+          )}
         </div>
       </div>
     </>

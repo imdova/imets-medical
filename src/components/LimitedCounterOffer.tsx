@@ -1,35 +1,38 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { offerEndDate } from "@/constants/offer";
 
-interface LimitedCounterOfferProps {
-  initialCount: number;
-  duration: number; // in seconds
-}
-
-const LimitedCounterOffer: React.FC<LimitedCounterOfferProps> = ({
-  initialCount,
-  duration,
-}) => {
-  const [count, setCount] = useState(initialCount);
-  const [timeLeft, setTimeLeft] = useState(duration);
+const LimitedCounterOffer: React.FC = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
-    if (timeLeft > 0) {
-      const timer = setInterval(() => {
-        setTimeLeft((prev) => prev - 1);
-      }, 1000);
-      return () => clearInterval(timer);
-    }
-  }, [timeLeft]);
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const difference = offerEndDate.getTime() - now.getTime();
 
-  const formatTime = (seconds: number) => {
-    const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    const secs = seconds % 60;
-    return { hours, minutes, secs };
-  };
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / 1000 / 60) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
 
-  const { hours, minutes, secs } = formatTime(timeLeft);
+        return { days, hours, minutes, seconds };
+      }
+
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 }; // Timer has ended
+    };
+
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer); // Cleanup on unmount
+  }, []);
 
   return (
     <div className="rounded-[50px] bg-primary p-4 text-white md:m-12">
@@ -39,29 +42,29 @@ const LimitedCounterOffer: React.FC<LimitedCounterOfferProps> = ({
         </div>
         <div className="max-w-[400px]">
           <div className="mb-3 mt-2 flex justify-center gap-2 text-sm">
+            {timeLeft.days > 0 && (
+              <div className="text-center">
+                <p className="text-2xl font-bold">{timeLeft.days}</p>
+                <p className="text-xs">days</p>
+              </div>
+            )}
             <div className="text-center">
-              <p className="text-2xl font-bold">
-                {hours.toString().padStart(2, "0")}
-              </p>
+              <p className="text-2xl font-bold">{timeLeft.hours}</p>
               <p className="text-xs">Hours</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold">
-                {minutes.toString().padStart(2, "0")}
-              </p>
+              <p className="text-2xl font-bold">{timeLeft.minutes}</p>
               <p className="text-xs">Minutes</p>
             </div>
             <div className="text-center text-orange-primary">
-              <p className="text-2xl font-bold">
-                {secs.toString().padStart(2, "0")}
-              </p>
+              <p className="text-2xl font-bold">{timeLeft.seconds}</p>
               <p className="text-xs">Seconds</p>
             </div>
           </div>
           <h2 className="text-center text-2xl font-bold">
             Don't miss this offer!{" "}
             <span className="text-4xl text-orange-primary">50%</span> Discount
-            for only {count} Hours
+            for only {timeLeft.days * 24 + timeLeft.hours} Hours
           </h2>
         </div>
         <button className="link-smooth m-auto block text-nowrap rounded-3xl bg-orange-primary px-6 py-4 text-xl font-bold text-white hover:bg-black">
