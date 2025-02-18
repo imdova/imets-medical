@@ -70,22 +70,15 @@ type CourseType = {
     redirect: string;
     groupId: string;
   };
-  price: Record<string, string>;
-};
-type FreeCourseType = {
-  id: string;
-  slug: string;
-  image: string;
-  title: string;
-  rating: number;
-  instructor: {
-    id: string;
-    name: string;
-    image: string;
-  };
-  startDate: string;
   questions: Question[];
   videos: CourseVideo[];
+  courseMaterials: CourseMaterial[];
+  price: Record<string, Price>;
+};
+
+type Price = {
+  old: string;
+  new: string;
 };
 
 interface TabItem {

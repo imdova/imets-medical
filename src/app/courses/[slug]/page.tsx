@@ -25,6 +25,9 @@ import { coursesList } from "@/constants/courses.data";
 import CourseApply from "@/components/courses/CourseApply";
 import StickyCTA from "@/components/StickyCTA";
 import useGeoInfo from "../../../hooks/useGeoInfo";
+import CourseCard from "@/components/CourseCard";
+import { Carousel } from "@/components/UI/Carousel";
+import SliderHead from "@/components/UI/SliderHead";
 
 interface SingleCourseProps {
   params: Promise<{ slug: string }>;
@@ -42,6 +45,8 @@ export default function SingleCourse({ params }: SingleCourseProps) {
   const course = coursesList.find((x) => x.slug === slug);
 
   if (!course) return <NotFoundPage />;
+  const { new: newPrice, old: oldPrice } =
+    course.price[data.country_code2] || course.price.other;
 
   const tabData = [
     { label: "Overview", content: <OverviewTab {...course} /> },
@@ -85,9 +90,10 @@ export default function SingleCourse({ params }: SingleCourseProps) {
             {!loading && (
               <div className="flex items-center gap-2 text-white">
                 <Coins className="text-orange-primary" size={16} />
-                <span>
-                  {course.price[data.country_code2] || course.price.other}
+                <span className="text-sm text-red-600 line-through">
+                  {oldPrice}
                 </span>
+                <span className="text-lg">{newPrice}</span>
               </div>
             )}
             <div className="hidden items-center gap-2 text-white md:flex">
@@ -119,7 +125,7 @@ export default function SingleCourse({ params }: SingleCourseProps) {
               />
             </div>
             {/* Course Details content  */}
-            <div className="h-fit overflow-hidden rounded-2xl bg-white !p-0 !pb-4 lg:w-[400px]">
+            <div className="h-fit overflow-hidden rounded-2xl !p-0 !pb-4 md:bg-white lg:w-[400px]">
               <div className="mb-4 hidden h-[140px] overflow-hidden text-white md:block">
                 <Image
                   src={course.image}
@@ -185,6 +191,24 @@ export default function SingleCourse({ params }: SingleCourseProps) {
           groupId={course.form.groupId}
           redirect={course.form.redirect}
         />
+      </section>
+      <section className="container mx-auto mb-12 px-4 lg:max-w-[1170px]">
+        <h2 className="mb-4 text-3xl font-bold">Relevant Courses </h2>
+        <SliderHead
+          containerClass="relative"
+          carouselClass="mobile-scroll-bar-hidden flex w-full gap-4 overflow-x-scroll"
+          length={coursesList.length}
+        >
+          {coursesList.map((course, index) => (
+            <CourseCard key={index} {...course} {...data} loading={loading} />
+          ))}
+        </SliderHead>
+        {/* <Carousel
+          items={coursesList}
+          renderItem={(item) => (
+            <CourseCard {...item} {...data} loading={loading} />
+          )}
+        /> */}
       </section>
     </main>
   );

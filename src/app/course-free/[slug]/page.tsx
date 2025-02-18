@@ -11,8 +11,7 @@ import Link from "next/link";
 import YouTubePlayer from "@/components/YouTubePlayer";
 import Progress from "@/components/Progress";
 import ProgressTabs from "@/components/ProgressTabs";
-import { freeCoursesList } from "@/constants/courses-free.data";
-import { courseMaterials } from "@/constants/courses.data";
+import { coursesList } from "@/constants/courses.data";
 interface SingleCourseProps {
   params: Promise<{ slug: string }>;
 }
@@ -20,7 +19,7 @@ interface SingleCourseProps {
 export default function OfflineVideo({ params }: SingleCourseProps) {
   const { slug } = use(params);
   const [currentVideo, setCurrentVideo] = useState(0);
-  const course = freeCoursesList.find((x) => x.slug === slug);
+  const course = coursesList.find((x) => x.slug === slug);
   const [question, setQuestion] = useState("");
   const [reply, setReply] = useState("");
   const [replyIndex, setReplyIndex] = useState<string | null>(null);
@@ -191,7 +190,7 @@ export default function OfflineVideo({ params }: SingleCourseProps) {
           <div className="mb-4 rounded-md p-3 shadow-halfShadow">
             <h2 className="mb-4 text-xl font-bold">Course Material</h2>
             <ul>
-              {courseMaterials.map((material, index) => (
+              {course.courseMaterials.map((material, index) => (
                 <li
                   key={index}
                   className="flex items-center space-x-4 border-b p-3 last:border-b-0"

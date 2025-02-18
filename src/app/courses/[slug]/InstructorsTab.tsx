@@ -52,7 +52,7 @@ const InstructorsTab: React.FC<CourseType> = ({ instructors }) => {
           </div>
         );
       })}
-      <LimitedCounterOffer initialCount={10} duration={5000} />
+      <LimitedCounterOffer />
     </div>
   );
 };
