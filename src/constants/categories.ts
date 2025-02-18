@@ -1,8 +1,9 @@
-export const categories: CourseCategoriesType[] = [
+export const categories = [
   "All",
   "Healthcare Quality",
   "Infection Control",
-  "Hospital Management",
-  "HR Management",
-  "Marketing Management",
+  "Healthcare Management",
+  "Doctors",
+  "Pharmacists",
+  "Nurses",
 ];

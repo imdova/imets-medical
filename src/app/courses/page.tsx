@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const page = () => {
   const { data, loading } = useGeoInfo();
-  const [filter, setFilter] = useState<CourseCategoriesType>("All");
+  const [filter, setFilter] = useState("All");
 
   const filteredCourses =
     filter === "All"

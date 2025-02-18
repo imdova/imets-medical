@@ -24,7 +24,7 @@ import useGeoInfo from "@/hooks/useGeoInfo";
 
 export default function Home() {
   const { data, loading } = useGeoInfo();
-  const [filter, setFilter] = useState<CourseCategoriesType>("All");
+  const [filter, setFilter] = useState("All");
 
   const filteredCourses =
     filter === "All"

@@ -1,8 +1,8 @@
-export const cphq_preparation_course: CourseType = {
-  id: "1",
+export const supply_chain: CourseType = {
+  id: "7",
   slug: "cphq-preparation-course",
-  image: "/images/cphq.webp",
-  title: "CPHQ Preparation Course",
+  image: "/images/supply-chain.webp",
+  title: "Healthcare Supply Management Diploma",
   rating: 5,
 
   /// instructor data

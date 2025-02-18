@@ -1,8 +1,8 @@
-export const cphq_preparation_course: CourseType = {
-  id: "1",
+export const hr_management: CourseType = {
+  id: "9",
   slug: "cphq-preparation-course",
   image: "/images/cphq.webp",
-  title: "CPHQ Preparation Course",
+  title: "Healthcare HR Management Diploma",
   rating: 5,
 
   /// instructor data

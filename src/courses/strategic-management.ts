@@ -1,5 +1,5 @@
-export const cphq_preparation_course: CourseType = {
-  id: "1",
+export const strategic_management: CourseType = {
+  id: "8",
   slug: "cphq-preparation-course",
   image: "/images/cphq.webp",
   title: "CPHQ Preparation Course",
