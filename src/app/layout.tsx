@@ -30,17 +30,17 @@ const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
 
 export const metadata: Metadata = {
   title: {
-    default: "IMETS Medical School",
+    default: "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
     template: "%s | IMETS School of Business",
   },
   description:
-    "Empowering future healthcare professionals through top-tier education and training programs.",
+    "IMETS Medical School offers cutting-edge, specialized healthcare programs designed to empower the next generation of medical professionals. Join us to excel in modern medicine with excellence, innovation, and compassion.",
   openGraph: {
     title: "IMETS School of Business",
     description:
       "Join IMETS School of Business for specialized healthcare job training and business programs designed for career success.",
     url: baseUrl,
-    siteName: "IMETS School of Business",
+    siteName: "IMETS Medical School",
     images: [
       {
         url: `${baseUrl}/og.png`,
