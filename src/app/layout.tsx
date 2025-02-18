@@ -30,7 +30,7 @@ const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
 
 export const metadata: Metadata = {
   title: {
-    default: "IMETS School of Business",
+    default: "IMETS Medical School",
     template: "%s | IMETS School of Business",
   },
   description:

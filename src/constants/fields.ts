@@ -25,9 +25,13 @@ export const formFields: FieldConfig[] = [
     label: "Specialty",
     type: "select", // Use only text, number, email, password, date, select, checkbox
     options: [
-      { label: "doctors", value: "doctors" },
-      { label: "dentist", value: "dentists" },
-      { label: "nurses", value: "nurses" },
+      { label: "Doctors", value: "Doctors" },
+      { label: "Dentists", value: "Dentists" },
+      { label: "Pharmacists", value: "Pharmacists" },
+      { label: "Nurses", value: "Nurses" },
+      { label: "Technicians", value: "Technicians" },
+      { label: "Science", value: "Science" },
+      { label: "Others", value: "Others" },
     ],
     inputProps: { placeholder: "Select Your specialty" },
     required: true,
