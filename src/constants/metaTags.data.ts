@@ -1,4 +1,4 @@
-export const GOOGLE_TAG_MANAGER = "GTM-XYZ";
+export const GOOGLE_TAG_MANAGER = "GTM-5HC2Q7CD";
 
 export const metaTagsData: MetaTag[] = [
   {
