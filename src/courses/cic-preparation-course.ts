@@ -1,8 +1,7 @@
 export const cic_preparation_course: CourseType = {
   id: "3",
   slug: "cic-preparation-course",
-  image:
-    "https://img.freepik.com/free-photo/medium-shot-young-people-recording-podcast_23-2149386529.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+  image: "/images/cic.webp",
   title: "CIC Preparation Course",
   rating: 5,
   instructor: {
@@ -12,24 +11,24 @@ export const cic_preparation_course: CourseType = {
       "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
   },
   price: {
-    EG: { old: "25000 EGP", new: "20000 EGP" },
-    SA: { old: "15000 SAR", new: "10000 SAR" },
+    EG: { old: "8500 EGP", new: "8500 EGP" },
+    SA: { old: "1800 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "450 $", new: "400 $" },
+    other: { old: "17000 $", new: "17000 $" },
   },
-  lectures: 10,
+  lectures: 16,
   lecture_date: "1 Lecture-Weekly",
   lecture_Method: "Online-Zoom",
   students: 1400,
   status: "BestSeller",
-  type: "Marketing Management",
+  type: "Infection Control",
   video: {
     url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
     thumbnail:
       "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
   },
-  duration: "12 weeks",
+  duration: "4 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
@@ -37,11 +36,11 @@ export const cic_preparation_course: CourseType = {
     redirect: "/",
   },
   description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-        you know how to manage and advance healthcare Quality and safety.
-        Effective preparation for the CPHQ exam is critical to earning the
-        credential. The CPHQ certification incorporates the body of knowledge in
-        the healthcare Quality profession. It covers the following seven
-        domains:H`,
+      you know how to manage and advance healthcare Quality and safety.
+      Effective preparation for the CPHQ exam is critical to earning the
+      credential. The CPHQ certification incorporates the body of knowledge in
+      the healthcare Quality profession. It covers the following seven
+      domains:H`,
   courseGoals: {
     content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
     goals: [

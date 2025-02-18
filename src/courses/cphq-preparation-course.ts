@@ -1,31 +1,31 @@
 export const cphq_preparation_course: CourseType = {
   id: "1",
   slug: "cphq-preparation-course",
-  image: "/images/cicPrep.webp",
+  image: "/images/cphq.webp",
   title: "CPHQ Preparation Course",
   rating: 5,
 
   /// instructor data
   instructor: {
     id: "1",
-    name: "DR/ Carlos Maggi",
+    name: "DR/ Sara Abdulla",
     image: "/images/cicPrep.webp",
   },
   price: {
-    EG: { old: "25000 EGP", new: "20000 EGP" },
-    SA: { old: "15000 SAR", new: "10000 SAR" },
+    EG: { old: "8500 EGP", new: "8500 EGP" },
+    SA: { old: "1800 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "450 $", new: "400 $" },
+    other: { old: "17000 EGP", new: "17000 EGP" },
   },
   lectures: 10,
   lecture_date: "1 Lecture-Weekly",
   lecture_Method: "Online-Zoom",
-  students: 1800,
+  students: 3200,
   status: "BestSeller",
   type: "Healthcare Quality",
   video: {
-    url: "https://www.youtube.com/watch?v=R9-6cBqzczo",
+    url: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
   },
   duration: "12 weeks",
   languages: "EN - AR",
@@ -34,19 +34,19 @@ export const cphq_preparation_course: CourseType = {
   /// here you can add the form id that you want
   form: {
     // name: "",
-    groupId: "112928224",
-    redirect: "/course-free/cphq-preparation-course",
+    groupId: "112929547",
+    redirect: "www.imetsacademy.com",
   },
   //
   //// tab over view
   //
   // the description at the description page  at here ===> Course Description
   description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-        you know how to manage and advance healthcare Quality and safety.
-        Effective preparation for the CPHQ exam is critical to earning the
-        credential. The CPHQ certification incorporates the body of knowledge in
-        the healthcare Quality profession. It covers the following seven
-        domains:H`,
+      you know how to manage and advance healthcare Quality and safety.
+      Effective preparation for the CPHQ exam is critical to earning the
+      credential. The CPHQ certification incorporates the body of knowledge in
+      the healthcare Quality profession. It covers the following seven
+      domains:H`,
 
   // the data at this part ===> What you'll learn in this course?
   courseGoals: {
@@ -54,8 +54,7 @@ export const cphq_preparation_course: CourseType = {
     goals: [
       /// start goal
       {
-        title:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        title: "Understand healthcare quality system.",
         content:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
@@ -63,7 +62,7 @@ export const cphq_preparation_course: CourseType = {
       ///
       /// start goal
       {
-        title: "Lorem Ipsum has been the industry's standard dummy",
+        title: "Establish leadership environment.",
         content:
           "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
       },
@@ -71,7 +70,7 @@ export const cphq_preparation_course: CourseType = {
       ///
       /// start goal
       {
-        title: "when an unknown printer took a galley",
+        title: "Monitor, analyze,  and improve performanc.",
         content:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
@@ -79,9 +78,19 @@ export const cphq_preparation_course: CourseType = {
       ///
       /// start goal
       {
-        title: "containing Lorem Ipsum passages,",
+        title: "Use statistics to make recommendations.",
         content:
           "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+      },
+      {
+        title: "Recognize accreditation process.",
+        content:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      },
+      {
+        title: "Monitor, analyze,  and improve performanc.",
+        content:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       },
     ],
   },
@@ -91,16 +100,13 @@ export const cphq_preparation_course: CourseType = {
     /// start module
     {
       id: 1,
-      title: "Healthcare Quality Concepts",
+      title: "Introduction to Healthcare Quality",
       lessons: [
-        { id: 1, title: "Quality Leadership and Integration", url: "#" },
-        { id: 2, title: "Patient Safety", url: "#" },
-        {
-          id: 3,
-          title: "Performance and Process Improvement",
-          url: "#",
-          preview: true,
-        },
+        { id: 1, title: "Quality Concepts", url: "#" },
+        { id: 2, title: "Quality Dimensions", url: "#" },
+        { id: 3, title: "System Approach", url: "#" },
+        { id: 4, title: "Managed Care", url: "#" },
+        { id: 5, title: "Integrated Delivery System", url: "#" },
       ],
     },
     /// end module
@@ -112,14 +118,19 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Leadership versus Management",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Leadership Styles", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Strategic Management",
+          url: "#",
+        },
+        {
+          id: 4,
+          title: "Organizational Structure",
           url: "#",
         },
       ],
@@ -133,14 +144,14 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Safety and Just Culture",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Medical Errors", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Patient Safety Programs",
           url: "#",
         },
       ],
@@ -151,14 +162,24 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Performance Measurement",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Performance Improvement Approaches", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Clinical Performance Measurement",
+          url: "#",
+        },
+        {
+          id: 4,
+          title: "Utilization Management",
+          url: "#",
+        },
+        {
+          id: 5,
+          title: "Risk Management",
           url: "#",
         },
       ],
@@ -172,15 +193,9 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Quality Review and Accountability",
           url: "#",
           preview: true,
-        },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
         },
       ],
     },
@@ -197,12 +212,6 @@ export const cphq_preparation_course: CourseType = {
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
       ],
     },
     /// end module
@@ -214,15 +223,9 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Regulatory and Accreditation",
           url: "#",
           preview: true,
-        },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
         },
       ],
     },
@@ -235,14 +238,19 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Sampling and Population",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Basic Statistics", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Display Techniques",
+          url: "#",
+        },
+        {
+          id: 4,
+          title: "Quality Tools",
           url: "#",
         },
       ],
@@ -450,6 +458,7 @@ export const cphq_preparation_course: CourseType = {
           "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
       },
       content: "What is the best way to learn Next.js?",
+      /// all replies to the question by Mohamed Farag at the free course page
       replies: [
         {
           id: "2-1",
@@ -507,11 +516,14 @@ export const cphq_preparation_course: CourseType = {
       timestamp: 17,
     },
   ],
+
+  /// the videos at  the free course
   videos: [
     {
       title: "Introduction",
       progress: 10,
       url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
+      // if locked make it true this is free access video
       locked: false,
       duration: "1:00",
     },
@@ -519,6 +531,7 @@ export const cphq_preparation_course: CourseType = {
       title: "Medical Terminology",
       progress: 30,
       url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
+      // if locked make it true this is free access video
       locked: false,
       duration: "4:00",
     },
@@ -526,6 +539,7 @@ export const cphq_preparation_course: CourseType = {
       title: "Medical Neuroscience",
       progress: 50,
       url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
+      //  this is locked access video
       locked: true,
       duration: "2:35",
     },
@@ -533,6 +547,7 @@ export const cphq_preparation_course: CourseType = {
       title: "Trauma on EMT",
       progress: 75,
       url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
+      //  this is locked access video
       locked: true,
       duration: "7:00",
     },
@@ -540,6 +555,7 @@ export const cphq_preparation_course: CourseType = {
       title: "Biomedical Visualization",
       progress: 100,
       url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
+      //  this is locked access video
       locked: true,
       duration: "11:00",
     },

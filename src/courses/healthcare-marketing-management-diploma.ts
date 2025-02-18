@@ -1,10 +1,9 @@
 export const healthcare_marketing_management_diploma: CourseType = {
   id: "6",
   slug: "healthcare-marketing-management-diploma",
-  image:
-    "https://img.freepik.com/free-photo/couple-desk-working-together-from-home_23-2149208556.jpg?t=st=1739104160~exp=1739107760~hmac=056166b5c10b1c47cea18b69102388e34a4de670ff8d9d9eca150913639c59a2&w=996",
+  image: "/images/marketing.webp",
   title: "Healthcare Marketing Management Diploma",
-  rating: 2,
+  rating: 5,
   instructor: {
     id: "6",
     name: "DR/ ahmed Maggi",
@@ -12,18 +11,18 @@ export const healthcare_marketing_management_diploma: CourseType = {
       "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
   },
   price: {
-    EG: { old: "25000 EGP", new: "20000 EGP" },
-    SA: { old: "15000 SAR", new: "10000 SAR" },
+    EG: { old: "8500 EGP", new: "8500 EGP" },
+    SA: { old: "1800 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "450 $", new: "400 $" },
+    other: { old: "1700 EGP", new: "1700 EGP" },
   },
   lectures: 8,
   lecture_date: "1 Lecture-Weekly",
   lecture_Method: "Online-Zoom",
   students: 950,
   status: "BestSeller",
-  type: "Marketing Management",
+  type: "Healthcare Manageement",
   video: {
     url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
     thumbnail:
@@ -37,11 +36,11 @@ export const healthcare_marketing_management_diploma: CourseType = {
     redirect: "/",
   },
   description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-        you know how to manage and advance healthcare Quality and safety.
-        Effective preparation for the CPHQ exam is critical to earning the
-        credential. The CPHQ certification incorporates the body of knowledge in
-        the healthcare Quality profession. It covers the following seven
-        domains:H`,
+      you know how to manage and advance healthcare Quality and safety.
+      Effective preparation for the CPHQ exam is critical to earning the
+      credential. The CPHQ certification incorporates the body of knowledge in
+      the healthcare Quality profession. It covers the following seven
+      domains:H`,
   courseGoals: {
     content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
     goals: [
@@ -373,6 +372,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
         "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
     },
   ],
+
   questions: [
     {
       id: "1",
