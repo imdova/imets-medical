@@ -1,6 +1,6 @@
 export const supply_chain: CourseType = {
   id: "7",
-  slug: "cphq-preparation-course",
+  slug: "healthcare-supply-chain-diploma",
   image: "/images/supply-chain.webp",
   title: "Healthcare Supply Management Diploma",
   rating: 5,

@@ -22,9 +22,9 @@ export const hospital_management_diploma: CourseType = {
   lecture_Method: "Online-Zoom",
   students: 1300,
   status: "BestSeller",
-  type: "Hospital Management",
+  type: "Healthcare Management",
   video: {
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+    url: "https://www.youtube.com/watch?v=EOgJKtSnNEA",
     thumbnail:
       "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
   },
@@ -32,45 +32,45 @@ export const hospital_management_diploma: CourseType = {
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
-    groupId: "112928224",
+    groupId: "112930551",
     redirect: "/",
   },
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` Ready to lead in the healthcare industry? Our Hospital Management Diploma is designed for those who aspire to take on key roles in hospital administration and healthcare management. This program will guide you through every aspect of running a healthcare facility efficiently—whether it’s managing day-to-day operations, overseeing finances, handling human resources, or ensuring quality patient care.`,
   courseGoals: {
     content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
     goals: [
       {
         title:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting",
+          "Healthcare Administration",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Gain insights into managing hospital departments, staff, and resources to ensure smooth and efficient healthcare operations.Financial Management: Learn how to handle hospital budgets, billing, and financial planning, ensuring the facility’s financial health.",
       },
       {
-        title: "Lorem Ipsum has been the industry's standard dummy",
+        title: "Human Resource Management:",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "Master the art of recruiting, training, and managing hospital staff while fostering a work environment focused on quality patient care.",
       },
       {
-        title: "when an unknown printer took a galley",
+        title: "Quality & Patient Safety:",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Explore strategies for maintaining high standards of care, reducing risks, and ensuring patient safety.",
       },
       {
-        title: "containing Lorem Ipsum passages,",
+        title: "Strategic Planning:",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "Develop strategies that align with the hospital’s mission and adapt to the changing healthcare landscape.",
+      },
+      {
+        title: "Hospital Information Systems:",
+        content:
+          "Get hands-on experience with healthcare information systems, including electronic health records (EHR) and health informatics.",
       },
     ],
   },
   courseModules: [
     {
       id: 1,
-      title: "Healthcare Quality Concepts",
+      title: "Course1: Strategic Management",
       lessons: [
         { id: 1, title: "Quality Leadership and Integration", url: "#" },
         { id: 2, title: "Patient Safety", url: "#" },
@@ -84,7 +84,7 @@ export const hospital_management_diploma: CourseType = {
     },
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Course2 : HR Management",
       lessons: [
         {
           id: 1,
@@ -102,7 +102,7 @@ export const hospital_management_diploma: CourseType = {
     },
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Course3 : Healthcare Quality Management",
       lessons: [
         {
           id: 1,
@@ -120,7 +120,7 @@ export const hospital_management_diploma: CourseType = {
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Course4 : Healthcare Marketing Management",
       lessons: [
         {
           id: 1,
@@ -138,7 +138,7 @@ export const hospital_management_diploma: CourseType = {
     },
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Course5 : Healthcare Supply Chain Management",
       lessons: [
         {
           id: 1,
@@ -156,7 +156,7 @@ export const hospital_management_diploma: CourseType = {
     },
     {
       id: 6,
-      title: "Population Health and Care Transitions",
+      title: "Course6 : Infection Prevention and Control",
       lessons: [
         {
           id: 1,
@@ -174,7 +174,7 @@ export const hospital_management_diploma: CourseType = {
     },
     {
       id: 7,
-      title: "Regulatory and Accreditation",
+      title: "Course3 : Financial Management",
       lessons: [
         {
           id: 1,

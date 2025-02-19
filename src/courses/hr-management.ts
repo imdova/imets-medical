@@ -1,6 +1,6 @@
 export const hr_management: CourseType = {
   id: "9",
-  slug: "cphq-preparation-course",
+  slug: "healthcare-hr-management-diploma",
   image: "/images/cphq.webp",
   title: "Healthcare HR Management Diploma",
   rating: 5,
@@ -23,30 +23,25 @@ export const hr_management: CourseType = {
   lecture_Method: "Online-Zoom",
   students: 3200,
   status: "BestSeller",
-  type: "Healthcare Quality",
+  type: "Healthcare Management",
   video: {
-    url: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
+    url: "https://www.youtube.com/watch?v=RDlK4QkeqLg",
   },
-  duration: "12 weeks",
+  duration: "4 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
 
   /// here you can add the form id that you want
   form: {
     // name: "",
-    groupId: "112929547",
+    groupId: "112930552",
     redirect: "www.imetsacademy.com",
   },
   //
   //// tab over view
   //
   // the description at the description page  at here ===> Course Description
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` This diploma is ideal for individuals seeking to launch or advance their careers in healthcare HR, current HR professionals who want to specialize in healthcare, and healthcare managers looking to strengthen their HR expertise. Whether you're a newcomer or a seasoned professional, our program offers valuable insights and skills.`,
 
   // the data at this part ===> What you'll learn in this course?
   courseGoals: {
@@ -54,43 +49,43 @@ export const hr_management: CourseType = {
     goals: [
       /// start goal
       {
-        title: "Understand healthcare quality system.",
+        title: "Recognize the key skills and responsibilities of a human resource manager.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Establish leadership environment.",
+        title: "Explain general recruitment, selection, training and appraisal processes",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Monitor, analyze,  and improve performanc.",
+        title: "Outline how employee separation and termination should occur",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Use statistics to make recommendations.",
+        title: "Discuss how to manage and retain employees effectively",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "",
       },
       {
-        title: "Recognize accreditation process.",
+        title: "Highlight the role of internal culture affects an organization",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       {
-        title: "Monitor, analyze,  and improve performanc.",
+        title: "Identify strategies for managing the ‘process of change’ within an institution",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
     ],
   },

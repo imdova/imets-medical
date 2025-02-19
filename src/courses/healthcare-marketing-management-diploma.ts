@@ -7,8 +7,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
   instructor: {
     id: "6",
     name: "DR/ ahmed Maggi",
-    image:
-      "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
+    image:"/images/market.webp",
   },
   price: {
     EG: { old: "8500 EGP", new: "8500 EGP" },
@@ -22,27 +21,24 @@ export const healthcare_marketing_management_diploma: CourseType = {
   lecture_Method: "Online-Zoom",
   students: 950,
   status: "BestSeller",
-  type: "Healthcare Manageement",
+  type: "Healthcare Management",
   video: {
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+    url: "https://www.youtube.com/watch?v=KHtbqfjfPLo",
     thumbnail:
       "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
   },
-  duration: "12 weeks",
+  duration: "8 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
-    groupId: "112928224",
+    groupId: "112930561",
     redirect: "/",
   },
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` Are you looking to specialize in healthcare marketing and make a real impact in the industry? The Marketing Management Diploma in healthcare is designed for individuals passionate about connecting healthcare providers with the people they serve. Whether you’re a marketing professional aiming to focus on healthcare or a healthcare provider wanting to learn how to market services effectively, this diploma provides the knowledge and skills you need to succeed.`,
   courseGoals: {
-    content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
+    content: `This Marketing Management Diploma covers all the essential strategies and tools specific to healthcare marketing. Here’s what you can expect:
+
+`,
     goals: [
       {
         title:

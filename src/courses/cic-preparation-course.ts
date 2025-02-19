@@ -24,59 +24,59 @@ export const cic_preparation_course: CourseType = {
   status: "BestSeller",
   type: "Infection Control",
   video: {
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+    url: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
     thumbnail:
       "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
   },
-  duration: "4 weeks",
+  duration: "16 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
-    groupId: "112928224",
+    groupId: "112930550",
     redirect: "/",
   },
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` The “Certified in Infection Control (CIC)” course is designed for healthcare professionals who aim to enhance their knowledge and expertise in preventing and controlling the spread of infections within healthcare settings. This course covers key principles of infection prevention, including epidemiology, microbiology, sterilization, disinfection, and regulatory compliance, in alignment with international infection control standards.H`,
   courseGoals: {
     content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
     goals: [
       {
         title:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting",
+          "Understand the fundamental concepts of infection prevention and control.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       {
-        title: "Lorem Ipsum has been the industry's standard dummy",
+        title: "Learn how to identify, prevent, and manage healthcare-associated infections (HAIs).",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "",
       },
       {
-        title: "when an unknown printer took a galley",
+        title: "Gain insights into the latest guidelines, best practices, and regulations in infection control.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       {
-        title: "containing Lorem Ipsum passages,",
+        title: "Develop skills in epidemiology, microbiology, sterilization, and disinfection processes.",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "",
+      },
+      {
+        title: "Prepare for the CIC certification exam by mastering key areas of the infection control curriculum.",
+        content:
+          "",
       },
     ],
   },
   courseModules: [
     {
       id: 1,
-      title: "Healthcare Quality Concepts",
+      title: "Identification of Infectious Disease Processes",
       lessons: [
-        { id: 1, title: "Quality Leadership and Integration", url: "#" },
-        { id: 2, title: "Patient Safety", url: "#" },
+        { id: 1, title: "Risk factors for infectious diseases", url: "#" },
+        { id: 2, title: "colonization, infection, and pseudo infection", url: "#" },
         {
           id: 3,
-          title: "Performance and Process Improvement",
+          title: "prophylactic, empiric and therapeutic uses of antimicrobials",
           url: "#",
           preview: true,
         },
@@ -84,123 +84,116 @@ export const cic_preparation_course: CourseType = {
     },
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Preventing/Controlling the Transmission of Infectious Agents",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "infection prevention policies and procedures",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "infection prevention and control strategies", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "strategies related to Transmission based Precautions",
           url: "#",
         },
       ],
     },
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Cleaning, Disinfection, Sterilization of Medical Devices and Equipment",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "appropriate cleaning, disinfection, and sterilization practices based on intended use (e.g., Spaulding classification)",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
+        { id: 2, title: "Direct observations critical steps of cleaning/low level disinfection, high level disinfection, and/or sterilization", url: "#" },
+        
       ],
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Surveillance and Epidemiologic Investigation",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Design of Surveillance Systems",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Collection and Compilation of Surveillance Data", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Interpretation of Surveillance Data ",
+          url: "#",
+        },
+        {
+          id: 3,
+          title: "Outbreak Investigation",
           url: "#",
         },
       ],
     },
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Environment of Care",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Environmental Safety ",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "evaluation and monitoring of environmental cleaning and disinfection practices and technologies ", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "infection risks and provide recommendations for risk mitigation during construction, renovation, and maintenance",
           url: "#",
         },
       ],
     },
     {
       id: 6,
-      title: "Population Health and Care Transitions",
+      title: "Employee/Occupational Health",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "screening and immunization programs",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
+        { id: 2, title: "employee/occupational health regarding counseling, follow up, and work restriction recommendations related to communicable diseases and/or exposures", url: "#" },
+        
       ],
     },
     {
       id: 7,
-      title: "Regulatory and Accreditation",
+      title: "Education and Research",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "education of patients, families, and others regarding prevention and control measures",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
+        { id: 2, title: "strategies that engage the patient, family, and others in activities aimed at preventing infection", url: "#" },
+        
       ],
     },
     {
       id: 8,
-      title: "Health Data Analytics",
+      title: "Management and Communication",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Planning the Infection Prevention Program",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Communication - Quality Performance Improvement and Patient Safety activities related to infection prevention", url: "#" },
         {
           id: 3,
           title: "Health Data Analytics",
@@ -211,9 +204,9 @@ export const cic_preparation_course: CourseType = {
   ],
   whoCanAttend: {
     content:
-      "Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.",
+      "Becoming a Certified Professional in Infection Control (CIC®) is a significant step for healthcare professionals who want to excel in infection prevention and control. Here’s why obtaining this certification can benefit your career and the healthcare industry:",
     items: [
-      "QualityProfessionals",
+      "Healthcare Professionals",
       "Medical and Nursing Directors",
       "Doctors",
       "Pharmacists",
@@ -228,25 +221,25 @@ export const cic_preparation_course: CourseType = {
   instructors: [
     {
       id: "1",
-      name: "DR/Mohamed Farag",
-      job: "Healthcare Quality Manager",
+      name: "DR/Shrouk Sayed",
+      job: "Regional Infection Control Manager at EIH",
       image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
-      experience: 15,
+        "/images/shrouk.jpg",
+      certification: "CIC - MBA - HMD",
+      experience: 17,
       location: "Cairo, Eqypt",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      rating: 4,
+      rating: 5,
     },
     {
       id: "2",
-      name: "DR/Mohamed Ahmed",
-      job: "Healthcare Quality Manager",
+      name: "DR/Reham Ragab",
+      job: "Healthcare Quality Consultant at MOH",
       image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
+        "/images/reham.jpg",
       certification: "MBA - CPHQ - HMD",
-      experience: 10,
+      experience: 12,
       location: "Asyut, Eqypt",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

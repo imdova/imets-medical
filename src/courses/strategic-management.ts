@@ -1,15 +1,15 @@
 export const strategic_management: CourseType = {
   id: "8",
-  slug: "cphq-preparation-course",
+  slug: "strategic-management-diploma",
   image: "/images/cphq.webp",
-  title: "CPHQ Preparation Course",
+  title: "Healthcare Strategic Management Diploma",
   rating: 5,
 
   /// instructor data
   instructor: {
     id: "1",
     name: "DR/ Sara Abdulla",
-    image: "/images/cicPrep.webp",
+    image: "/images/strategic.webp",
   },
   price: {
     EG: { old: "17000 EGP", new: "8500 EGP" },
@@ -18,79 +18,74 @@ export const strategic_management: CourseType = {
     // other work for any other country the default price
     other: { old: "900$", new: "450$" },
   },
-  lectures: 10,
+  lectures: 8,
   lecture_date: "1 Lecture-Weekly",
   lecture_Method: "Online-Zoom",
   students: 3200,
   status: "BestSeller",
-  type: "Healthcare Quality",
+  type: "Healthcare Management",
   video: {
-    url: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
+    url: "https://www.youtube.com/watch?v=8LC6iA2Wo0w",
   },
-  duration: "12 weeks",
+  duration: "8 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
 
   /// here you can add the form id that you want
   form: {
     // name: "",
-    groupId: "112929547",
+    groupId: "112930555",
     redirect: "www.imetsacademy.com",
   },
   //
   //// tab over view
   //
   // the description at the description page  at here ===> Course Description
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` The healthcare industry is constantly changing, and successful organizations need strategic thinkers to navigate its unique challenges. Our Strategic Management Diploma in healthcare is crafted for professionals looking to take on leadership roles and drive meaningful change in healthcare organizations. Whether you’re already working in healthcare or aiming to enter this rewarding field, this diploma will give you the skills to plan, implement, and manage strategies that can make a real difference in patient care and operational success.`,
 
   // the data at this part ===> What you'll learn in this course?
   courseGoals: {
-    content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
+    content: `This Strategic Management Diploma focuses on the specific needs of the healthcare sector, providing you with the tools and knowledge to excel. Here’s a snapshot of what you’ll explore:`,
     goals: [
       /// start goal
       {
-        title: "Understand healthcare quality system.",
+        title: "Foundations of Healthcare Strategic Management:",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "et to grips with the essentials of strategic management tailored to healthcare. You’ll learn how to navigate the complex world of healthcare policies, regulations, and patient-centered care, laying the groundwork for your strategic thinking.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Establish leadership environment.",
+        title: "Healthcare Environment Analysis: ",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "Understanding your market is key. This module dives into market trends, patient demographics, competition, and regulations in healthcare. You’ll use tools like SWOT analysis, PESTEL analysis, and Porter’s Five Forces to identify both opportunities and challenges, so you can make informed decisions.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Monitor, analyze,  and improve performanc.",
+        title: "Strategic Planning in Healthcare:",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Learn how to create actionable strategic plans that align with an organization’s mission and vision. You’ll focus on setting long-term goals, enhancing patient care, improving operational efficiency, and ensuring financial stability.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Use statistics to make recommendations.",
+        title: "Implementing Healthcare Strategies: ",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "A strategic plan means nothing without proper execution. This section will show you how to implement strategies effectively, manage resources, and collaborate with healthcare teams to meet organizational goals.",
       },
       {
-        title: "Recognize accreditation process.",
+        title: "Performance Measurement in Healthcare:",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "How do you know if your strategies are working? This module covers key performance indicators (KPIs), patient satisfaction metrics, and other evaluation tools that help you track progress, make data-driven decisions, and continuously improve.",
       },
       {
-        title: "Monitor, analyze,  and improve performanc.",
+        title: "Leadership in Healthcare: ",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Great strategies need strong leaders. This module focuses on developing your leadership skills, including communication, team motivation, and strategic decision-making that puts patient care and organizational goals first.",
       },
     ],
   },
@@ -100,7 +95,7 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 1,
-      title: "Introduction to Healthcare Quality",
+      title: "Introduction to Strategic Management",
       lessons: [
         { id: 1, title: "Quality Concepts", url: "#" },
         { id: 2, title: "Quality Dimensions", url: "#" },
@@ -114,7 +109,7 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Businesses Matrics - BCG Matrix and GE Matrix",
       lessons: [
         {
           id: 1,
@@ -140,7 +135,7 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Businesses Matrices - McKinsey Matrix and Shell Matrix",
       lessons: [
         {
           id: 1,
@@ -158,7 +153,7 @@ export const strategic_management: CourseType = {
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Decision Making Process and Corporate Planning",
       lessons: [
         {
           id: 1,
@@ -189,7 +184,7 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Business Strategy",
       lessons: [
         {
           id: 1,
@@ -204,7 +199,7 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 6,
-      title: "Population Health and Care Transitions",
+      title: "Corporate Strategy",
       lessons: [
         {
           id: 1,
@@ -219,7 +214,7 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 7,
-      title: "Regulatory and Accreditation",
+      title: "Implementing Strategy",
       lessons: [
         {
           id: 1,
@@ -234,7 +229,7 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 8,
-      title: "Health Data Analytics",
+      title: "Evaluation of Strategy",
       lessons: [
         {
           id: 1,

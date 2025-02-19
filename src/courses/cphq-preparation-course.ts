@@ -1,6 +1,8 @@
+import { Video } from "lucide-react";
+
 export const cphq_preparation_course: CourseType = {
   id: "1",
-  slug: "cphq-preparation-course",
+  slug: "cphq-course",
   image: "/images/cphq.webp",
   title: "CPHQ Preparation Course",
   rating: 5,
@@ -279,10 +281,10 @@ export const cphq_preparation_course: CourseType = {
     /// start
     {
       id: "1",
-      name: "DR/Mohamed Farag",
-      job: "Healthcare Quality Manager",
+      name: "DR Sara Abdullah",
+      job: "Healthcare Quality Manager at DAF Hospital",
       image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
+        "/images/sara.jpg",
       certification: "MBA - CPHQ - HMD",
       experience: 15,
       location: "Cairo, Eqypt",
@@ -295,13 +297,13 @@ export const cphq_preparation_course: CourseType = {
     /// start
     {
       id: "2",
-      name: "DR/Mohamed Ahmed",
-      job: "Healthcare Quality Manager",
+      name: "DR Ahmed Habib",
+      job: "Healthcare Quality Professional",
       image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
-      experience: 10,
-      location: "Asyut, Eqypt",
+        "/images/habib.png",
+      certification: "CPHQ - Hospital Management Diploma (AUC) - MBA - CPT - PMP",
+      experience: 12,
+      location: "Cairo, Eqypt",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       rating: 5,
@@ -362,8 +364,8 @@ export const cphq_preparation_course: CourseType = {
     /// start
     {
       id: 1,
-      thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
+      Video:
+        "https://www.youtube.com/watch?v=XbcyZHHQvZg",
       title: "Skyfall",
       author: "By Author Name",
       views: "10k Views",
@@ -415,38 +417,38 @@ export const cphq_preparation_course: CourseType = {
     {
       id: 1,
       image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+        "/images/Z6G_2502.jpg",
       isFeatured: true,
     },
     {
       id: 2,
       image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+       "/images/Z6G_2539.jpg",
     },
     {
       id: 3,
       image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+       "/images/Z6G_2569.jpg",
     },
     {
       id: 4,
       image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+        "/images/Z6G_2588.jpg",
     },
     {
       id: 5,
       image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+        "/images/Z6G_2641.jpg",
     },
     {
       id: 6,
       image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+        "/images/Z6G_2502.jpg",
     },
     {
       id: 7,
       image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+        "/images/Z6G_2502.jpg",
     },
   ],
   questions: [
