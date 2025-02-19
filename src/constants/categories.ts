@@ -5,5 +5,4 @@ export const categories = [
   "Healthcare Management",
   "Doctors",
   "Pharmacists",
-  "Nurses",
-];
+ ];

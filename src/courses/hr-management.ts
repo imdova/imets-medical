@@ -34,7 +34,7 @@ export const hr_management: CourseType = {
   /// here you can add the form id that you want
   form: {
     // name: "",
-    name: "Unique_Name",
+    name: "form-speciality",
     groupId: "112930552",
     redirect: "www.imetsacademy.com",
   },

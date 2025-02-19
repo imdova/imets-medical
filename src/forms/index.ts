@@ -1,6 +1,6 @@
-import { unique_name } from "./form1";
-import { unique_name_2 } from "./form2";
+import { form_speciality } from "./form-speciality";
+import { form_basic } from "./formbasic";
 
-const formsData: FormType[] = [unique_name, unique_name_2] as const;
+const formsData: FormType[] = [form_speciality, form_basic] as const;
 
 export default formsData;

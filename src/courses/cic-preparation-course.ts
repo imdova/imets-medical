@@ -27,14 +27,13 @@ export const cic_preparation_course: CourseType = {
   video: {
     url: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
     thumbnail:
-      "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+      "",
   },
   duration: "16 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
-    // name: "Unique_Name-2", for test
-    name: "Unique_Name",
+    name: "form-speciality",
     groupId: "112930550",
     redirect: "/",
   },
@@ -327,18 +326,15 @@ export const cic_preparation_course: CourseType = {
   ],
   videosGrid: [
     {
-      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
-      thumbnail:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
-      title: "Skyfall",
-      author: "By Author Name",
-      views: "10k Views",
-      timeAgo: "1 hour ago",
+      videoUrl: "https://www.youtube.com/watch?v=EXnm42VAv98",
+      title: "Dentist",
+      author: "Dr Aya Sayed",
+      
     },
     {
-      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
-      thumbnail:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+      videoUrl: "https://www.youtube.com/watch?v=HT9wtHncGDQ",
+      title: "Dentist",
+      author: "Dr Aya Sayed",
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=NSXeTYUjCI4",

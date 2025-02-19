@@ -16,9 +16,9 @@ export const coursesList: CourseType[] = [
   infection_prevention_and_control_diploma,
   hospital_management_diploma,
   healthcare_marketing_management_diploma,
-  supply_chain,
-  strategic_management,
   hr_management,
+  strategic_management,
+  supply_chain,
 ];
 
 export const coursesSEOContent = {

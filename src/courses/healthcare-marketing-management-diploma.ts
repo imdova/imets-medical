@@ -33,7 +33,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
-    name: "Unique_Name",
+    name: "form-speciality",
     groupId: "112930561",
     redirect: "/",
   },

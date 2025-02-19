@@ -33,7 +33,7 @@ export const healthcare_quality_management_diploma: CourseType = {
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
-    name: "Unique_Name",
+    name: "form-speciality",
     groupId: "112928224",
     redirect: "/",
   },
