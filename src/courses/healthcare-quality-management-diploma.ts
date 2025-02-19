@@ -4,19 +4,19 @@ export const healthcare_quality_management_diploma: CourseType = {
   image: "/images/quality diploma.webp",
   title: "Healthcare Quality Management Diploma",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
-    meta_keywords: "here is the meta keyword",
+    meta_title: "Healthcare Quality Management Diploma | Become a Leader in Healthcare Excellence",
+    meta_description: "Transform your career with our Healthcare Quality Management Diploma! Gain the skills to improve patient care, streamline healthcare processes, and lead quality improvement initiatives. Enroll now and earn an industry-recognized certification!",
+    meta_keywords: "Healthcare Quality Management Diploma, Healthcare Quality Certification, Quality Management in Healthcare, Healthcare Quality Training, Online Healthcare Quality Course, Healthcare Improvement Diploma, Patient Safety Training, Healthcare Quality Leadership, Healthcare Management Diploma, Quality Improvement in Healthcare",
   },
   rating: 5,
   isInHomePage: true,
-  reviewsNumber: 20,
+  reviewsNumber: 1800,
   price: {
-    EG: { old: "12000 EGP", new: "12000 EGP" },
-    SA: { old: "2800 SAR", new: "2800 SAR" },
+    EG: { old: "24000 EGP", new: "12000 EGP" },
+    SA: { old: "5600 SAR", new: "2800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "24000 EGP", new: "24000 EGP" },
+    other: { old: "1300$", new: "650$" },
   },
   lectures: 16,
   lecture_date: "1 Lecture-Weekly",

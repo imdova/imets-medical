@@ -4,9 +4,9 @@ export const hospital_management_diploma: CourseType = {
   image: "/images/hospital management.webp",
   title: "Hospital Management Diploma",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
-    meta_keywords: "here is the meta keyword",
+    meta_title: "Hospital Management Diploma | Online for Healthcare Excellence",
+    meta_description: "Ready to lead in healthcare? Enroll in our Hospital Management Diploma program and gain the skills to lead and manage healthcare facilities effectively. Flexible online learning, expert instructors, and industry-recognized certification await!",
+    meta_keywords: "Hospital Management Diploma, Healthcare Management Certification, Hospital Administration Course, Online Healthcare Management, Hospital Leadership Training, Healthcare Management Diploma, Hospital Operations Course, Healthcare Administration Certification, Healthcare Management Skills, Hospital Management Program",
   },
   rating: 5,
   isInHomePage: true,

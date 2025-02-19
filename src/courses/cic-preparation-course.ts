@@ -4,19 +4,19 @@ export const cic_preparation_course: CourseType = {
   image: "/images/cic.webp",
   title: "CIC Preparation Course",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
-    meta_keywords: "here is the meta keyword",
+    meta_title: "CIC Preparation Course | Prepare for the CIC Exam and Certification",
+    meta_description: "Ready to become a certified infection control specialist? Enroll in our CIC Preparation Course and prepare for the CIC exam with expert-led training, study materials, and practice tests. Advance your career in Infection Control management today",
+    meta_keywords: "CIC Preparation Course, CIC Certification, CIC Exam Prep, Infection Control Training, CIC Online Course, CIC Study Guide, CIC Practice Test, Infection Control Certification, CIC Training Program, CIC Exam Help",
   },
   rating: 5,
-  reviewsNumber: 20,
+  reviewsNumber: 1700,
   isInHomePage: true,
   price: {
-    EG: { old: "8500 EGP", new: "8500 EGP" },
-    SA: { old: "1800 SAR", new: "1800 SAR" },
+    EG: { old: "18000 EGP", new: "9000 EGP" },
+    SA: { old: "3600 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "17000 $", new: "17000 $" },
+    other: { old: "900 $", new: "450 $" },
   },
   lectures: 16,
   lecture_date: "1 Lecture-Weekly",

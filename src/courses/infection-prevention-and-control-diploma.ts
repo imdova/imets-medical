@@ -4,19 +4,19 @@ export const infection_prevention_and_control_diploma: CourseType = {
   image: "/images/infection.webp",
   title: "Infection Control Diploma",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
-    meta_keywords: "here is the meta keyword",
+    meta_title: "Infection Control Diploma | Become a Certified Infection Prevention Specialist",
+    meta_description: "Advance your career in healthcare with our Infection Control Diploma! Learn essential skills to prevent infections, ensure patient safety, and meet industry standards. Enroll now and earn a recognized certification in infection prevention!",
+    meta_keywords: "Infection Control Diploma, Infection Prevention Certification, Infection Control Training, Healthcare Infection Control, Online Infection Control Course, Infection Prevention Specialist, Patient Safety Training, Infection Control Certification, Healthcare Hygiene Training, Infection Control Program",
   },
   rating: 5,
   isInHomePage: false,
-  reviewsNumber: 20,
+  reviewsNumber: 2150,
   price: {
-    EG: { old: "12000 EGP", new: "12000 EGP" },
-    SA: { old: "2800 SAR", new: "2800 SAR" },
+    EG: { old: "24000 EGP", new: "12000 EGP" },
+    SA: { old: "5600 SAR", new: "2800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "17000 EGP", new: "17000 EGP" },
+    other: { old: "1300 $", new: "650 $" },
   },
   lectures: 18,
   lecture_date: "1 Lecture-Weekly",

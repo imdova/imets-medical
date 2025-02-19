@@ -4,15 +4,15 @@ export const cphq_preparation_course: CourseType = {
   image: "/images/cphq.webp",
   title: "CPHQ Preparation Course",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
-    meta_keywords: "here is the meta keyword",
+    meta_title: "CPHQ Course Online | Prepare for the CPHQ Exam",
+    meta_description: "Enroll in our CPHQ course to become a Certified Professional in Healthcare Quality. Get expert training, exam preparation, and career advancement in healthcare quality management.",
+    meta_keywords: "CPHQ course, Certified Professional in Healthcare Quality, CPHQ certification, healthcare quality training, CPHQ exam prep, healthcare quality management, CPHQ online course, healthcare quality certification",
   },
   rating: 5,
-  reviewsNumber: 20,
+  reviewsNumber: 1340,
   isInHomePage: true,
   price: {
-    EG: { old: "17000 EGP", new: "8500 EGP" },
+    EG: { old: "18000 EGP", new: "8500 EGP" },
     SA: { old: "3600 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
@@ -35,7 +35,7 @@ export const cphq_preparation_course: CourseType = {
   form: {
     name: "form-speciality",
     groupId: "112929547",
-    redirect: "www.imetsacademy.com",
+    redirect: "http://wa.me/201022995596",
   },
   //
   //// tab over view
