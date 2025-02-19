@@ -3,12 +3,14 @@ export const healthcare_marketing_management_diploma: CourseType = {
   slug: "healthcare-marketing-management-diploma",
   image: "/images/marketing.webp",
   title: "Healthcare Marketing Management Diploma",
-  rating: 5,
-  instructor: {
-    id: "6",
-    name: "DR/ ahmed Maggi",
-    image:"/images/market.webp",
+  meta: {
+    meta_title: "here is the meta title",
+    meta_description: "here is the meta description",
+    meta_keywords: "here is the meta keyword",
   },
+  rating: 5,
+  isInHomePage: true,
+  reviewsNumber: 20,
   price: {
     EG: { old: "8500 EGP", new: "8500 EGP" },
     SA: { old: "1800 SAR", new: "1800 SAR" },
@@ -31,6 +33,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
+    name: "Unique_Name",
     groupId: "112930561",
     redirect: "/",
   },
@@ -251,7 +254,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
   ],
   reviews: [
     {
-      id: "1",
+      reviewImage: "/images/review.png",
       date: "Nov 7, 2023",
       rating: 5,
       user: {
@@ -264,9 +267,9 @@ export const healthcare_marketing_management_diploma: CourseType = {
         "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
     },
     {
-      id: "2",
+      reviewImage: "/images/review.png",
       date: "Nov 7, 2023",
-      rating: 3,
+      rating: 5,
       user: {
         name: "michael T",
         image:
@@ -277,9 +280,9 @@ export const healthcare_marketing_management_diploma: CourseType = {
         "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
     },
     {
-      id: "3",
+      reviewImage: "/images/review.png",
       date: "Nov 7, 2023",
-      rating: 4,
+      rating: 5,
       user: {
         name: "Noha mamdoh",
         image:
@@ -292,201 +295,27 @@ export const healthcare_marketing_management_diploma: CourseType = {
   ],
   videosGrid: [
     {
-      id: 1,
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
       thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
+        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
       title: "Skyfall",
       author: "By Author Name",
       views: "10k Views",
       timeAgo: "1 hour ago",
-      isFeatured: true,
     },
     {
-      id: 2,
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
       thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-    {
-      id: 3,
-      thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-    {
-      id: 4,
-      thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-    {
-      id: 5,
-      thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-  ],
-  ImagesGrid: [
-    {
-      id: 1,
-      image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
-      isFeatured: true,
-    },
-    {
-      id: 2,
-      image:
         "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
     },
     {
-      id: 3,
-      image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+      videoUrl: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
     },
     {
-      id: 4,
-      image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
     },
     {
-      id: 5,
-      image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
-    },
-    {
-      id: 6,
-      image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
-    },
-    {
-      id: 7,
-      image:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
-    },
-  ],
-
-  questions: [
-    {
-      id: "1",
-      user: {
-        name: "Mohamed Farag",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      },
-      content: "What is the best way to learn Next.js?",
-      replies: [
-        {
-          id: "2-1",
-          user: {
-            name: "Emily Brown",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Utility classes save time!",
-          timestamp: 17,
-        },
-        {
-          id: "2-2",
-          user: {
-            name: "Mike Johnson",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Less custom CSS needed.",
-          timestamp: 17,
-        },
-      ],
-      timestamp: 17,
-    },
-    {
-      id: "2",
-      user: {
-        name: "Ahmed Samir",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      },
-      content: "How does Tailwind CSS improve development speed?",
-      replies: [
-        {
-          id: "1-1",
-          user: {
-            name: "John Doe",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Start with the official docs!",
-          timestamp: 17,
-        },
-        {
-          id: "1-2",
-          user: {
-            name: "Jane Smith",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Follow some YouTube tutorials.",
-          timestamp: 17,
-        },
-      ],
-      timestamp: 17,
-    },
-  ],
-  videos: [
-    {
-      title: "Introduction",
-      progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
-      locked: false,
-      duration: "1:00",
-    },
-    {
-      title: "Medical Terminology",
-      progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
-      locked: false,
-      duration: "4:00",
-    },
-    {
-      title: "Medical Neuroscience",
-      progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
-      locked: true,
-      duration: "2:35",
-    },
-    {
-      title: "Trauma on EMT",
-      progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
-      locked: true,
-      duration: "7:00",
-    },
-    {
-      title: "Biomedical Visualization",
-      progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
-      locked: true,
-      duration: "11:00",
-    },
-  ],
-  courseMaterials: [
-    {
-      title: "Introduction to Next.js",
-      fileUrl: "/files/intro-to-nextjs.pdf",
-      fileType: "pdf",
-    },
-    {
-      title: "TypeScript Basics",
-      fileUrl: "/files/typescript-basics.docx",
-      fileType: "docx",
-    },
-    {
-      title: "Tailwind CSS Guide",
-      fileUrl: "/files/tailwind-guide.pdf",
-      fileType: "pdf",
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
     },
   ],
   startDate: "2022-01-01",

@@ -8,11 +8,15 @@ import Modal from "./UI/Modal";
 import DynamicForm from "./Forms/dynamicForm";
 import { formFields } from "@/constants/fields";
 import Button from "./Forms/buttons/Button";
+import formsData from "@/forms";
 
-const StickyCTA: React.FC<{ groupId: string; redirect: string }> = ({
-  groupId,
-  redirect,
-}) => {
+const StickyCTA: React.FC<{
+  groupId: string;
+  redirect: string;
+  name: string;
+}> = ({ groupId, redirect, name }) => {
+  const formData = formsData.find((x) => x.name === name) || formsData[0];
+
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -29,7 +33,7 @@ const StickyCTA: React.FC<{ groupId: string; redirect: string }> = ({
       const response = await sendDataToMailerLite(data, groupId);
 
       if (response.success) {
-        showNotification("success", "your data submitted successfully ");
+        showNotification("success", formData.successMessage);
         // onClose();
         if (redirect) {
           router.push(redirect);
@@ -49,7 +53,7 @@ const StickyCTA: React.FC<{ groupId: string; redirect: string }> = ({
   return (
     <React.Fragment>
       <div
-        className={`font-watad sticky bottom-2 left-2 right-2 z-30 mx-2 mt-8 flex items-center justify-end rounded-2xl border-2 border-dashed border-yellow-500 bg-white p-4 backdrop-blur-sm transition-transform md:justify-end`}
+        className={`sticky bottom-2 left-2 right-2 z-30 mx-2 mt-8 flex items-center justify-end rounded-2xl border-2 border-dashed border-yellow-500 bg-white p-4 font-watad backdrop-blur-sm transition-transform md:justify-end`}
       >
         <p className="text-xl text-primary">خصم 50% لفتره محدوده</p>
         <button
@@ -62,14 +66,14 @@ const StickyCTA: React.FC<{ groupId: string; redirect: string }> = ({
       {isOpen && (
         <Modal onClose={onClose} isOpen={isOpen}>
           <DynamicForm
-            fields={formFields}
+            fields={formData.fields}
             onClose={onClose}
             onSubmit={onSubmit}
             loading={loading}
             error={error}
-            // title={formData.title}
-            // description={formData.content}
-            // submitButtonText={formData.submitButtonText}
+            title={formData.title}
+            description={formData.content}
+            submitButtonText={formData.submitButtonText}
           />
         </Modal>
       )}

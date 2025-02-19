@@ -1,4 +1,6 @@
-type MetaTag = {
+import { Metadata } from "next";
+
+export type MetaTag = {
   pages: string[];
-  metaTags: string;
+  metaTags: Metadata;
 };

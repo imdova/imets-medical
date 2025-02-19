@@ -1,4 +1,5 @@
 import { coursesList } from "@/constants/courses.data";
+import { Award, Briefcase, CheckCircle, Globe, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +8,7 @@ export default function Footer() {
     <footer className="relative w-full bg-[url('../assets/images/footer.jpg')] bg-cover bg-center before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:bg-[linear-gradient(_#041060_30%,_#e2b403_150%)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Grid */}
-        <div className="relative mx-auto grid max-w-sm grid-cols-2 gap-3 gap-y-8 py-10 sm:max-w-3xl sm:grid-cols-5 md:gap-8 lg:max-w-full lg:grid-cols-6">
+        <div className="relative mx-auto grid max-w-sm grid-cols-2 gap-3 gap-y-8 py-10 sm:max-w-3xl sm:grid-cols-4 md:gap-8 lg:max-w-full lg:grid-cols-6">
           <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
             <Link
               href="https://pagedone.io/"
@@ -87,39 +88,44 @@ export default function Footer() {
               <li className="mb-6">
                 <Link
                   href="/courses"
-                  className="text-white hover:text-orange-primary"
+                  className="shadow-simple shadow-simple cursor-pointer text-nowrap rounded-md bg-orange-primary px-4 py-2 font-medium text-white transition-all duration-150 ease-in-out hover:bg-yellow-600/60 focus:outline-none focus:ring-2 focus:ring-orange-primary focus:ring-offset-2"
                 >
                   Explore All Courses
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="col-span-2 text-left lg:mx-auto">
+          <div className="col-span-2 hidden text-left md:block lg:mx-auto">
             <h4 className="mb-7 text-lg font-medium text-white">
               Why Choose IMETS?
             </h4>
             <ul className="text-sm transition-all duration-500">
-              <li className="mb-6">
+              <li className="mb-6 flex items-center">
+                <CheckCircle className="mr-3 h-5 w-5 text-orange-primary" />
                 <p className="text-white">
                   15+ Years of Experience – Trusted in healthcare education
                 </p>
               </li>
-              <li className="mb-6">
+              <li className="mb-6 flex items-center">
+                <Globe className="mr-3 h-5 w-5 text-orange-primary" />
                 <p className="text-white">
                   Live Online Lectures – Attend from anywhere
                 </p>
               </li>
-              <li className="mb-6">
+              <li className="mb-6 flex items-center">
+                <Users className="mr-3 h-5 w-5 text-orange-primary" />
                 <p className="text-white">
                   Expert Instructors – Learn from top professionals
                 </p>
               </li>
-              <li className="mb-6">
+              <li className="mb-6 flex items-center">
+                <Award className="mr-3 h-5 w-5 text-orange-primary" />
                 <p className="text-white">
                   International Certification – Boost your career opportunities
                 </p>
               </li>
-              <li className="mb-6">
+              <li className="mb-6 flex items-center">
+                <Briefcase className="mr-3 h-5 w-5 text-orange-primary" />
                 <p className="text-white">
                   Career Monitoring – Unlock your potential
                 </p>

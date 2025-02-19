@@ -8,6 +8,9 @@ interface YouTubePlayerProps {
   thumbnailUrl?: string;
   priority?: boolean;
   autoPlay?: boolean; // New prop to control autoplay
+  playing?: boolean;
+  outControl?: boolean;
+  onPlaying?: (url: string) => void;
 }
 
 const YouTubePlayer: React.FC<YouTubePlayerProps> = ({
@@ -15,6 +18,9 @@ const YouTubePlayer: React.FC<YouTubePlayerProps> = ({
   thumbnailUrl: initialThumbnailUrl,
   priority = false,
   autoPlay = false, // Default to false if not provided
+  playing = false,
+  outControl = false,
+  onPlaying,
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -42,17 +48,27 @@ const YouTubePlayer: React.FC<YouTubePlayerProps> = ({
     }
   }, [autoPlay]);
 
+  const onPlay = () => {
+    setIsPlaying(true);
+    onPlaying?.(videoUrl);
+  };
+
   if (!videoId) {
     return <div>Invalid YouTube URL</div>;
   }
 
   return (
     <div className="relative h-full w-full overflow-hidden rounded-lg">
-      {!isPlaying ? (
-        <div
-          className="group absolute inset-0 cursor-pointer"
-          onClick={() => setIsPlaying(true)}
-        >
+      {(outControl && playing) || (!outControl && isPlaying) ? (
+        <iframe
+          src={`${embedUrl}?autoplay=1&modestbranding=1&rel=0`}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="absolute left-0 top-0 h-full w-full"
+        />
+      ) : (
+        <div className="group absolute inset-0 cursor-pointer" onClick={onPlay}>
           <Image
             src={thumbnailUrl}
             alt={"youtube video"}
@@ -70,14 +86,6 @@ const YouTubePlayer: React.FC<YouTubePlayerProps> = ({
             />
           </div>
         </div>
-      ) : (
-        <iframe
-          src={`${embedUrl}?autoplay=1&modestbranding=1&rel=0`}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="absolute left-0 top-0 h-full w-full"
-        />
       )}
     </div>
   );

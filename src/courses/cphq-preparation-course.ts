@@ -1,18 +1,16 @@
-import { Video } from "lucide-react";
-
 export const cphq_preparation_course: CourseType = {
   id: "1",
   slug: "cphq-course",
   image: "/images/cphq.webp",
   title: "CPHQ Preparation Course",
-  rating: 5,
-
-  /// instructor data
-  instructor: {
-    id: "1",
-    name: "DR/ Sara Abdulla",
-    image: "/images/cicPrep.webp",
+  meta: {
+    meta_title: "here is the meta title",
+    meta_description: "here is the meta description",
+    meta_keywords: "here is the meta keyword",
   },
+  rating: 5,
+  reviewsNumber: 20,
+  isInHomePage: true,
   price: {
     EG: { old: "17000 EGP", new: "8500 EGP" },
     SA: { old: "3600 SAR", new: "1800 SAR" },
@@ -35,7 +33,7 @@ export const cphq_preparation_course: CourseType = {
 
   /// here you can add the form id that you want
   form: {
-    // name: "",
+    name: "Unique_Name",
     groupId: "112929547",
     redirect: "www.imetsacademy.com",
   },
@@ -283,8 +281,7 @@ export const cphq_preparation_course: CourseType = {
       id: "1",
       name: "DR Sara Abdullah",
       job: "Healthcare Quality Manager at DAF Hospital",
-      image:
-        "/images/sara.jpg",
+      image: "/images/sara.jpg",
       certification: "MBA - CPHQ - HMD",
       experience: 15,
       location: "Cairo, Eqypt",
@@ -299,9 +296,9 @@ export const cphq_preparation_course: CourseType = {
       id: "2",
       name: "DR Ahmed Habib",
       job: "Healthcare Quality Professional",
-      image:
-        "/images/habib.png",
-      certification: "CPHQ - Hospital Management Diploma (AUC) - MBA - CPT - PMP",
+      image: "/images/habib.png",
+      certification:
+        "CPHQ - Hospital Management Diploma (AUC) - MBA - CPT - PMP",
       experience: 12,
       location: "Cairo, Eqypt",
       content:
@@ -311,9 +308,8 @@ export const cphq_preparation_course: CourseType = {
     /// end
   ],
   reviews: [
-    /// start
     {
-      id: "1",
+      reviewImage: "/images/review.png",
       date: "Nov 7, 2023",
       rating: 5,
       user: {
@@ -325,13 +321,10 @@ export const cphq_preparation_course: CourseType = {
       content:
         "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
     },
-    /// end
-    ///
-    /// start
     {
-      id: "2",
+      reviewImage: "/images/review.png",
       date: "Nov 7, 2023",
-      rating: 3,
+      rating: 5,
       user: {
         name: "michael T",
         image:
@@ -341,13 +334,10 @@ export const cphq_preparation_course: CourseType = {
       content:
         "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
     },
-    /// end
-    ///
-    /// start
     {
-      id: "3",
+      reviewImage: "/images/review.png",
       date: "Nov 7, 2023",
-      rating: 4,
+      rating: 5,
       user: {
         name: "Noha mamdoh",
         image:
@@ -357,226 +347,31 @@ export const cphq_preparation_course: CourseType = {
       content:
         "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
     },
-    /// end
   ],
 
   videosGrid: [
-    /// start
     {
-      id: 1,
-      Video:
-        "https://www.youtube.com/watch?v=XbcyZHHQvZg",
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+      thumbnail:
+        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
       title: "Skyfall",
       author: "By Author Name",
       views: "10k Views",
       timeAgo: "1 hour ago",
-      isFeatured: true,
     },
-    /// end
-    ///
-    /// start
     {
-      id: 2,
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
       thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-    /// end
-    ///
-    /// start
-    {
-      id: 3,
-      thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-    /// end
-    ///
-    /// start
-    {
-      id: 4,
-      thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-    /// end
-    ///
-    /// start
-    {
-      id: 5,
-      thumbnail:
-        "https://img.freepik.com/free-photo/portrait-schoolgirl-memphis-style-background_23-2148203809.jpg?t=st=1739460008~exp=1739463608~hmac=83fd4fea35c9d2409cc30128aa35751a4375b429c0bb42aca9732d987aa923e3&w=360",
-      title: "",
-      author: "DR/Mohamed Farag",
-    },
-  ],
-  ImagesGrid: [
-    {
-      id: 1,
-      image:
-        "/images/Z6G_2502.jpg",
-      isFeatured: true,
+        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
     },
     {
-      id: 2,
-      image:
-       "/images/Z6G_2539.jpg",
+      videoUrl: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
     },
     {
-      id: 3,
-      image:
-       "/images/Z6G_2569.jpg",
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
     },
     {
-      id: 4,
-      image:
-        "/images/Z6G_2588.jpg",
-    },
-    {
-      id: 5,
-      image:
-        "/images/Z6G_2641.jpg",
-    },
-    {
-      id: 6,
-      image:
-        "/images/Z6G_2502.jpg",
-    },
-    {
-      id: 7,
-      image:
-        "/images/Z6G_2502.jpg",
-    },
-  ],
-  questions: [
-    {
-      id: "1",
-      user: {
-        name: "Mohamed Farag",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      },
-      content: "What is the best way to learn Next.js?",
-      /// all replies to the question by Mohamed Farag at the free course page
-      replies: [
-        {
-          id: "2-1",
-          user: {
-            name: "Emily Brown",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Utility classes save time!",
-          timestamp: 17,
-        },
-        {
-          id: "2-2",
-          user: {
-            name: "Mike Johnson",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Less custom CSS needed.",
-          timestamp: 17,
-        },
-      ],
-      timestamp: 17,
-    },
-    {
-      id: "2",
-      user: {
-        name: "Ahmed Samir",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      },
-      content: "How does Tailwind CSS improve development speed?",
-      replies: [
-        {
-          id: "1-1",
-          user: {
-            name: "John Doe",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Start with the official docs!",
-          timestamp: 17,
-        },
-        {
-          id: "1-2",
-          user: {
-            name: "Jane Smith",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Follow some YouTube tutorials.",
-          timestamp: 17,
-        },
-      ],
-      timestamp: 17,
-    },
-  ],
-
-  /// the videos at  the free course
-  videos: [
-    {
-      title: "Introduction",
-      progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
-      // if locked make it true this is free access video
-      locked: false,
-      duration: "1:00",
-    },
-    {
-      title: "Medical Terminology",
-      progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
-      // if locked make it true this is free access video
-      locked: false,
-      duration: "4:00",
-    },
-    {
-      title: "Medical Neuroscience",
-      progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
-      //  this is locked access video
-      locked: true,
-      duration: "2:35",
-    },
-    {
-      title: "Trauma on EMT",
-      progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
-      //  this is locked access video
-      locked: true,
-      duration: "7:00",
-    },
-    {
-      title: "Biomedical Visualization",
-      progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
-      //  this is locked access video
-      locked: true,
-      duration: "11:00",
-    },
-  ],
-  courseMaterials: [
-    {
-      title: "Introduction to Next.js",
-      fileUrl: "/files/intro-to-nextjs.pdf",
-      fileType: "pdf",
-    },
-    {
-      title: "TypeScript Basics",
-      fileUrl: "/files/typescript-basics.docx",
-      fileType: "docx",
-    },
-    {
-      title: "Tailwind CSS Guide",
-      fileUrl: "/files/tailwind-guide.pdf",
-      fileType: "pdf",
+      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
     },
   ],
   startDate: "2022-01-01",

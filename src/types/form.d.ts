@@ -64,3 +64,11 @@ interface DynamicModalProps {
   disableCancel?: boolean;
   hideButtons?: boolean;
 }
+interface FormType {
+  name: string;
+  title: string;
+  content: string;
+  successMessage: string;
+  submitButtonText: string;
+  fields: FieldConfig[]; // Use a more specific type if you know the structure of `fields`
+}

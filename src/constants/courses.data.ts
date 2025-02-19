@@ -18,5 +18,17 @@ export const coursesList: CourseType[] = [
   healthcare_marketing_management_diploma,
   supply_chain,
   strategic_management,
-  hr_management
+  hr_management,
 ];
+
+export const coursesSEOContent = {
+  title: "Why Choose Our Online Courses?",
+  subtitle:
+    "Gain valuable skills with our expert-led courses. Whether you're looking to upskill or switch careers, our courses provide the knowledge and flexibility you need.",
+  list: [
+    "Learn from industry professionals",
+    "Flexible learning at your own pace",
+    "Lifetime access to course materials",
+    "Industry-relevant certifications",
+  ],
+};

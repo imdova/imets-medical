@@ -7,13 +7,25 @@ import { formFields } from "@/constants/fields";
 import { useNotification } from "../UI/NotificationComponent";
 import { sendDataToMailerLite } from "@/lib/mailerlite/mailer_lite";
 import { useRouter } from "next/navigation";
+import Button from "../Forms/buttons/Button";
+import formsData from "@/forms";
 
 type Form = {
   redirect: string;
   groupId: string;
+  name: string;
+  className?: string;
+  children: React.ReactNode;
 };
-const CourseApply: React.FC<Form> = ({ groupId, redirect }) => {
+const CourseApply: React.FC<Form> = ({
+  groupId,
+  redirect,
+  name,
+  children,
+  className,
+}) => {
   const router = useRouter();
+  const formData = formsData.find((x) => x.name === name) || formsData[0];
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -29,7 +41,7 @@ const CourseApply: React.FC<Form> = ({ groupId, redirect }) => {
       const response = await sendDataToMailerLite(data, groupId);
 
       if (response.success) {
-        showNotification("success", "your data submitted successfully ");
+        showNotification("success", formData.successMessage);
         // onClose();
         if (redirect) {
           router.push(redirect);
@@ -51,23 +63,20 @@ const CourseApply: React.FC<Form> = ({ groupId, redirect }) => {
       {isOpen && (
         <Modal onClose={onClose} isOpen={isOpen}>
           <DynamicForm
-            fields={formFields}
+            fields={formData.fields}
             onClose={onClose}
             onSubmit={onSubmit}
             loading={loading}
             error={error}
-            // title={formData.title}
-            // description={formData.content}
-            // submitButtonText={formData.submitButtonText}
+            title={formData.title}
+            description={formData.content}
+            submitButtonText={formData.submitButtonText}
           />
         </Modal>
       )}
-      <button
-        onClick={open}
-        className="block m-auto px-6 py-2 bg-orange-primary text-white rounded-3xl hover:bg-black link-smooth"
-      >
-        Apply Now
-      </button>
+      <Button onClick={open} className={className}>
+        {children}
+      </Button>
     </>
   );
 };

@@ -27,11 +27,18 @@ type CourseType = {
   slug: string;
   image: string;
   title: string;
+  isInHomePage: boolean;
   rating: number;
+  reviewsNumber?: number;
   description: string;
   courseGoals: {
     content: string;
     goals: { title: string; content: string }[];
+  };
+  meta: {
+    meta_title: string;
+    meta_description: string;
+    meta_keywords: string;
   };
   courseModules: {
     id: number;
@@ -42,11 +49,6 @@ type CourseType = {
     content: string;
     items: string[];
   };
-  instructor: {
-    id: string;
-    name: string;
-    image: string;
-  };
   lectures: number;
   lecture_date: string;
   lecture_Method: string;
@@ -56,24 +58,58 @@ type CourseType = {
   startDate: string;
   duration: string;
   instructors: Instructor[];
-  reviews: review[];
+  reviews: Review[];
   video: {
     url: string;
     thumbnail?: string;
   };
-  videosGrid: Video[];
-  ImagesGrid: images[];
+  videosGrid: VideoGridItem[];
   languages: string;
   certificate: string;
   form: {
-    // name: string;
+    name: string;
     redirect: string;
     groupId: string;
+  };
+  price: Record<string, Price>;
+};
+
+type Review = {
+  date?: string;
+  reviewImage?: string;
+  rating?: number;
+  user?: {
+    name: string;
+    image: string;
+    job: string;
+  };
+  content?: string;
+};
+
+type FreeCourseType = {
+  id: string;
+  slug: string;
+  image: string;
+  title: string;
+  instructor: {
+    id: string;
+    name: string;
+    image: string;
   };
   questions: Question[];
   videos: CourseVideo[];
   courseMaterials: CourseMaterial[];
-  price: Record<string, Price>;
+  rating: number;
+  status: string;
+  startDate: string;
+};
+type VideoGridItem = {
+  videoUrl: string;
+  title?: string;
+  author?: string;
+  views?: string;
+  timeAgo?: string;
+  thumbnail?: string;
 };
 
 type Price = {

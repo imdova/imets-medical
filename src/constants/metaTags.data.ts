@@ -1,39 +1,41 @@
 export const GOOGLE_TAG_MANAGER = "GTM-5HC2Q7CD";
 
-export const metaTagsData: MetaTag[] = [
-  {
-    pages: ["default"], // Applies to all pages
-    metaTags: `
-      <meta name="robots" content="index, follow">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta name="language" content="English">
-      <meta name="title" content="Home Page - Abdelrhman">
-      <meta name="description" content="Welcome to the home page of the best developer ever.">
-      <meta name="keywords" content="home, developer, frontend">
-    `,
+export const metaTagsData = {
+  default: {
+    title: {
+      default:
+        "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
+      template: "%s | IMETS School of Business",
+    },
+    description:
+      "IMETS Medical School offers cutting-edge, specialized healthcare programs designed to empower the next generation of medical professionals. Join us to excel in modern medicine with excellence, innovation, and compassion.",
+    keywords: "",
   },
-  {
-    pages: ["/", "/home"], // Applies to both the root path and /home
-    metaTags: `
-      <meta name="title" content="Home Page - Abdelrhman">
-      <meta name="description" content="Welcome to the home page of the best developer ever.">
-      <meta name="keywords" content="home, developer, frontend">
-    `,
+  about: {
+    title:
+      "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
+    description:
+      "IMETS Medical School offers cutting-edge, specialized healthcare programs designed to empower the next generation of medical professionals. Join us to excel in modern medicine with excellence, innovation, and compassion.",
+    keywords: "",
   },
-  {
-    pages: ["/about", "/about-us"], // Applies to both /about and /about-us
-    metaTags: `
-      <meta name="title" content="About Page - Abdelrhman">
-      <meta name="description" content="Learn more about the best developer ever.">
-      <meta name="keywords" content="about, developer, frontend">
-    `,
+  blog: {
+    title: {
+      default:
+        "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
+      template: "%s | IMETS School of Business",
+    },
+    description:
+      "IMETS Medical School offers cutting-edge, specialized healthcare programs designed to empower the next generation of medical professionals. Join us to excel in modern medicine with excellence, innovation, and compassion.",
+    keywords: "",
   },
-  {
-    pages: ["/contact"], // Applies only to /contact
-    metaTags: `
-      <meta name="title" content="Contact Page - Abdelrhman">
-      <meta name="description" content="Get in touch with the best developer ever.">
-      <meta name="keywords" content="contact, developer, frontend">
-    `,
+  courses: {
+    title: {
+      default:
+        "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
+      template: "%s | IMETS School of Business",
+    },
+    description:
+      "IMETS Medical School offers cutting-edge, specialized healthcare programs designed to empower the next generation of medical professionals. Join us to excel in modern medicine with excellence, innovation, and compassion.",
+    keywords: "",
   },
-];
+};

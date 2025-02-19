@@ -3,7 +3,7 @@ import Rating from "@/components/Rating";
 import { Album, MapPin, PlayCircle } from "lucide-react";
 import Image from "next/image";
 
-const InstructorsTab: React.FC<CourseType> = ({ instructors }) => {
+const InstructorsTab: React.FC<CourseType> = ({ instructors, form }) => {
   return (
     <div className="box-content">
       {instructors.map((instructor) => {
@@ -52,7 +52,7 @@ const InstructorsTab: React.FC<CourseType> = ({ instructors }) => {
           </div>
         );
       })}
-      <LimitedCounterOffer />
+      <LimitedCounterOffer form={form} />
     </div>
   );
 };

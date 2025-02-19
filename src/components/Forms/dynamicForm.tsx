@@ -108,7 +108,9 @@ const DynamicForm = ({
     >
       <div>
         {title && (
-          <h2 className="mb-1 text-2xl font-bold leading-none">{title}</h2>
+          <h2 className="mb-1 text-2xl font-bold leading-none text-black">
+            {title}
+          </h2>
         )}
         {description && (
           <p className="text-sm text-neutral-500">{description}</p>

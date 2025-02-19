@@ -11,7 +11,7 @@ import Link from "next/link";
 import YouTubePlayer from "@/components/YouTubePlayer";
 import Progress from "@/components/Progress";
 import ProgressTabs from "@/components/ProgressTabs";
-import { coursesList } from "@/constants/courses.data";
+import freeCourses from "@/courses-free";
 interface SingleCourseProps {
   params: Promise<{ slug: string }>;
 }
@@ -19,7 +19,7 @@ interface SingleCourseProps {
 export default function OfflineVideo({ params }: SingleCourseProps) {
   const { slug } = use(params);
   const [currentVideo, setCurrentVideo] = useState(0);
-  const course = coursesList.find((x) => x.slug === slug);
+  const course = freeCourses.find((x) => x.slug === slug);
   const [question, setQuestion] = useState("");
   const [reply, setReply] = useState("");
   const [replyIndex, setReplyIndex] = useState<string | null>(null);
@@ -60,39 +60,9 @@ export default function OfflineVideo({ params }: SingleCourseProps) {
   };
 
   // handle Submit Qustions
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (question.trim()) {
-      const newQuestion: Question = {
-        id: (questions.length + 1).toString(),
-        user: course.instructor,
-        content: question,
-        replies: [],
-        timestamp: Date.now(),
-      };
-      setQuestions([...questions, newQuestion]);
-      setQuestion("");
-    }
-  };
+  //
   // handle Submit Reply Qustions
-  const handleReplySubmit = (e: React.FormEvent, id: string) => {
-    e.preventDefault();
-    if (reply.trim()) {
-      const newReply: Omit<Question, "replies"> = {
-        id: `${id}-${Date.now()}`,
-        user: course.instructor as Question["user"],
-        content: reply,
-        timestamp: Date.now(),
-      };
-      setQuestions(
-        questions.map((q) =>
-          q.id === id ? { ...q, replies: [...q.replies, newReply] } : q,
-        ),
-      );
-      setReply("");
-      setReplyIndex(null);
-    }
-  };
+
   // timestamp field to questions and replies and implemented
   const timeAgo = (timestamp: number) => {
     const seconds = Math.floor((Date.now() - timestamp) / 1000);

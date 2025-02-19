@@ -30,9 +30,9 @@ const Modal: React.FC<{
         <div className="relative h-0 w-full">
           <button
             onClick={onClose}
-            className="absolute -right-5 -top-4 -translate-y-1/2 translate-x-1/2 rounded-full bg-white p-2"
+            className="absolute -right-4 -top-3 -translate-y-1/2 translate-x-1/2 rounded-full bg-white p-2"
           >
-            <X className="h-4 w-4" />
+            <X className="h-4 w-4 text-black" />
           </button>
         </div>
         {children}

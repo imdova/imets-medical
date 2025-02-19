@@ -5,7 +5,6 @@ import localFont from "next/font/local";
 import Footer from "@/components/Footer/footer";
 import { NotificationProvider } from "@/components/UI/NotificationComponent";
 import MetaPixel from "@/components/meta/MetaPixel";
-import DynamicMetaTags from "@/components/meta/DynamicMetaTags";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { GOOGLE_TAG_MANAGER } from "@/constants/metaTags.data";
 
@@ -30,7 +29,8 @@ const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
 
 export const metadata: Metadata = {
   title: {
-    default: "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
+    default:
+      "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
     template: "%s | IMETS School of Business",
   },
   description:
@@ -72,6 +72,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -83,7 +84,6 @@ export default function RootLayout({
       <head>
         {/* Add the MetaPixel component with your Pixel ID */}
         <MetaPixel />
-        <DynamicMetaTags />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${watad.variable} antialiased`}

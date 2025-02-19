@@ -8,6 +8,7 @@ const OverviewTab: React.FC<CourseType> = ({
   courseGoals,
   courseModules,
   whoCanAttend,
+  form,
 }) => {
   return (
     <div className="rounded-xl shadow-none md:p-4 md:shadow-md">
@@ -43,7 +44,7 @@ const OverviewTab: React.FC<CourseType> = ({
           </div>
         ))}
       </div>
-      <LimitedCounterOffer />
+      <LimitedCounterOffer form={form} />
     </div>
   );
 };

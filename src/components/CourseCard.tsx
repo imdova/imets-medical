@@ -18,6 +18,7 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
   price,
   country_code2,
   loading,
+  reviewsNumber,
 }) => {
   const { new: newPrice, old: oldPrice } = price[country_code2] || price.other;
   return (
@@ -50,9 +51,11 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
             </Link>
             <div className="flex flex-col items-center gap-1">
               <Rating rating={rating} size={10} />
-              <span className="text-[10px] text-secondary">
-                ({rating} Reviews)
-              </span>
+              {reviewsNumber && (
+                <span className="text-[10px] text-secondary">
+                  ({reviewsNumber} Reviews)
+                </span>
+              )}
             </div>
           </div>
           <div className="mb-3 grid w-full grid-cols-2 gap-3">

@@ -3,12 +3,12 @@ import Image from "next/image";
 import { BookOpen, Clock, Earth, Star, Video } from "lucide-react";
 import Link from "next/link";
 
-const VideoCard: React.FC<CourseType> = ({
+const VideoCard: React.FC<FreeCourseType> = ({
   id,
   image,
   title,
-  rating,
   instructor,
+  rating,
   status,
   startDate,
 }) => {

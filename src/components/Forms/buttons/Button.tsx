@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "rounded-md px-4 py-2 font-medium shadow-simple transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
+    "rounded-xl px-4 py-2 font-medium shadow-simple transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
 
   const colorStyles: Record<ButtonColor, Record<ButtonVariant, string>> = {
     primary: {

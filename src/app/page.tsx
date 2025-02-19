@@ -25,11 +25,11 @@ import useGeoInfo from "@/hooks/useGeoInfo";
 export default function Home() {
   const { data, loading } = useGeoInfo();
   const [filter, setFilter] = useState("All");
-
+  const homeCourser = coursesList.filter((course) => course.isInHomePage);
   const filteredCourses =
     filter === "All"
-      ? coursesList
-      : coursesList.filter((course) => course.type === filter);
+      ? homeCourser
+      : homeCourser.filter((course) => course.type === filter);
   return (
     <>
       {/* Section Landing Page */}

@@ -27,7 +27,7 @@ const MobileMenu: React.FC = () => {
       <button
         onClick={() => setMenu((prevState) => !prevState)}
         aria-expanded={menu}
-        className="group w-[56px] text-2xl text-primary focus:outline-none sm:w-[76px] sm:text-3xl md:hidden"
+        className="group w-[56px] text-2xl text-primary focus:outline-none sm:w-[76px] sm:text-3xl lg:hidden"
         aria-label={menu ? "Close menu" : "Open menu"}
       >
         <svg
@@ -61,30 +61,34 @@ const MobileMenu: React.FC = () => {
       <div
         onClick={closeMenu}
         aria-hidden="true"
-        className={`${menu ? "opacity-100" : "pointer-events-none opacity-0"} fixed inset-0 top-[70px] h-[calc(100dvh-70px)] w-screen bg-black/30 backdrop-blur-sm duration-700 md:hidden`}
+        className={`${menu ? "opacity-100" : "pointer-events-none opacity-0"} fixed inset-0 top-[70px] h-[calc(100dvh-70px)] w-screen bg-black/30 backdrop-blur-sm duration-700 lg:hidden`}
       ></div>
 
       <div
         style={
           menu
-            ? { left: "10px", height: "80vh", width: "70vw" }
+            ? { left: "10px", height: "50vh", width: "60vw" }
             : { left: "-20vw", height: "0", width: "0", top: "0" }
         }
-        className="text-background fixed top-[80px] z-20 flex h-[50vh] w-[70vw] overflow-hidden rounded-[25px] bg-white duration-700 ease-in-out md:hidden"
+        className="text-background fixed top-[80px] z-20 flex w-[50vw] max-w-[400px] overflow-hidden rounded-[25px] bg-white duration-700 ease-in-out md:hidden"
         id="mobile-menu"
         aria-label="Mobile navigation"
       >
         <div className="scroll-bar-hidden flex min-h-[50vh] min-w-[70vw] flex-col justify-start overflow-y-auto p-5">
-          {commonLinks.map((link, index) => (
-            <Link
-              key={index}
-              href={link.url}
-              onClick={closeMenu}
-              className="block px-4 py-2 hover:bg-blue-500/50 hover:text-primary"
-            >
-              {link.title}
-            </Link>
-          ))}
+          {commonLinks.map((link, index) => {
+            const Icon = link.icon;
+            return (
+              <Link
+                key={index}
+                href={link.url}
+                onClick={closeMenu}
+                className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-lg text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-600"
+              >
+                <Icon className="h-5 w-5 text-orange-primary" />
+                <span>{link.title}</span>
+              </Link>
+            );
+          })}
 
           <a target="_blank" href={whatsappUrl}>
             <div
@@ -101,6 +105,12 @@ const MobileMenu: React.FC = () => {
               <span> Chat</span>
             </div>
           </a>
+          {/* <Link
+            href="#"
+            className="w-fit rounded-xl border border-orange-primary px-4 py-2 font-medium text-orange-primary hover:bg-orange-primary hover:text-white"
+          >
+            Become Instructor
+          </Link> */}
         </div>
       </div>
     </>
