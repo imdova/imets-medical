@@ -54,7 +54,7 @@ const LimitedCounterOffer: React.FC<{ form: CourseType["form"] }> = ({
           </h2>
         </div>
         <CourseApply
-          className="link-smooth m-auto block text-nowrap rounded-3xl bg-orange-primary px-6 py-4 text-xl font-bold text-white hover:bg-black"
+          className="link-smooth m-auto block text-nowrap rounded-3xl bg-orange-primary px-6 py-4 text-xl font-bold text-white hover:bg-yellow-400"
           {...form}
         >
           Apply Now

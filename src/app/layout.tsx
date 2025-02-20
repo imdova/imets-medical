@@ -6,7 +6,7 @@ import Footer from "@/components/Footer/footer";
 import { NotificationProvider } from "@/components/UI/NotificationComponent";
 import MetaPixel from "@/components/meta/MetaPixel";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { GOOGLE_TAG_MANAGER } from "@/constants/metaTags.data";
+import { GOOGLE_TAG_MANAGER, metaTagsData } from "@/constants/metaTags.data";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,53 +23,30 @@ const watad = localFont({
   variable: "--font-watad",
   weight: "400",
 });
-const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? `${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : "http://localhost:3000";
 
 export const metadata: Metadata = {
-  title: {
-    default:
-      "IMETS Medical School | Revolutionizing Healthcare Education with Innovative Programs",
-    template: "%s | IMETS School of Business",
-  },
-  description:
-    "IMETS Medical School offers cutting-edge, specialized healthcare programs designed to empower the next generation of medical professionals. Join us to excel in modern medicine with excellence, innovation, and compassion.",
-  openGraph: {
-    title: "IMETS School of Business",
-    description:
-      "Join IMETS School of Business for specialized healthcare job training and business programs designed for career success.",
-    url: baseUrl,
-    siteName: "IMETS Medical School",
-    images: [
+  ...metaTagsData.default,
+  icons: {
+    shortcut: "/favicon.ico",
+    icon: [
       {
-        url: `${baseUrl}/og.png`,
-        width: 1920,
-        height: 1080,
+        rel: "apple-touch-icon",
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
       },
     ],
-    locale: "en-US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  twitter: {
-    title: "IMETS School of Business",
-    description:
-      "Advance your career with IMETS School of Business—offering premier healthcare job training and business programs.",
-    card: "summary_large_image",
-  },
-  icons: {
-    shortcut: "/favicon.png",
   },
 };
 

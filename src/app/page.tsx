@@ -21,6 +21,11 @@ import NewsCard from "@/components/NewsCard";
 import { categories } from "@/constants/categories";
 import Link from "next/link";
 import useGeoInfo from "@/hooks/useGeoInfo";
+import Head from "next/head";
+
+const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+  ? `${process.env.NEXT_PUBLIC_VERCEL_URL}`
+  : "http://localhost:3000";
 
 export default function Home() {
   const { data, loading } = useGeoInfo();
@@ -32,6 +37,19 @@ export default function Home() {
       : homeCourser.filter((course) => course.type === filter);
   return (
     <>
+      <Head>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "IMETS Medical School",
+              "url": "${baseUrl}",
+              "logo": "${baseUrl}/logo.png"
+            }
+          `}
+        </script>
+      </Head>
       {/* Section Landing Page */}
       <section className="relative h-[550px] bg-primary">
         <div className="container mx-auto px-6 lg:max-w-[1170px]">

@@ -8,3 +8,6 @@ interface Result<T = void> {
 
 type ButtonVariant = "contained" | "outlined";
 type ButtonColor = "primary" | "warning" | "success" | "error";
+
+// meta data
+type MetaPageType = "default" | "about" | "blog" | "courses";

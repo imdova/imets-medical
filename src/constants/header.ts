@@ -15,7 +15,7 @@ export const commonLinks: LinkItem[] = [
   },
   {
     title: "About us",
-    url: "/about-us",
+    url: "/about",
     icon: Users,
   },
   {
@@ -25,7 +25,7 @@ export const commonLinks: LinkItem[] = [
   },
   {
     title: "Contact us",
-    url: "/contact-us",
+    url: "/contact",
     icon: Mail,
   },
   {

@@ -43,7 +43,7 @@ const PhoneNumberInput: React.FC<CustomInputProps> = ({
   const validateAndFormatPhone = (input: string, code: string) => {
     const phoneNumberObj = parsePhoneNumberFromString(
       input,
-      code as CountryCode
+      code as CountryCode,
     );
     if (phoneNumberObj && phoneNumberObj.isValid()) {
       setIsValid(true);
@@ -85,8 +85,14 @@ const PhoneNumberInput: React.FC<CustomInputProps> = ({
           className="rounded-l-none"
           value={phoneNumber}
           onChange={handlePhoneChange}
-          error={!isValid || !!error}
-          helperText={helperText || !isValid ? "Invalid phone number" : ""}
+          error={phoneNumber ? !isValid : !!error}
+          helperText={
+            phoneNumber
+              ? !isValid
+                ? "Invalid phone number"
+                : ""
+              : helperText || ""
+          }
         />
       </div>
     </div>

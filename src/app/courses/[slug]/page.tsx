@@ -25,13 +25,13 @@ export async function generateMetadata({
     },
     openGraph: {
       title: course.meta.meta_title,
-      // images: [
-      //   {
-      //     url: course.image,
-      //     width: 1200,
-      //     height: 630,
-      //   },
-      // ],
+      images: [
+        {
+          url: course.image,
+          width: 1200,
+          height: 630,
+        },
+      ],
       videos: [
         {
           url: course.video.url,

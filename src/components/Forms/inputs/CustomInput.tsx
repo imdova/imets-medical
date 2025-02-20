@@ -15,13 +15,13 @@ const CustomInput = forwardRef<
       rows = 3,
       ...props
     },
-    ref
+    ref,
   ) => {
-    const inputStyles = `w-full rounded-md border px-3 py-2 text-sm hover:border-orange-primary focus:outline-none focus:ring-2 focus:ring-orange-primary ${
+    const inputStyles = `w-full  rounded-lg border px-3 py-2 hover:border-orange-primary focus:outline-none focus:ring-1 focus:ring-orange-primary ${
       error
         ? "border-red-500 text-red-900 focus:ring-red-500 pr-8"
-        : "border-gray-300 focus:border-orange-primary focus:ring-orange-primary"
-    } ${className || ""}`;
+        : "border-gray-200 focus:border-orange-primary focus:ring-orange-primary"
+    } ${className || ""} ${multiline ? "resize-none scroll-bar-minimal" : "h-[38px]"}`;
 
     return (
       <div className="w-full">
@@ -65,7 +65,7 @@ const CustomInput = forwardRef<
         )}
       </div>
     );
-  }
+  },
 );
 
 CustomInput.displayName = "CustomInput";

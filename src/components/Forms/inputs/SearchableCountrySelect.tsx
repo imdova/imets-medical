@@ -1,6 +1,7 @@
 import React, { forwardRef, useState, useEffect, useRef } from "react";
 import { ChevronDown, Check, Search } from "lucide-react";
 import Flag from "@/components/UI/flagitem";
+import CustomInput from "./CustomInput";
 
 interface Option {
   value: string;
@@ -33,18 +34,18 @@ const SearchableSelectCountry = forwardRef<
       placeholder,
       ...props
     },
-    ref
+    ref,
   ) => {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState<Option | null>(
-      options.find((opt) => opt.value === controlledValue) || null
+      options.find((opt) => opt.value === controlledValue) || null,
     );
     const [searchTerm, setSearchTerm] = useState("");
     const selectContainerRef = useRef<HTMLDivElement>(null);
     const searchInputRef = useRef<HTMLInputElement>(null);
 
     const filteredOptions = options.filter((option) =>
-      option.label.toLowerCase().includes(searchTerm.toLowerCase())
+      option.label.toLowerCase().includes(searchTerm.toLowerCase()),
     );
 
     useEffect(() => {
@@ -90,7 +91,7 @@ const SearchableSelectCountry = forwardRef<
         {label && (
           <label
             htmlFor={props.id}
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="mb-1 block text-sm font-medium text-gray-700"
           >
             {label}
           </label>
@@ -117,12 +118,7 @@ const SearchableSelectCountry = forwardRef<
 
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className={`
-              w-fit min-w-[90px] px-3 py-2 border rounded-md rounded-r-none  text-sm cursor-pointer
-              flex items-center justify-between
-              ${error ? "border-red-500" : "border-gray-300"}
-              ${className || ""}
-            `}
+            className={`flex h-[38px] w-fit min-w-[90px] cursor-pointer items-center justify-between rounded-lg rounded-r-none border px-3 py-2 text-sm hover:border-orange-primary ${error ? "border-red-500" : "border-gray-200"} ${className || ""} `}
           >
             <span>
               {/* <Flag code={option.value} name={option.label} /> */}
@@ -144,37 +140,37 @@ const SearchableSelectCountry = forwardRef<
           </div>
 
           {isOpen && (
-            <div className="absolute z-10 min-w-[300px] mt-1 w-full bg-white border rounded-md shadow-lg">
-              <div className="p-2 border-b">
+            <div className="absolute z-10 mt-1 w-full min-w-[300px] rounded-md border bg-white shadow-lg">
+              <div className="border-b p-2">
                 <div className="relative">
-                  <Search className="absolute left-2 top-2 h-4 w-4 text-gray-400" />
-                  <input
+                  <Search className="absolute left-2 top-1/2 z-[1] h-4 w-4 -translate-y-1/2 text-gray-400" />
+                  <CustomInput
                     ref={searchInputRef}
                     type="text"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-8 pr-3 py-1 text-sm border rounded-md"
+                    className="pl-8 pr-3 text-sm outline-none"
                     placeholder="Search..."
                     onClick={(e) => e.stopPropagation()}
                   />
                 </div>
               </div>
 
-              <ul className="max-h-48 overflow-auto">
+              <ul className="scroll-bar-minimal max-h-48 overflow-auto">
                 {filteredOptions.map((option) => (
                   <li
                     key={option.value}
                     onClick={() => handleOptionSelect(option)}
-                    className="px-3 py-2 hover:bg-gray-100 cursor-pointer flex items-center justify-between"
+                    className="flex cursor-pointer items-center justify-between px-3 py-2 hover:bg-gray-100"
                   >
                     {option.label}
                     {selectedOption?.value === option.value && (
-                      <Check className="h-4 w-4 text-blue-500" />
+                      <Check className="h-4 w-4 text-orange-primary" />
                     )}
                   </li>
                 ))}
                 {filteredOptions.length === 0 && (
-                  <li className="px-3 py-2 text-gray-500 text-sm">
+                  <li className="px-3 py-2 text-sm text-gray-500">
                     No results found
                   </li>
                 )}
@@ -194,7 +190,7 @@ const SearchableSelectCountry = forwardRef<
         )}
       </div>
     );
-  }
+  },
 );
 
 SearchableSelectCountry.displayName = "SearchableSelectCountry";

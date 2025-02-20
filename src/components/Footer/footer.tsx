@@ -37,7 +37,7 @@ export default function Footer() {
               </li>
               <li className="mb-6">
                 <Link
-                  href="/about-us"
+                  href="/about"
                   className="text-white hover:text-orange-primary"
                 >
                   About Us
@@ -61,7 +61,7 @@ export default function Footer() {
               </li>
               <li className="mb-6">
                 <Link
-                  href="/contact-us"
+                  href="/contact"
                   className="text-white hover:text-orange-primary"
                 >
                   Contact Us
