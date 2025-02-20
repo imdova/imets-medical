@@ -4,12 +4,15 @@ export const hospital_management_diploma: CourseType = {
   image: "/images/hospital management.webp",
   title: "Hospital Management Diploma",
   meta: {
-    meta_title: "Hospital Management Diploma | Online for Healthcare Excellence",
-    meta_description: "Ready to lead in healthcare? Enroll in our Hospital Management Diploma program and gain the skills to lead and manage healthcare facilities effectively. Flexible online learning, expert instructors, and industry-recognized certification await!",
-    meta_keywords: "Hospital Management Diploma, Healthcare Management Certification, Hospital Administration Course, Online Healthcare Management, Hospital Leadership Training, Healthcare Management Diploma, Hospital Operations Course, Healthcare Administration Certification, Healthcare Management Skills, Hospital Management Program",
+    meta_title:
+      "Hospital Management Diploma | Online for Healthcare Excellence",
+    meta_description:
+      "Ready to lead in healthcare? Enroll in our Hospital Management Diploma program and gain the skills to lead and manage healthcare facilities effectively. Flexible online learning, expert instructors, and industry-recognized certification await!",
+    meta_keywords:
+      "Hospital Management Diploma, Healthcare Management Certification, Hospital Administration Course, Online Healthcare Management, Hospital Leadership Training, Healthcare Management Diploma, Hospital Operations Course, Healthcare Administration Certification, Healthcare Management Skills, Hospital Management Program",
   },
   rating: 5,
-  isInHomePage: true,
+
   reviewsNumber: 20,
   price: {
     EG: { old: "18900 EGP", new: "18900 EGP" },
@@ -254,47 +257,6 @@ export const hospital_management_diploma: CourseType = {
       rating: 5,
     },
   ],
-  reviews: [
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "mahmoud salman",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "michael T",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "Noha mamdoh",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-  ],
   videosGrid: [
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
@@ -318,6 +280,33 @@ export const hospital_management_diploma: CourseType = {
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+    },
+  ],
+  reviews: [
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
     },
   ],
   startDate: "2022-01-01",

@@ -12,7 +12,11 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   message,
 }) => {
   // Create the WhatsApp URL with the encoded message
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const cleanedNumber = phoneNumber.replace(/\D/g, "");
+  const encodedMessage = encodeURIComponent(message);
+
+  // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${cleanedNumber}&text=${encodedMessage}`;
 
   return (
     <a

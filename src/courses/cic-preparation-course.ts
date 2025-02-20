@@ -4,13 +4,16 @@ export const cic_preparation_course: CourseType = {
   image: "/images/cic.webp",
   title: "CIC Preparation Course",
   meta: {
-    meta_title: "CIC Preparation Course | Prepare for the CIC Exam and Certification",
-    meta_description: "Ready to become a certified infection control specialist? Enroll in our CIC Preparation Course and prepare for the CIC exam with expert-led training, study materials, and practice tests. Advance your career in Infection Control management today",
-    meta_keywords: "CIC Preparation Course, CIC Certification, CIC Exam Prep, Infection Control Training, CIC Online Course, CIC Study Guide, CIC Practice Test, Infection Control Certification, CIC Training Program, CIC Exam Help",
+    meta_title:
+      "CIC Preparation Course | Prepare for the CIC Exam and Certification",
+    meta_description:
+      "Ready to become a certified infection control specialist? Enroll in our CIC Preparation Course and prepare for the CIC exam with expert-led training, study materials, and practice tests. Advance your career in Infection Control management today",
+    meta_keywords:
+      "CIC Preparation Course, CIC Certification, CIC Exam Prep, Infection Control Training, CIC Online Course, CIC Study Guide, CIC Practice Test, Infection Control Certification, CIC Training Program, CIC Exam Help",
   },
   rating: 5,
   reviewsNumber: 1700,
-  isInHomePage: true,
+
   price: {
     EG: { old: "18000 EGP", new: "9000 EGP" },
     SA: { old: "3600 SAR", new: "1800 SAR" },
@@ -26,8 +29,7 @@ export const cic_preparation_course: CourseType = {
   type: "Infection Control",
   video: {
     url: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
-    thumbnail:
-      "",
+    thumbnail: "",
   },
   duration: "16 weeks",
   languages: "EN - AR",
@@ -283,53 +285,11 @@ export const cic_preparation_course: CourseType = {
       rating: 5,
     },
   ],
-  reviews: [
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "mahmoud salman",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "michael T",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "Noha mamdoh",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-  ],
   videosGrid: [
     {
       videoUrl: "https://www.youtube.com/watch?v=EXnm42VAv98",
       title: "Dentist",
       author: "Dr Aya Sayed",
-      
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=HT9wtHncGDQ",
@@ -346,6 +306,33 @@ export const cic_preparation_course: CourseType = {
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+    },
+  ],
+  reviews: [
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
     },
   ],
   startDate: "2022-01-01",

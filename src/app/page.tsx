@@ -30,11 +30,11 @@ const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
 export default function Home() {
   const { data, loading } = useGeoInfo();
   const [filter, setFilter] = useState("All");
-  const homeCourser = coursesList.filter((course) => course.isInHomePage);
+  const homeCourser = coursesList.slice(0, 9);
   const filteredCourses =
     filter === "All"
       ? homeCourser
-      : homeCourser.filter((course) => course.type === filter);
+      : coursesList.filter((course) => course.type === filter);
   return (
     <>
       <Head>

@@ -10,7 +10,7 @@ const Progress: React.FC<ProgressProps> = ({ value, max = 100 }) => {
   return (
     <div className="relative h-3 w-full rounded-lg bg-gray-200">
       <div
-        className="absolute left-0 h-3 rounded-lg bg-orange-primary"
+        className="absolute left-0 h-3 rounded-lg bg-orange-primary transition-all duration-500"
         style={{ width: `${percentage}%` }}
       />
     </div>

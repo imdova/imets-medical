@@ -4,9 +4,12 @@ export const infection_prevention_and_control_diploma: CourseType = {
   image: "/images/infection.webp",
   title: "Infection Control Diploma",
   meta: {
-    meta_title: "Infection Control Diploma | Become a Certified Infection Prevention Specialist",
-    meta_description: "Advance your career in healthcare with our Infection Control Diploma! Learn essential skills to prevent infections, ensure patient safety, and meet industry standards. Enroll now and earn a recognized certification in infection prevention!",
-    meta_keywords: "Infection Control Diploma, Infection Prevention Certification, Infection Control Training, Healthcare Infection Control, Online Infection Control Course, Infection Prevention Specialist, Patient Safety Training, Infection Control Certification, Healthcare Hygiene Training, Infection Control Program",
+    meta_title:
+      "Infection Control Diploma | Become a Certified Infection Prevention Specialist",
+    meta_description:
+      "Advance your career in healthcare with our Infection Control Diploma! Learn essential skills to prevent infections, ensure patient safety, and meet industry standards. Enroll now and earn a recognized certification in infection prevention!",
+    meta_keywords:
+      "Infection Control Diploma, Infection Prevention Certification, Infection Control Training, Healthcare Infection Control, Online Infection Control Course, Infection Prevention Specialist, Patient Safety Training, Infection Control Certification, Healthcare Hygiene Training, Infection Control Program",
   },
   rating: 5,
   isInHomePage: false,
@@ -255,47 +258,6 @@ export const infection_prevention_and_control_diploma: CourseType = {
       rating: 5,
     },
   ],
-  reviews: [
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "mahmoud salman",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "michael T",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "Noha mamdoh",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-  ],
   videosGrid: [
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
@@ -319,6 +281,33 @@ export const infection_prevention_and_control_diploma: CourseType = {
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+    },
+  ],
+  reviews: [
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
     },
   ],
   startDate: "2022-01-01",

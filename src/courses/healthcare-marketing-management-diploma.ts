@@ -9,7 +9,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
     meta_keywords: "here is the meta keyword",
   },
   rating: 5,
-  isInHomePage: true,
+
   reviewsNumber: 20,
   price: {
     EG: { old: "8500 EGP", new: "8500 EGP" },
@@ -252,47 +252,6 @@ export const healthcare_marketing_management_diploma: CourseType = {
       rating: 5,
     },
   ],
-  reviews: [
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "mahmoud salman",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "michael T",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-    {
-      reviewImage: "/images/review.png",
-      date: "Nov 7, 2023",
-      rating: 5,
-      user: {
-        name: "Noha mamdoh",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-        job: "Marketing Director",
-      },
-      content:
-        "Sam.AI truly values its employees and their well-being. From flexible work hours to regular team-building activities, the company goes above and beyond to create a supportive and inclusive environment.",
-    },
-  ],
   videosGrid: [
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
@@ -316,6 +275,33 @@ export const healthcare_marketing_management_diploma: CourseType = {
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+    },
+  ],
+  reviews: [
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
+    },
+    {
+      image: "/images/review.jpg",
+      name: "Noha mamdoh",
+      title: "Doctor at name of hospital",
     },
   ],
   startDate: "2022-01-01",

@@ -22,9 +22,12 @@ const ProgressTabs: React.FC<ProgressTabsProps> = ({
   return (
     <div className="w-full">
       {tabs.map((tab) => (
-        <div key={tab.title} className="max-h-[300px] overflow-auto">
+        <div
+          key={tab.title}
+          className="scroll-bar-minimal max-h-[300px] overflow-auto"
+        >
           <div
-            className="mb-2 flex cursor-pointer items-center justify-between rounded-md border p-3"
+            className="sticky top-0 mb-2 flex cursor-pointer items-center justify-between rounded-md border bg-white p-3"
             onClick={() => setActiveTab(tab.title)}
           >
             <span className="font-medium">{tab.title}</span>

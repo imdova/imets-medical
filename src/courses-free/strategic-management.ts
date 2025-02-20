@@ -14,74 +14,6 @@ export const strategic_management: FreeCourseType = {
     image: "/images/strategic.webp",
   },
 
-  questions: [
-    {
-      id: "1",
-      user: {
-        name: "Mohamed Farag",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      },
-      content: "What is the best way to learn Next.js?",
-      /// all replies to the question by Mohamed Farag at the free course page
-      replies: [
-        {
-          id: "2-1",
-          user: {
-            name: "Emily Brown",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Utility classes save time!",
-          timestamp: 17,
-        },
-        {
-          id: "2-2",
-          user: {
-            name: "Mike Johnson",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Less custom CSS needed.",
-          timestamp: 17,
-        },
-      ],
-      timestamp: 17,
-    },
-    {
-      id: "2",
-      user: {
-        name: "Ahmed Samir",
-        image:
-          "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      },
-      content: "How does Tailwind CSS improve development speed?",
-      replies: [
-        {
-          id: "1-1",
-          user: {
-            name: "John Doe",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Start with the official docs!",
-          timestamp: 17,
-        },
-        {
-          id: "1-2",
-          user: {
-            name: "Jane Smith",
-            image:
-              "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-          },
-          content: "Follow some YouTube tutorials.",
-          timestamp: 17,
-        },
-      ],
-      timestamp: 17,
-    },
-  ],
-
   /// the videos at  the free course
   videos: [
     {
@@ -105,7 +37,7 @@ export const strategic_management: FreeCourseType = {
       progress: 50,
       url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
       //  this is locked access video
-      locked: true,
+      locked: false,
       duration: "2:35",
     },
     {
@@ -113,7 +45,7 @@ export const strategic_management: FreeCourseType = {
       progress: 75,
       url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
       //  this is locked access video
-      locked: true,
+      locked: false,
       duration: "7:00",
     },
     {
@@ -121,7 +53,7 @@ export const strategic_management: FreeCourseType = {
       progress: 100,
       url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
       //  this is locked access video
-      locked: true,
+      locked: false,
       duration: "11:00",
     },
   ],
@@ -142,4 +74,16 @@ export const strategic_management: FreeCourseType = {
       fileType: "pdf",
     },
   ],
+  socialMediaCards: {
+    whatsApp: {
+      number: "+201008815007",
+      message: "Hi, I'm interested in your course",
+    },
+    telegram: {
+      link: "https://t.me/imetsacademymedical",
+    },
+    youTube: {
+      link: "https://www.youtube.com/c/IMETSAcademyMedical",
+    },
+  },
 };

@@ -6,8 +6,8 @@ import { BaseHeaderProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import WhatsAppButton from "../UI/WhatsAppButton";
-import { whatsAppData } from "@/constants/whatsApp.data";
 import MobileMenu from "./MobileMenu";
+import { whatsAppData } from "@/constants/social-media.data";
 
 const Header: React.FC<BaseHeaderProps> = () => {
   const isScrolled = useScrollDetection();

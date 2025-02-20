@@ -1,7 +1,7 @@
 "use client";
 
 import { commonLinks } from "@/constants/header";
-import { whatsAppData } from "@/constants/whatsApp.data";
+import { whatsAppData } from "@/constants/social-media.data";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";

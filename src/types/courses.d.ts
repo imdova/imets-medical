@@ -27,7 +27,6 @@ type CourseType = {
   slug: string;
   image: string;
   title: string;
-  isInHomePage: boolean;
   rating: number;
   reviewsNumber?: number;
   description: string;
@@ -75,15 +74,9 @@ type CourseType = {
 };
 
 type Review = {
-  date?: string;
-  reviewImage?: string;
-  rating?: number;
-  user?: {
-    name: string;
-    image: string;
-    job: string;
-  };
-  content?: string;
+  image: string;
+  name?: string;
+  title?: string;
 };
 
 type FreeCourseType = {
@@ -96,12 +89,12 @@ type FreeCourseType = {
     name: string;
     image: string;
   };
-  questions: Question[];
   videos: CourseVideo[];
   courseMaterials: CourseMaterial[];
   rating: number;
   status: string;
   startDate: string;
+  socialMediaCards: any;
 };
 type VideoGridItem = {
   videoUrl: string;
