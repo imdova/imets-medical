@@ -12,7 +12,6 @@ export const infection_prevention_and_control_diploma: CourseType = {
       "Infection Control Diploma, Infection Prevention Certification, Infection Control Training, Healthcare Infection Control, Online Infection Control Course, Infection Prevention Specialist, Patient Safety Training, Infection Control Certification, Healthcare Hygiene Training, Infection Control Program",
   },
   rating: 5,
-  isInHomePage: false,
   reviewsNumber: 2150,
   price: {
     EG: { old: "24000 EGP", new: "12000 EGP" },
