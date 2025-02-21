@@ -17,45 +17,30 @@ export const cphq_preparation_course: FreeCourseType = {
   /// the videos at  the free course
   videos: [
     {
-      title: "Introduction",
+      title: "Introduction to Healthcare Quality",
       progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
+      url: "https://www.youtube.com/watch?v=SV3wK4hYwbc",
       // if locked make it true this is free access video
       locked: false,
       duration: "1:00",
     },
     {
-      title: "Medical Terminology",
+      title: "Healthcare Quality Aspects",
       progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
+      url: "https://www.youtube.com/watch?v=kNitOV_x4dI",
       // if locked make it true this is free access video
       locked: false,
       duration: "4:00",
     },
     {
-      title: "Medical Neuroscience",
+      title: "Healthcare Quality Dimensions",
       progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
+      url: "https://www.youtube.com/watch?v=qcMEQ_ZhtXk&t=9s",
       //  this is locked access video
       locked: false,
       duration: "2:35",
     },
-    {
-      title: "Trauma on EMT",
-      progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
-      //  this is locked access video
-      locked: false,
-      duration: "7:00",
-    },
-    {
-      title: "Biomedical Visualization",
-      progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
-      //  this is locked access video
-      locked: false,
-      duration: "11:00",
-    },
+    
   ],
   courseMaterials: [
     {

@@ -24,9 +24,9 @@ export const form_speciality: FormType = {
    
     {
       name: "phone",
-      label: "Phone Number",
+      label: "Whats app Number",
       type: "phone", // Use only text, number, email, password, date, select, checkbox
-      inputProps: { placeholder: "Your Phone Number" },
+      inputProps: { placeholder: "Your whats app Number" },
       required: true,
     },
     {

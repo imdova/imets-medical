@@ -4,15 +4,15 @@ export const hr_management: CourseType = {
   image: "/images/hr.jpeg",
   title: "Healthcare HR Management Diploma",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
+    meta_title: "Healthcare HR Management Diploma | IMETS Medical School",
+    meta_description: "Enroll in IMETS Medical School’s Healthcare HR Management Diploma. Learn recruitment, compliance, and leadership skills tailored for healthcare HR. Start your journey",
     meta_keywords: "here is the meta keyword",
   },
   rating: 5,
 
   reviewsNumber: 1400,
   price: {
-    EG: { old: "17000 EGP", new: "8500 EGP" },
+    EG: { old: "17000 EGP", new: "8000 EGP" },
     SA: { old: "3600 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
@@ -42,48 +42,47 @@ export const hr_management: CourseType = {
   //// tab over view
   //
   // the description at the description page  at here ===> Course Description
-  description: ` This diploma is ideal for individuals seeking to launch or advance their careers in healthcare HR, current HR professionals who want to specialize in healthcare, and healthcare managers looking to strengthen their HR expertise. Whether you're a newcomer or a seasoned professional, our program offers valuable insights and skills.`,
+  description: ` The Healthcare HR Management Diploma at IMETS Medical School is a specialized program designed to equip you with the skills and knowledge needed to excel in human resources within the healthcare sector. This program combines theoretical knowledge with practical applications, ensuring that you are well-prepared to tackle the unique challenges of managing HR in healthcare organizations.`,
 
   // the data at this part ===> What you'll learn in this course?
   courseGoals: {
-    content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
+    content: `The Healthcare HR Management Diploma at IMETS Medical School equips you with the skills and knowledge needed to excel in human resources within the healthcare sector. By the end of this program, you will:`,
     goals: [
       /// start goal
       {
         title:
-          "Recognize the key skills and responsibilities of a human resource manager.",
-        content: "",
+          "Understand the Fundamentals of Healthcare HR Management",
+        content: "You will Learn the unique challenges and opportunities of managing HR in healthcare settings, Also you will be able to xplore the role of HR in supporting patient care and organizational success.",
       },
       /// end goal
       ///
       /// start goal
       {
         title:
-          "Explain general recruitment, selection, training and appraisal processes",
-        content: "",
+          "Master Recruitment and Retention Strategies",
+        content: "You will Learn to design effective onboarding and orientation programs, Also you will gain expertise in hiring and retaining top healthcare talent.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Outline how employee separation and termination should occur",
-        content: "",
+        title: "Develop Employee Relations and Engagement Skills",
+        content: "You will Understand how to build a positive workplace culture in healthcare organizations, Also you will learn to handle conflicts, grievances, and employee satisfaction.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Discuss how to manage and retain employees effectively",
-        content: "",
+        title: "Ensure Compliance with Healthcare Regulations",
+        content: "You will Gain knowledge of labor laws, healthcare regulations, and ethical HR practices, Also you will Learn to navigate compliance challenges in healthcare HR.",
       },
       {
-        title: "Highlight the role of internal culture affects an organization",
-        content: "",
+        title: "Enhance Performance Management and Training",
+        content: "You will be ab;e to Develop skills to evaluate employee performance and provide constructive feedback, Also you will Learn to design and implement training programs for healthcare staff.",
       },
       {
-        title:
-          "Identify strategies for managing the ‘process of change’ within an institution",
-        content: "",
+        title:"Manage Compensation and Benefits",
+        content: "You will Understand how to design competitive compensation packages for healthcare professionals, Aslo you will Learn to manage benefits programs, including health insurance and retirement plans.",
       },
     ],
   },
@@ -93,13 +92,12 @@ export const hr_management: CourseType = {
     /// start module
     {
       id: 1,
-      title: "Introduction to Healthcare Quality",
+      title: "Module 1: Introduction to Healthcare HR Management",
       lessons: [
-        { id: 1, title: "Quality Concepts", url: "#" },
-        { id: 2, title: "Quality Dimensions", url: "#" },
-        { id: 3, title: "System Approach", url: "#" },
-        { id: 4, title: "Managed Care", url: "#" },
-        { id: 5, title: "Integrated Delivery System", url: "#" },
+        { id: 1, title: " Role of HR in Healthcare Organizations", url: "#" },
+        { id: 2, title: "Unique Challenges of Healthcare HR", url: "#" },
+        { id: 3, title: "Aligning HR Strategies with Healthcare Goals", url: "#" },
+        
       ],
     },
     /// end module
@@ -107,25 +105,21 @@ export const hr_management: CourseType = {
     /// start module
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Module 2: Recruitment and Retention in Healthcare",
       lessons: [
         {
           id: 1,
-          title: "Leadership versus Management",
+          title: "Talent Acquisition Strategies for Healthcare",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Leadership Styles", url: "#" },
+        { id: 2, title: "Effective Onboarding and Orientation Programs", url: "#" },
         {
           id: 3,
-          title: "Strategic Management",
+          title: "Retention Strategies for Healthcare Professionals",
           url: "#",
         },
-        {
-          id: 4,
-          title: "Organizational Structure",
-          url: "#",
-        },
+        
       ],
     },
     /// end module
@@ -133,48 +127,39 @@ export const hr_management: CourseType = {
     /// start module
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Module 3: Employee Relations and Engagement",
       lessons: [
         {
           id: 1,
-          title: "Safety and Just Culture",
+          title: "Building a Positive Workplace Culture",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Medical Errors", url: "#" },
+        { id: 2, title: "Managing Conflict and Grievances in Healthcare", url: "#" },
         {
           id: 3,
-          title: "Patient Safety Programs",
+          title: "Employee Engagement and Satisfaction Surveys",
           url: "#",
         },
       ],
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Module 4: Performance Management and Training",
       lessons: [
         {
           id: 1,
-          title: "Performance Measurement",
+          title: "Setting Performance Standards and Goals",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Performance Improvement Approaches", url: "#" },
+        { id: 2, title: "Conducting Performance Reviews and Providing Feedback", url: "#" },
         {
           id: 3,
-          title: "Clinical Performance Measurement",
+          title: "Designing Training Programs for Healthcare Staff",
           url: "#",
         },
-        {
-          id: 4,
-          title: "Utilization Management",
-          url: "#",
-        },
-        {
-          id: 5,
-          title: "Risk Management",
-          url: "#",
-        },
+        
       ],
     },
     /// end module
@@ -182,87 +167,46 @@ export const hr_management: CourseType = {
     /// start module
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Module 5: Compensation and Benefits Management",
       lessons: [
         {
           id: 1,
-          title: "Quality Review and Accountability",
+          title: "Designing Competitive Compensation Packages",
           url: "#",
           preview: true,
         },
-      ],
-    },
-    /// end module
-    ///
-    /// start module
-    {
-      id: 6,
-      title: "Population Health and Care Transitions",
-      lessons: [
         {
-          id: 1,
-          title: "Population Health and Care Transitions",
+          id: 2,
+          title: "Managing Employee Benefits: Health Insurance and Retirement Plans",
           url: "#",
           preview: true,
         },
-      ],
-    },
-    /// end module
-    ///
-    /// start module
-    {
-      id: 7,
-      title: "Regulatory and Accreditation",
-      lessons: [
-        {
-          id: 1,
-          title: "Regulatory and Accreditation",
-          url: "#",
-          preview: true,
-        },
-      ],
-    },
-    /// end module
-    ///
-    /// start module
-    {
-      id: 8,
-      title: "Health Data Analytics",
-      lessons: [
-        {
-          id: 1,
-          title: "Sampling and Population",
-          url: "#",
-          preview: true,
-        },
-        { id: 2, title: "Basic Statistics", url: "#" },
         {
           id: 3,
-          title: "Display Techniques",
+          title: "Payroll Management in Healthcare",
           url: "#",
-        },
-        {
-          id: 4,
-          title: "Quality Tools",
-          url: "#",
+          preview: true,
         },
       ],
     },
+    
+    /// end module
+    
     /// end module
   ],
   whoCanAttend: {
     content:
       "Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.",
     items: [
-      "QualityProfessionals",
-      "Medical and Nursing Directors",
+      "Healthcare Professionals",
       "Doctors",
       "Pharmacists",
-      "Nursing Specialists",
-      "Professionals interested in managerial or quality jobs",
+      "HR managers",
+      "Recruiters",
       "Healthcare Administrators and Managers",
-      "Risk Managers",
-      "Medical Technologists",
+      "Students and Graduates",
+      "Career Changers",
+      "Professionals looking to specialize in healthcare HR.",
     ],
   },
   //
@@ -272,33 +216,21 @@ export const hr_management: CourseType = {
     /// start
     {
       id: "1",
-      name: "DR/Mohamed Farag",
-      job: "Healthcare Quality Manager",
+      name: "DR Ahmed Ibrahim",
+      job: "Group HR Director - As Salam International Hospital Group - Alameda",
       image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
+        "/images/ai.jpg",
+      certification: "MBA - DBA - HMD",
       experience: 15,
       location: "Cairo, Eqypt",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      rating: 4,
+        "Experienced International Human Resources Director with a demonstrated history of working in the hospitals & the health care industry. Skilled in Business Planning, Succession Planning, Negotiation, Human Resources, Analytical Skills, Talent Acquisition, Employees Relations, Employees Engagement, Business Strategy, and Operations Management. Strong human resources professional with a DBA (Doctorate in Business Administration) focused in Health Care Management.",
+      rating: 5,
     },
     /// end
     ///
     /// start
-    {
-      id: "2",
-      name: "DR/Mohamed Ahmed",
-      job: "Healthcare Quality Manager",
-      image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
-      experience: 10,
-      location: "Asyut, Eqypt",
-      content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      rating: 5,
-    },
+    
     /// end
   ],
   videosGrid: [

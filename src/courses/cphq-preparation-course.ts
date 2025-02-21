@@ -107,8 +107,8 @@ export const cphq_preparation_course: CourseType = {
         { id: 1, title: "Quality Concepts", url: "#" },
         { id: 2, title: "Quality Dimensions", url: "#" },
         { id: 3, title: "System Approach", url: "#" },
-        { id: 4, title: "Managed Care", url: "#" },
-        { id: 5, title: "Integrated Delivery System", url: "#" },
+        { id: 4, title: "Process Variation", url: "#" },
+        { id: 5, title: "Integrated Delivery System and Managed Care", url: "#" },
       ],
     },
     /// end module
@@ -124,15 +124,20 @@ export const cphq_preparation_course: CourseType = {
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Leadership Styles", url: "#" },
+        { id: 2, title: "Leadership Styles in Healthcare", url: "#" },
         {
           id: 3,
-          title: "Strategic Management",
+          title: "Strategic Management and Organization Structure",
           url: "#",
         },
         {
           id: 4,
-          title: "Organizational Structure",
+          title: "Leading Quality Improvement Teams",
+          url: "#",
+        },
+        {
+          id: 5,
+          title: "Measuring and Monitoring Quality Performance",
           url: "#",
         },
       ],
@@ -146,11 +151,11 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Safety and Just Culture",
+          title: "Building a Culture of Safety",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Medical Errors", url: "#" },
+        { id: 2, title: "Management of Medical Errors", url: "#" },
         {
           id: 3,
           title: "Patient Safety Programs",
@@ -195,7 +200,19 @@ export const cphq_preparation_course: CourseType = {
       lessons: [
         {
           id: 1,
-          title: "Quality Review and Accountability",
+          title: " Principles of Quality Review",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 2,
+          title: " Ensuring Accountability in Healthcare Quality",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 3,
+          title: " Monitoring and Reporting Quality Performance",
           url: "#",
           preview: true,
         },
@@ -320,7 +337,7 @@ export const cphq_preparation_course: CourseType = {
       timeAgo: "1 hour ago",
     },
     {
-      videoUrl: "https://www.youtube.com/watch?v=9iS5pieCn5A",
+      videoUrl: "https://www.youtube.com/watch?v=XbcyZHHQvZg",
       thumbnail:
         "",
     },

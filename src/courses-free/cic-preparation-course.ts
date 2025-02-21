@@ -8,49 +8,49 @@ export const cic_preparation_course: FreeCourseType = {
   startDate: "2022-01-01",
   instructor: {
     id: "1",
-    name: "DR/ Carlos Maggi",
+    name: "",
     image:
-      "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
+      "",
   },
 
   /// the videos at  the free course
   videos: [
     {
-      title: "Introduction",
+      title: "Introduction to CIC Preparation Part 1",
       progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
+      url: "https://www.youtube.com/watch?v=lLIeyzcJJYg&t=8s",
       // if locked make it true this is free access video
       locked: false,
       duration: "1:00",
     },
     {
-      title: "Medical Terminology",
+      title: "Introduction to CIC Preparation Part 2",
       progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
+      url: "https://www.youtube.com/watch?v=kkvEfRWuOXU&t=2s",
       // if locked make it true this is free access video
       locked: false,
       duration: "4:00",
     },
     {
-      title: "Medical Neuroscience",
+      title: "Introduction to CIC Preparation Part 3",
       progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
+      url: "https://www.youtube.com/watch?v=iR0SM4lmoyA&t=4s",
       //  this is locked access video
       locked: false,
       duration: "2:35",
     },
     {
-      title: "Trauma on EMT",
+      title: "Introduction to CIC Preparation Part 4",
       progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
+      url: "https://www.youtube.com/watch?v=4jwFOwtDEw4",
       //  this is locked access video
       locked: false,
       duration: "7:00",
     },
     {
-      title: "Biomedical Visualization",
+      title: "Introduction to CIC Preparation Part 5",
       progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
+      url: "https://www.youtube.com/watch?v=-ZRFDo25AYo&t=606s",
       //  this is locked access video
       locked: false,
       duration: "11:00",
@@ -58,20 +58,12 @@ export const cic_preparation_course: FreeCourseType = {
   ],
   courseMaterials: [
     {
-      title: "Introduction to Next.js",
+      title: "CI Curriculum",
       fileUrl: "/files/intro-to-nextjs.pdf",
       fileType: "pdf",
     },
-    {
-      title: "TypeScript Basics",
-      fileUrl: "/files/typescript-basics.docx",
-      fileType: "docx",
-    },
-    {
-      title: "Tailwind CSS Guide",
-      fileUrl: "/files/tailwind-guide.pdf",
-      fileType: "pdf",
-    },
+   
+    
   ],
   socialMediaCards: {
     whatsApp: {

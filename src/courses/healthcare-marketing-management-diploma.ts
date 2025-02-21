@@ -202,28 +202,27 @@ export const healthcare_marketing_management_diploma: CourseType = {
   instructors: [
     {
       id: "1",
-      name: "DR Passant Mohamed",
-      job: "Marketing Manager at Dar Alfouad Hospital",
-      image:
-        "/images/shrouk.jpg",
-      certification: "Bachelor of Phatmacy - MBA",
-      experience: 15,
+      name: "DR/Passant Youssef",
+      job: "Marketing Manager-Dar AlFouad Hospitals-Alameda Healthcare Group",
+      image: "/images/passant.webp",
+      certification: "MBA ( Marketing ) - Professional Diploma in Digital Marketing- HMD",
+      experience: 17,
       location: "Cairo, Eqypt",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "17 Years of Experience in the Healthcare Field, working with top Healthcare providers ,pharmaceutical companies, and pharmacies chains in Egypt, Saudi Arabia and Gulf region. -MBA holder and Digital Marketing Certified -Launched + 300 successful camapigns ,63 products launches and +100 different vitrual& hybrid Mega Events",
       rating: 5,
     },
     {
       id: "2",
-      name: "DR/Mohamed Ahmed",
-      job: "Healthcare Quality Manager",
+      name: "DR/Ahmed Habib",
+      job: "Marketing Manager at IMETS Medical School",
       image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
+        "/images/habib.png",
+      certification: "MBA( Marketing Management) -Didotal Marketing Diploma - Digital Transformation Diploma - HMD - PMP Certified",
       experience: 10,
       location: "Cairo, Eqypt",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Digital Project Manager, Digital Product Designer, UI and UX designer, MBA Strategic Management, PMP, Marketing Management, Digital Marketing and Business Development, CPHQ, Digital Transformation Consultant",
       rating: 5,
     },
   ],
