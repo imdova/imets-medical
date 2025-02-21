@@ -350,5 +350,5 @@ export const cic_preparation_course: CourseType = {
       title: "",
     },
   ],
-  startDate: "2022-01-01",
+  startDate: "2025-04-15",
 };

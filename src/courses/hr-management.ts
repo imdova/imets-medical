@@ -285,5 +285,5 @@ export const hr_management: CourseType = {
       title: "Doctor at name of hospital",
     },
   ],
-  startDate: "2022-01-01",
+  startDate: "2025-03-15",
 };

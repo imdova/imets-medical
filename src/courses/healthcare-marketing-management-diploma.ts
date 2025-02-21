@@ -278,5 +278,5 @@ export const healthcare_marketing_management_diploma: CourseType = {
       title: "Doctor at name of hospital",
     },
   ],
-  startDate: "2022-01-01",
+  startDate: "2025-04-15",
 };

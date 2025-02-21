@@ -314,5 +314,5 @@ export const infection_prevention_and_control_diploma: CourseType = {
       title: "Doctor at name of hospital",
     },
   ],
-  startDate: "2022-01-01",
+  startDate: "2025-04-15",
 };

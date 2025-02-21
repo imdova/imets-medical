@@ -233,7 +233,7 @@ export const hospital_management_diploma: CourseType = {
       experience: 15,
       location: "Cairo, Eqypt",
       content:
-        "Instructo, consultant, Auditor, Thesis supervisor• Planning and coordinating activities for high-level management and business alike. • Effectively teaching a variety of postgraduate management courses; evaluating student learning; participating in related department activities; advising students; and complying with all Department, College, and University regulations • Provide academic guidance and practical support from the inception of the project to the submission of the thesis • Project management work plan, with timelines, actions, and resources needed from policy to procedural level. • Training of QMS working group and other stakeholders involved in the mapping process Stakeholders will be determined to learn about QMS development, map out the current project management cycle, and work toward its future implementation identify academic priorities, set measurable goals to achieve priorities, and monitor progress toward goals",
+        "Instructo, consultant, Auditor, Thesis supervisor• Planning and coordinating activities for high-level management and business alike. • Effectively teaching a variety of postgraduate management courses; evaluating student learning; participating in related department activities; advising students; and complying with all Department, College, and University regulations • Provide academic guidance and practical support from the inception of the project to the submission of the thesis ",
       rating: 4,
     },
     {
@@ -327,30 +327,26 @@ export const hospital_management_diploma: CourseType = {
   ],
   reviews: [
     {
-      image: "/images/review.jpg",
-      name: "Noha mamdoh",
-      title: "Doctor at name of hospital",
+      image: "/images/g1.webp",
+      name: "",
+      title: "",
     },
     {
-      image: "/images/review.jpg",
-      name: "Noha mamdoh",
-      title: "Doctor at name of hospital",
+      image: "/images/g2.webp",
+      name: "",
+      title: "",
     },
     {
-      image: "/images/review.jpg",
-      name: "Noha mamdoh",
-      title: "Doctor at name of hospital",
+      image: "/images/g3.webp",
+      name: "",
+      title: "",
     },
     {
-      image: "/images/review.jpg",
-      name: "Noha mamdoh",
-      title: "Doctor at name of hospital",
+      image: "/images/g4.webp",
+      name: "",
+      title: "",
     },
-    {
-      image: "/images/review.jpg",
-      name: "Noha mamdoh",
-      title: "Doctor at name of hospital",
-    },
+    
   ],
-  startDate: "2022-01-01",
+  startDate: "2025-04-15",
 };
