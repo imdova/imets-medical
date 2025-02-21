@@ -9,7 +9,7 @@ export const strategic_management: CourseType = {
     meta_keywords: "here is the meta keyword",
   },
   rating: 5,
-  reviewsNumber: 20,
+  reviewsNumber: 950,
   price: {
     EG: { old: "17000 EGP", new: "8500 EGP" },
     SA: { old: "3600 SAR", new: "1800 SAR" },

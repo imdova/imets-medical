@@ -4,19 +4,19 @@ export const healthcare_marketing_management_diploma: CourseType = {
   image: "/images/marketing.webp",
   title: "Healthcare Marketing Management Diploma",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
-    meta_keywords: "here is the meta keyword",
+    meta_title: "Healthcare Marketing Management Diploma | Advance Your Career in Healthcare Marketing",
+    meta_description: "Enhance your career with our Healthcare Marketing Management Diploma. Learn strategic marketing, digital healthcare trends, and patient engagement. Enroll today!",
+    meta_keywords: "Healthcare Marketing Diploma, Healthcare Marketing Management, Healthcare Marketing Course, Digital Healthcare Marketing, Healthcare Branding, Patient Engagement Strategies, Healthcare Business Growth",
   },
   rating: 5,
 
-  reviewsNumber: 20,
+  reviewsNumber: 2300,
   price: {
-    EG: { old: "8500 EGP", new: "8500 EGP" },
-    SA: { old: "1800 SAR", new: "1800 SAR" },
+    EG: { old: "17000 EGP", new: "8500 EGP" },
+    SA: { old: "3600 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "1700 EGP", new: "1700 EGP" },
+    other: { old: "900 $", new: "450 $" },
   },
   lectures: 8,
   lecture_date: "1 Lecture-Weekly",
@@ -39,43 +39,43 @@ export const healthcare_marketing_management_diploma: CourseType = {
   },
   description: ` Are you looking to specialize in healthcare marketing and make a real impact in the industry? The Marketing Management Diploma in healthcare is designed for individuals passionate about connecting healthcare providers with the people they serve. Whether you’re a marketing professional aiming to focus on healthcare or a healthcare provider wanting to learn how to market services effectively, this diploma provides the knowledge and skills you need to succeed.`,
   courseGoals: {
-    content: `This Marketing Management Diploma covers all the essential strategies and tools specific to healthcare marketing. Here’s what you can expect:
+    content: `At IMETS Medical School, we’ve designed our Healthcare Marketing Management Diploma to empower you with the skills and knowledge you need to thrive in the fast-growing healthcare marketing industry. Whether you’re a healthcare professional looking to expand your expertise or a marketing enthusiast entering the healthcare field, this program will prepare you to make a real impact. Here’s what you’ll gain
 
 `,
     goals: [
       {
         title:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting",
+          "Master the Basics of Healthcare Marketing",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Manage market variables and consumer orientation. You will assess how client needs and requirements affect marketing strategies.",
       },
       {
-        title: "Lorem Ipsum has been the industry's standard dummy",
+        title: "Develop Strategic Marketing Plans",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "You will be able to apply strategies, address market issues and seize market opportunities for business advancement different aspects of service provision, identify issues and develop strategies to manage, create, inform and provide answers to various stakeholder.",
       },
       {
-        title: "when an unknown printer took a galley",
+        title: "Analyze Market Trends and Consumer Behavior",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "consumer behavior and the purchase decision process. understand, analyze, and evaluate the motivations and behavior of consumers giving you the tools to develop marketing strategies.",
       },
       {
-        title: "containing Lorem Ipsum passages,",
+        title: "Master Digital Marketing in Healthcare",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "Understand the role of digital platforms, including social media, SEO, and email marketing, in healthcare.",
       },
     ],
   },
   courseModules: [
     {
       id: 1,
-      title: "Healthcare Quality Concepts",
+      title: "Module 1: Introduction to Healthcare Marketing",
       lessons: [
-        { id: 1, title: "Quality Leadership and Integration", url: "#" },
-        { id: 2, title: "Patient Safety", url: "#" },
+        { id: 1, title: "Overview of Healthcare Marketing: Trends and Challenges", url: "#" },
+        { id: 2, title: "The Role of Marketing in Healthcare Organizations", url: "#" },
         {
           id: 3,
-          title: "Performance and Process Improvement",
+          title: "Understanding the Healthcare Consumer: Needs and Behaviors",
           url: "#",
           preview: true,
         },
@@ -83,160 +83,135 @@ export const healthcare_marketing_management_diploma: CourseType = {
     },
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Module 2: Strategic Marketing Planning in Healthcare",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Developing a Healthcare Marketing Strategy",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Setting SMART Marketing Goals for Healthcare Organizations", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Competitive Analysis and Market Positioning",
           url: "#",
         },
       ],
     },
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Module 3: Healthcare Branding and Communication",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Building a Strong Healthcare Brand",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Crafting Effective Messaging for Healthcare Audiences", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Visual Branding: Logos, Colors, and Design in Healthcare",
+          url: "#",
+        },
+        {
+          id: 3,
+          title: "Internal Marketing: Engaging Healthcare Staff and Stakeholders",
           url: "#",
         },
       ],
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Module 4: Consumer Behavior in Healthcare",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: " Fundamentals of Consumer Behavior in Healthcare",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Psychological Factors Influencing Patient Decisions", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Patient Journey Mapping: From Awareness to Loyalty",
           url: "#",
         },
       ],
     },
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Module 5: Healthcare Market Research",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Qualitative vs. Quantitative Research Methods",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Designing Surveys and Focus Groups for Healthcare Audiences", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Analyzing Healthcare Market Trends and Data",
+          url: "#",
+        },
+        {
+          id: 4,
+          title: "Using Market Research to Drive Marketing Decisions",
           url: "#",
         },
       ],
     },
     {
       id: 6,
-      title: "Population Health and Care Transitions",
+      title: "Module 6: Digital Marketing for Healthcare",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Social Media Marketing for Healthcare Brands",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Search Engine Optimization (SEO) for Healthcare Websites", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Email Marketing and Patient Engagement",
           url: "#",
         },
       ],
     },
-    {
-      id: 7,
-      title: "Regulatory and Accreditation",
-      lessons: [
-        {
-          id: 1,
-          title: "Population Health and Care Transitions",
-          url: "#",
-          preview: true,
-        },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
-      ],
-    },
-    {
-      id: 8,
-      title: "Health Data Analytics",
-      lessons: [
-        {
-          id: 1,
-          title: "Population Health and Care Transitions",
-          url: "#",
-          preview: true,
-        },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
-      ],
-    },
-  ],
+
+     ],
   whoCanAttend: {
     content:
       "Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.",
     items: [
-      "QualityProfessionals",
-      "Medical and Nursing Directors",
+      "Healthcare Professionals",
+      "Marketing and Business Graduates",
       "Doctors",
       "Pharmacists",
-      "Nursing Specialists",
-      "Professionals interested in managerial or quality jobs",
+      "Healthcare Entrepreneurs",
       "Healthcare Administrators and Managers",
-      "Risk Managers",
-      "Medical Technologists",
+      "Corporate Professionals in Healthcare",
+      "Career Changers and Aspiring Marketers",
+      "Professionals interested in Healthcare Marketing jobs",
     ],
   },
   /// in instructors tab
   instructors: [
     {
       id: "1",
-      name: "DR/Mohamed Farag",
-      job: "Healthcare Quality Manager",
+      name: "DR Passant Mohamed",
+      job: "Marketing Manager at Dar Alfouad Hospital",
       image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
+        "/images/shrouk.jpg",
+      certification: "Bachelor of Phatmacy - MBA",
       experience: 15,
       location: "Cairo, Eqypt",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      rating: 4,
+      rating: 5,
     },
     {
       id: "2",
@@ -246,7 +221,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
         "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
       certification: "MBA - CPHQ - HMD",
       experience: 10,
-      location: "Asyut, Eqypt",
+      location: "Cairo, Eqypt",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       rating: 5,

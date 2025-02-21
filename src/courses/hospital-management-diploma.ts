@@ -15,11 +15,11 @@ export const hospital_management_diploma: CourseType = {
 
   reviewsNumber: 20,
   price: {
-    EG: { old: "18900 EGP", new: "18900 EGP" },
-    SA: { old: "3800 SAR", new: "3800 SAR" },
+    EG: { old: "42000 EGP", new: "21000 EGP" },
+    SA: { old: "7600 SAR", new: "3800 SAR" },
     /// add country here
     // other work for any other country the default price
-    other: { old: "38000 EGP", new: "38000 EGP" },
+    other: { old: "2100 $", new: "950 $" },
   },
   lectures: 48,
   lecture_date: "1 Lecture-Weekly",

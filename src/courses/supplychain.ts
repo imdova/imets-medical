@@ -9,10 +9,10 @@ export const supply_chain: CourseType = {
     meta_keywords: "here is the meta keyword",
   },
   rating: 5,
-  reviewsNumber: 20,
+  reviewsNumber: 600,
   price: {
     EG: { old: "17000 EGP", new: "8500 EGP" },
-    SA: { old: "3600 SAR", new: "1800 SAR" },
+    SA: { old: "3400 SAR", new: "1600 SAR" },
     /// add country here
     // other work for any other country the default price
     other: { old: "900$", new: "450$" },

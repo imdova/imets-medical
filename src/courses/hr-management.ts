@@ -10,7 +10,7 @@ export const hr_management: CourseType = {
   },
   rating: 5,
 
-  reviewsNumber: 20,
+  reviewsNumber: 1400,
   price: {
     EG: { old: "17000 EGP", new: "8500 EGP" },
     SA: { old: "3600 SAR", new: "1800 SAR" },

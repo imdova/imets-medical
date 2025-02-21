@@ -5,9 +5,9 @@ export const infection_prevention_and_control_diploma: CourseType = {
   title: "Infection Control Diploma",
   meta: {
     meta_title:
-      "Infection Control Diploma | Become a Certified Infection Prevention Specialist",
+      "Infection Control Diploma | IMETS Medical School",
     meta_description:
-      "Advance your career in healthcare with our Infection Control Diploma! Learn essential skills to prevent infections, ensure patient safety, and meet industry standards. Enroll now and earn a recognized certification in infection prevention!",
+      "Join IMETS Medical School’s Infection Control Diploma. Master infection prevention practices, outbreak response, and healthcare safety protocols. Enroll now!",
     meta_keywords:
       "Infection Control Diploma, Infection Prevention Certification, Infection Control Training, Healthcare Infection Control, Online Infection Control Course, Infection Prevention Specialist, Patient Safety Training, Infection Control Certification, Healthcare Hygiene Training, Infection Control Program",
   },
@@ -39,175 +39,181 @@ export const infection_prevention_and_control_diploma: CourseType = {
     groupId: "112928224",
     redirect: "/",
   },
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` The Infection Control Diploma at IMETS Medical School is a comprehensive program designed to equip healthcare professionals and aspiring infection control specialists with the knowledge and skills needed to prevent, manage, and control infections in healthcare settings. This diploma combines theoretical knowledge with practical applications, ensuring that graduates are well-prepared to tackle real-world challenges in infection prevention and control.`,
   courseGoals: {
-    content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
+    content: `The Infection Control Diploma at IMETS Medical School is designed to equip you with the knowledge and skills needed to prevent and control infections in healthcare settings. By the end of this program, you will:`,
     goals: [
       {
         title:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting",
+          "Understand the Fundamentals of Infection Control",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Learn the principles of infection prevention and control (IPC) in healthcare and xplore the chain of infection and how to break it.",
       },
       {
-        title: "Lorem Ipsum has been the industry's standard dummy",
+        title: "Master Infection Control Practices",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "Gain expertise in hand hygiene, personal protective equipment (PPE), and sterilization techniques and learn to implement standard and transmission-based precautions.",
       },
       {
-        title: "when an unknown printer took a galley",
+        title: "Enhance Knowledge of Healthcare-Associated Infections (HAIs)",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "You will Study the most common HAIs, their causes, and prevention strategies, also you will earn to reduce infection rates in hospitals and clinics.",
       },
       {
-        title: "containing Lorem Ipsum passages,",
+        title: "Develop Outbreak Management Skills",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "You will Understand how to identify, manage, and control infection outbreaks, also you will earn to conduct risk assessments and develop outbreak response plans",
+      },
+      {
+        title: "Utilize Infection Control Policies and Guidelines",
+        content:
+          "You will Gain knowledge of national and international infection control guidelines (e.g., WHO, CDC), also you will earn to develop and implement infection control policies in healthcare settings.",
       },
     ],
   },
   courseModules: [
     {
       id: 1,
-      title: "Healthcare Quality Concepts",
+      title: "Identification of Infectious Disease Processes",
       lessons: [
-        { id: 1, title: "Quality Leadership and Integration", url: "#" },
-        { id: 2, title: "Patient Safety", url: "#" },
+        { id: 1, title: "Overview of Infection Prevention and Control (IPC)", url: "#" },
+        { id: 2, title: "The Chain of Infection and How to Break It", url: "#" },
         {
           id: 3,
-          title: "Performance and Process Improvement",
+          title: "Common HAIs: Causes, Risks, and Prevention",
           url: "#",
           preview: true,
         },
+        { id: 4, title: "Strategies to Reduce HAIs in Hospitals and Clinics", url: "#" },
+        { id: 5, title: "Monitoring and Reporting HAIs", url: "#" },
       ],
     },
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Preventing/Controlling the Transmission of Infectious Agents",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Understanding Infectious Agents and Their Transmission",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Standard Precautions for Infection Control", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Transmission-Based Precautions",
           url: "#",
         },
+        { id: 4, title: "Environmental Controls to Prevent Transmission", url: "#" },
+        { id: 5, title: "Preventing Healthcare-Associated Infections (HAIs)", url: "#" },
       ],
     },
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Module3: Cleaning, Disinfection, Sterilization of Medical Devices and Equipment",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "appropriate cleaning, disinfection, and sterilization practices based on intended use (e.g., Spaulding classification) ",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
+        { id: 2, title: "Direct observations OF critical steps of cleaning/low level disinfection, high level disinfection, and/or sterilization -", url: "#" },
+        
       ],
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Module4: Surveillance and Epidemiologic Investigation",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Designing and Implementing Surveillance Programs",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Data Management and Analysis", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Outbreak Detection and Response",
+          url: "#",
+        },
+        {
+          id: 4,
+          title: "Epidemiologic Investigation Techniques",
+          url: "#",
+        },
+        {
+          id: 5,
+          title: "Healthcare-Associated Infections (HAIs) Surveillance",
           url: "#",
         },
       ],
     },
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Module5: Employee/Occupational Health",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "screening and immunization programs",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "employee/occupational health regarding counseling, follow up,", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "work restriction recommendations related to communicable diseases and/or exposures",
           url: "#",
         },
       ],
     },
     {
       id: 6,
-      title: "Population Health and Care Transitions",
+      title: "Module6: Environment of Care",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Designing a Safe Healthcare Environment",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Cleaning, Disinfection, and Sterilization in Healthcare Facilities", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Waste Management and Environmental Safety",
           url: "#",
         },
       ],
     },
     {
       id: 7,
-      title: "Regulatory and Accreditation",
+      title: "Module7: Education and Research",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Education of patients, families, and others regarding prevention and control measures ",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
-        {
-          id: 3,
-          title: "Health Data Analytics",
-          url: "#",
-        },
+        { id: 2, title: "Strategies that engage the patient, family, and others in activities aimed at preventing infection", url: "#" },
+        
       ],
     },
     {
       id: 8,
-      title: "Health Data Analytics",
+      title: "Module8: Management and Communication",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Leadership in Infection Control",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Regulatory and Accreditation", url: "#" },
+        { id: 2, title: "Communication Strategies for Infection Control", url: "#" },
         {
           id: 3,
-          title: "Health Data Analytics",
+          title: "Managing Infection Control Programs",
           url: "#",
         },
       ],
@@ -215,16 +221,17 @@ export const infection_prevention_and_control_diploma: CourseType = {
   ],
   whoCanAttend: {
     content:
-      "Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.",
+      "The Infection Control Diploma at IMETS Medical School is designed for a diverse range of professionals and aspiring infection control specialists. This program is perfect for:",
     items: [
-      "QualityProfessionals",
+      "Healthcare  Professionals",
       "Medical and Nursing Directors",
       "Doctors",
       "Pharmacists",
       "Nursing Specialists",
-      "Professionals interested in managerial or quality jobs",
+      "Public Health Professionals",
+      "Professionals interested in infection control jobs",
       "Healthcare Administrators and Managers",
-      "Risk Managers",
+      "Infection Control Practitioners",
       "Medical Technologists",
     ],
   },
@@ -232,28 +239,26 @@ export const infection_prevention_and_control_diploma: CourseType = {
   instructors: [
     {
       id: "1",
-      name: "DR/Mohamed Farag",
-      job: "Healthcare Quality Manager",
-      image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
-      experience: 15,
+      name: "DR/Shrouk Sayed",
+      job: "Infection Control Group Director at international Eye hospitals",
+      image: "/images/shrouk.jpg",
+      certification: "CIC - MBA - HMD",
+      experience: 17,
       location: "Cairo, Eqypt",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      rating: 4,
+        "Experienced Infection control Manager with a demonstrated history of working in the hospital & health care industry. Skilled in Medical Education, Patient Safety, Hospitals, Healthcare Management, and Healthcare. Strong healthcare services professional with Certification board of infection control and epidemiology , ongoing in Associate's degree focused in Applied epidemiology from Egyptian fellowship board in Applied Epidemiology.",
+      rating: 5,
     },
     {
       id: "2",
-      name: "DR/Mohamed Ahmed",
-      job: "Healthcare Quality Manager",
-      image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
-      experience: 10,
-      location: "Asyut, Eqypt",
+      name: "DR/Reham Ragab",
+      job: "Infection Control Consultant",
+      image: "/images/reham.jpg",
+      certification: "CIC - CSRT - MBA - TOT",
+      experience: 12,
+      location: "Cairo, Eqypt",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Experienced Infection Control Practitioner with a demonstrated history of working in the Health, Wellness and Fitness industry. Skilled in Epidemiology, Infection Control, Surveillance, Patient Safety, and Problem Solving. Strong healthcare services professional with a Certified focused in infection control and epidemiology from Egyptian fellowship of the infection control and and Certified board of Infection control and epidemiology.",
       rating: 5,
     },
   ],

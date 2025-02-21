@@ -14,7 +14,7 @@ export const cphq_preparation_course: CourseType = {
   reviewsNumber: 1340,
 
   price: {
-    EG: { old: "18000 EGP", new: "8500 EGP" },
+    EG: { old: "18000 EGP", new: "9000 EGP" },
     SA: { old: "3600 SAR", new: "1800 SAR" },
     /// add country here
     // other work for any other country the default price
