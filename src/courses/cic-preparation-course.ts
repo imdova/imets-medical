@@ -310,27 +310,42 @@ export const cic_preparation_course: CourseType = {
   ],
   reviews: [
     {
-      image: "/images/ic1.jfif",
+      image: "/images/ic1.webp",
       name: "",
       title: "",
     },
     {
-      image: "/images/ic2.jfif",
+      image: "/images/ic2.webp",
       name: "",
       title: "",
     },
     {
-      image: "/images/ic3.jfif",
+      image: "/images/ic3.webp",
       name: "",
       title: "",
     },
     {
-      image: "/images/ic4.jfif",
+      image: "/images/ic4.webp",
       name: "",
       title: "",
     },
     {
-      image: "/images/ic5.jfif",
+      image: "/images/ic5.webp",
+      name: "",
+      title: "",
+    },
+    {
+      image: "/images/g1.webp",
+      name: "",
+      title: "",
+    },
+    {
+      image: "/images/g2.webp",
+      name: "",
+      title: "",
+    },
+    {
+      image: "/images/g3.webp",
       name: "",
       title: "",
     },
