@@ -1,7 +1,7 @@
 export const infection_prevention_and_control_diploma: CourseType = {
   id: "4",
   slug: "infection-control-diploma",
-  image: "/images/infection.webp",
+  image: "/images/Infection.webp",
   title: "Infection Control Diploma",
   meta: {
     meta_title:

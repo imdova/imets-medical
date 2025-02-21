@@ -1,7 +1,7 @@
 export const healthcare_marketing_management_diploma: CourseType = {
   id: "6",
   slug: "healthcare-marketing-management-diploma",
-  image: "/images/marketing.webp",
+  image: "/images/market.webp",
   title: "Healthcare Marketing Management Diploma",
   meta: {
     meta_title: "Healthcare Marketing Management Diploma | Advance Your Career in Healthcare Marketing",

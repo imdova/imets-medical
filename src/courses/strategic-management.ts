@@ -1,7 +1,7 @@
 export const strategic_management: CourseType = {
   id: "8",
   slug: "strategic-management-diploma",
-  image: "/images/cphq.webp",
+  image: "/images/strategic.webp",
   title: "Healthcare Strategic Management Diploma",
   meta: {
     meta_title: "here is the meta title",
