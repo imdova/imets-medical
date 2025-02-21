@@ -237,6 +237,8 @@ export const healthcare_quality_management_diploma: CourseType = {
       rating: 5,
     },
   ],
+
+  
   videosGrid: [
     {
       videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",

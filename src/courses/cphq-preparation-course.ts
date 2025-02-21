@@ -311,52 +311,52 @@ export const cphq_preparation_course: CourseType = {
   ],
   videosGrid: [
     {
-      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+      videoUrl: "https://www.youtube.com/watch?v=EXnm42VAv98",
       thumbnail:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+        "",
       title: "Skyfall",
       author: "By Author Name",
       views: "10k Views",
       timeAgo: "1 hour ago",
     },
     {
-      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+      videoUrl: "https://www.youtube.com/watch?v=9iS5pieCn5A",
       thumbnail:
-        "https://img.freepik.com/free-photo/woman-enjoying-movie-night_23-2149307313.jpg?t=st=1739465021~exp=1739468621~hmac=8c8b0cebd956ad913ec00ee18c41eb1440eefc42695a9da720158de9cf1fae2d&w=360",
+        "",
     },
     {
-      videoUrl: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
+      videoUrl: "https://www.youtube.com/watch?v=HT9wtHncGDQ",
     },
     {
-      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+      videoUrl: "https://www.youtube.com/watch?v=aPdec-1kBnQ&t=2s",
     },
     {
-      videoUrl: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
+      videoUrl: "https://www.youtube.com/watch?v=MyTxLQkP4yQ",
     },
   ],
   reviews: [
     {
-      image: "/images/review.jpg",
+      image: "/images/q1.jfif",
       name: "Noha mamdoh",
       title: "Doctor at name of hospital",
     },
     {
-      image: "/images/review.jpg",
+      image: "/images/q2.jfif",
       name: "Noha mamdoh",
       title: "Doctor at name of hospital",
     },
     {
-      image: "/images/review.jpg",
+      image: "/images/q3.jpg",
       name: "Noha mamdoh",
       title: "Doctor at name of hospital",
     },
     {
-      image: "/images/review.jpg",
+      image: "/images/q4.jpg",
       name: "Noha mamdoh",
       title: "Doctor at name of hospital",
     },
     {
-      image: "/images/review.jpg",
+      image: "/images/g1.jfif",
       name: "Noha mamdoh",
       title: "Doctor at name of hospital",
     },

@@ -1,7 +1,7 @@
 export const hr_management: CourseType = {
   id: "9",
   slug: "healthcare-hr-management-diploma",
-  image: "/images/hr.webp",
+  image: "/images/hr.jpeg",
   title: "Healthcare HR Management Diploma",
   meta: {
     meta_title: "here is the meta title",
