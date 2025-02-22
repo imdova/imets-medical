@@ -69,7 +69,7 @@ export default function Home() {
                 programs, tailored for professionals in healthcare.
               </p>
               <Link
-                href={`/courses`}
+                href={`/courses/category/all`}
                 className="group gap-2 text-nowrap rounded-xl bg-orange-primary px-12 py-3 text-white transition-all duration-150 ease-in-out hover:scale-105 hover:bg-yellow-400"
               >
                 Explore All Courser
@@ -156,15 +156,15 @@ export default function Home() {
               <div className="flex w-full flex-row flex-wrap gap-2 md:justify-end">
                 {categories.map((category) => (
                   <button
-                    key={category}
-                    onClick={() => setFilter(category)}
+                    key={category.slug}
+                    onClick={() => setFilter(category.name)}
                     className={`flex-1 text-nowrap rounded-md border px-4 py-2 text-sm transition-colors duration-500 ${
-                      filter === category
+                      filter === category.name
                         ? "bg-primary text-white"
                         : "bg-gray-200"
                     }`}
                   >
-                    {category}
+                    {category.name}
                   </button>
                 ))}
               </div>

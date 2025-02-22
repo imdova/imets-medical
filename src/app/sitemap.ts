@@ -1,3 +1,4 @@
+import { categories } from "@/constants/categories";
 import { coursesList } from "@/constants/courses.data";
 import { MetadataRoute } from "next";
 
@@ -10,13 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/courses/${course.slug}`,
     lastModified: new Date(),
   }));
+  const categoriesRoutes = categories.map((category) => ({
+    url: `${baseUrl}/courses/category/${category.slug}`,
+    lastModified: new Date(),
+  }));
   return [
     {
       url: `${baseUrl}`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/courses`,
       lastModified: new Date(),
     },
     {
@@ -32,5 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     ...coursesRoutes,
+    ...categoriesRoutes,
   ];
 }

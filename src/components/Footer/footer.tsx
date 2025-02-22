@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li className="mb-6">
                 <Link
-                  href="/courses"
+                  href="/courses/category/all"
                   className="text-white hover:text-orange-primary"
                 >
                   Courses
@@ -88,7 +88,7 @@ export default function Footer() {
               ))}
               <li className="mb-6">
                 <Link
-                  href="/courses"
+                  href="/courses/category/all"
                   className="shadow-simple shadow-simple cursor-pointer text-nowrap rounded-md bg-orange-primary px-4 py-2 font-medium text-white transition-all duration-150 ease-in-out hover:bg-yellow-600/60 focus:outline-none focus:ring-2 focus:ring-orange-primary focus:ring-offset-2"
                 >
                   Explore All Courses
@@ -165,10 +165,11 @@ export default function Footer() {
               All rights reserved.
             </span>
             <div className="mt-4 flex space-x-4 sm:justify-center lg:mt-0">
-              {socialMediaLinks.map((link) => {
+              {socialMediaLinks.map((link, index) => {
                 const Icon = link.icon;
                 return (
                   <a
+                    key={index}
                     href={link.link}
                     title={link.name}
                     className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-primary text-white transition-all duration-500 hover:bg-black"

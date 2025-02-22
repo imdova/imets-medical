@@ -2,6 +2,7 @@ import { coursesList } from "@/constants/courses.data";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import CourseView from "./courseView";
+import Footer from "@/components/Footer/footer";
 
 export async function generateMetadata({
   params,
@@ -53,7 +54,12 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const course = coursesList.find((x) => x.slug === slug);
   if (!course) return notFound();
 
-  return <CourseView course={course} />;
+  return (
+    <>
+      <CourseView course={course} />;
+      <Footer />
+    </>
+  );
 };
 
 export default Page;

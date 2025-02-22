@@ -22,3 +22,14 @@ interface ThankYouData {
   telegramLink: string;
   youtubeLink: string;
 }
+
+type CategoryType = {
+  name: string;
+  slug: string;
+  metaTags: {
+    title: string;
+    description: string;
+    keywords: string;
+  };
+  htmlInput: string;
+};

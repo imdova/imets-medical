@@ -27,13 +27,15 @@ const Header: React.FC<BaseHeaderProps> = () => {
           </Link>
           <div className="hidden items-center space-x-8 text-main lg:flex">
             {commonLinks.map((link) => {
+              const Icon = link.icon;
               return (
                 <Link
                   key={link.title}
                   href={link.url}
-                  className={`link-smooth font-medium uppercase hover:text-orange-primary`}
+                  className={`link-smooth flex items-center font-medium uppercase hover:text-orange-primary`}
                 >
-                  {link.title}
+                  <Icon className="mr-2 h-5 w-5" />
+                  <span>{link.title}</span>
                 </Link>
               );
             })}

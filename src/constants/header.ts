@@ -9,7 +9,7 @@ type LinkItem = {
 // Define the common links with icons
 export const commonLinks: LinkItem[] = [
   {
-    title: "Home Page",
+    title: "Home",
     url: "/",
     icon: Home,
   },
@@ -20,7 +20,7 @@ export const commonLinks: LinkItem[] = [
   },
   {
     title: "Courses",
-    url: "/courses",
+    url: "/courses/category/all",
     icon: BookOpen,
   },
   {
