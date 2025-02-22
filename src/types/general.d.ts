@@ -21,6 +21,7 @@ interface ThankYouData {
   whatsappMessage: string;
   telegramLink: string;
   youtubeLink: string;
+  freeCoursesLink: string;
 }
 
 type CategoryType = {

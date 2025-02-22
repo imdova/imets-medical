@@ -6,4 +6,5 @@ export const thankYouData: ThankYouData = {
   whatsappMessage: "I have a Question",
   telegramLink: "https://t.me/demo",
   youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
+  freeCoursesLink: "",
 };

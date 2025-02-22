@@ -49,23 +49,11 @@ export const healthcare_marketing_management_diploma: FreeCourseType = {
       duration: "11:00",
     },
   ],
-  courseMaterials: [
-    {
-      title: "Introduction to Next.js",
-      fileUrl: "/files/intro-to-nextjs.pdf",
-      fileType: "pdf",
-    },
-    {
-      title: "TypeScript Basics",
-      fileUrl: "/files/typescript-basics.docx",
-      fileType: "docx",
-    },
-    {
-      title: "Tailwind CSS Guide",
-      fileUrl: "/files/tailwind-guide.pdf",
-      fileType: "pdf",
-    },
-  ],
+  material: "/files/intro-to-nextjs.pdf",
+  actionImage: {
+    image: "/images/cic.webp",
+    url: "/courses",
+  },
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",

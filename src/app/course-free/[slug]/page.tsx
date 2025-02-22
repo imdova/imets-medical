@@ -12,7 +12,12 @@ import YouTubePlayer from "@/components/YouTubePlayer";
 import Progress from "@/components/Progress";
 import ProgressTabs from "@/components/ProgressTabs";
 import freeCourses from "@/courses-free";
-import { WhatsApp_Icon, Youtube_Icon } from "@/assets/icons/icons";
+import {
+  Telegram_Icon,
+  WhatsApp_Icon,
+  Youtube_Icon,
+} from "@/assets/icons/icons";
+import Button from "@/components/Forms/buttons/Button";
 interface SingleCourseProps {
   params: Promise<{ slug: string }>;
 }
@@ -56,138 +61,88 @@ export default function OfflineVideo({ params }: SingleCourseProps) {
 
   return (
     <div className="mx-auto my-10 px-6 lg:max-w-[1170px]">
-      <h1 className="mb-6 text-4xl font-bold">Offline course</h1>
-      <div className="mb-5 grid grid-cols-1 gap-5 lg:grid-cols-3">
+      <h1 className="mb-6 text-4xl font-bold">{course.title}</h1>
+      <div className="mb-5 flex flex-col gap-4 md:flex-row">
         {/* course Player Section */}
-        <div className="rounded-md p-3 shadow-halfShadow md:col-span-2">
-          <div className="mb-3 flex items-center justify-between">
-            <div className="mb-4">
-              <h2 className="mb-3 text-xl font-bold">{course.title}</h2>
-              <div className="flex items-center gap-2">
-                <Image
-                  className="h-8 w-8 rounded-full"
-                  src={course.instructor.image}
-                  alt="avatar"
-                  width={32}
-                  height={32}
-                />
-                <span className="text-xs text-secondary">
-                  {course.instructor.name}
-                </span>
-              </div>
-            </div>
-            {/* <button className="text-secondary">
-              <EllipsisVertical size={18} />
-            </button> */}
-          </div>
+        <div className="w-full flex-1 rounded-3xl border border-neutral-100 bg-white p-3 shadow-lg md:col-span-2">
           <div className="relative aspect-video h-auto w-full overflow-hidden bg-gray-400">
             <YouTubePlayer
               videoUrl={course.videos[currentVideo].url}
               priority={true}
             />
           </div>
-          <div className="mt-5 flex justify-between">
-            <button
+          <div className="mt-5 flex items-center justify-between">
+            <Button
               className="flex items-center gap-2 rounded-lg border bg-gray-200 p-2 pr-4 hover:bg-gray-300 disabled:opacity-50"
               onClick={prevVideo}
               disabled={currentVideo === 0}
             >
               <ChevronLeft /> Previous
-            </button>
-            <button
+            </Button>
+            <div className="flex">
+              <span className="text-md">
+                <Image width={24} height={24} src={PDF} alt="" />
+              </span>
+              <a
+                href={course.material}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg hover:text-primary hover:underline"
+              >
+                Download Course Material
+                <Download className="mb-1 ml-2 inline-block h-4 w-4" />
+              </a>
+            </div>
+            <Button
               className="flex items-center gap-2 rounded-lg border bg-gray-200 p-2 pl-4 hover:bg-gray-300 disabled:opacity-50"
               onClick={nextVideo}
               disabled={currentVideo === course.videos.length - 1}
             >
               Next <ChevronRight />
-            </button>
+            </Button>
           </div>
         </div>
 
         {/* Progress Sidebar */}
-        <div className="rounded-md p-3 shadow-halfShadow md:col-span-1">
-          <div className="mb-3 flex items-center justify-between">
-            <h2 className="mb-3 text-lg font-semibold">Progress</h2>
-            {/* <button className="text-secondary">
-                <EllipsisVertical size={18} />
-              </button> */}
-          </div>
-          <Progress value={((currentVideo + 1) / course.videos.length) * 100} />
-          <div className="mb-3 flex items-center justify-between">
-            <p className="my-3 text-xs text-gray-500">{course.title}</p>
-            <span className="text-xs text-secondary">
-              {currentVideo + 1}/{course.videos.length}
-            </span>
-          </div>
+        <div className="w-[325px] rounded-3xl border border-neutral-100 bg-white p-3 shadow-lg md:col-span-1">
           <ProgressTabs
             tabs={tabs}
             currentVideoIndex={currentVideo}
             setCurrentVideo={setCurrentVideo}
           />
-          <Link href="#" className="w-full">
+          <Link href={course.actionImage.url} className="w-full">
             <Image
-              src="/images/cic.webp"
+              src={course.actionImage.image}
               alt="action"
-              width={200}
-              height={200}
-              className="mt-4 h-40 w-full rounded-sm object-cover"
+              width={350}
+              height={350}
+              className="mt-4 aspect-square h-auto w-full rounded-sm object-cover"
             />
           </Link>
         </div>
       </div>
-      <div className="mb-4 rounded-md p-3 shadow-halfShadow">
-        <h2 className="mb-4 text-xl font-bold">Course Material</h2>
-        <ul>
-          {course.courseMaterials.map((material, index) => (
-            <li
-              key={index}
-              className="flex items-center space-x-4 border-b p-3 last:border-b-0"
-            >
-              <span className="text-lg">
-                <Image
-                  width={30}
-                  height={30}
-                  src={
-                    material.fileType === "pdf"
-                      ? PDF
-                      : material.fileType === "docx"
-                        ? DOCX
-                        : VideoFile
-                  }
-                  alt=""
-                />
-              </span>
-              <a
-                href={material.fileUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary hover:underline"
-              >
-                {material.title}{" "}
-                <Download className="mb-1 ml-2 inline-block h-4 w-4" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="mb-4 flex flex-wrap justify-center gap-8 rounded-md p-3 shadow-halfShadow">
+
+      <div className="flex flex-wrap justify-center gap-8">
         {/* WhatsApp Card */}
         <a
           href={`https://api.whatsapp.com/send?phone=${course.socialMediaCards.whatsApp.number.replace(/\D/g, "")}&text=${encodeURIComponent(course.socialMediaCards.whatsApp.message)}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-72 transform rounded-md border border-neutral-100 bg-white p-4 shadow-halfShadow transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-green-200"
+          className="w-72 transform rounded-3xl border border-neutral-100 bg-white p-6 shadow-lg transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-green-200"
         >
           <div className="mb-4 flex justify-center">
-            <WhatsApp_Icon className="h-9 w-9 animate-pulse text-green-500" />
+            <WhatsApp_Icon className="h-14 w-14 animate-pulse text-green-500" />
           </div>
-          <h2 className="text-center text-lg font-semibold text-gray-800">
+          <h2 className="mb-4 text-center text-xl font-semibold text-gray-800">
             Send a{" "}
-            <span className="text-lg font-semibold text-green-500">
+            <span className="text-xl font-semibold text-green-500">
               WhatsApp
             </span>{" "}
             Message
           </h2>
+          <p className="mb-4 text-center text-sm text-gray-600">
+            Click here to send us a message on WhatsApp.
+          </p>
         </a>
 
         {/* Telegram Card */}
@@ -195,17 +150,20 @@ export default function OfflineVideo({ params }: SingleCourseProps) {
           href={course.socialMediaCards.telegram.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-72 transform rounded-md border border-neutral-100 bg-white p-4 shadow-halfShadow transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-200"
+          className="w-72 transform rounded-3xl border border-neutral-100 bg-white p-6 shadow-lg transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-200"
         >
           <div className="mb-4 flex justify-center">
-            <Send className="h-9 w-9 animate-pulse text-blue-500" />
+            <Telegram_Icon className="h-14 w-14 animate-pulse text-blue-500" />
           </div>
-          <h2 className="text-center text-lg font-semibold text-gray-800">
+          <h2 className="mb-4 text-center text-2xl font-semibold text-gray-800">
             Join{" "}
-            <span className="text-lg font-semibold text-blue-500">
+            <span className="text-2xl font-semibold text-blue-500">
               Telegram
             </span>
           </h2>
+          <p className="mb-4 text-center text-gray-600">
+            Join our Telegram group for updates and discussions.
+          </p>
         </a>
 
         {/* YouTube Card */}
@@ -213,15 +171,18 @@ export default function OfflineVideo({ params }: SingleCourseProps) {
           href={course.socialMediaCards.youTube.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-72 transform rounded-md border border-neutral-100 bg-white p-4 shadow-halfShadow transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-red-200"
+          className="w-72 transform rounded-3xl border border-neutral-100 bg-white p-6 shadow-lg transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-red-200"
         >
           <div className="mb-4 flex justify-center">
-            <Youtube_Icon className="h-9 w-9 animate-pulse text-red-500" />
+            <Youtube_Icon className="h-14 w-14 animate-pulse text-red-500" />
           </div>
-          <h2 className="text-center text-lg font-semibold text-gray-800">
+          <h2 className="mb-4 text-center text-2xl font-semibold text-gray-800">
             Subscribe on{" "}
-            <span className="text-lg font-semibold text-red-500">YouTube</span>
+            <span className="text-2xl font-semibold text-red-500">YouTube</span>
           </h2>
+          <p className="mb-4 text-center text-gray-600">
+            Don't forget to subscribe to our YouTube channel.
+          </p>
         </a>
       </div>
     </div>

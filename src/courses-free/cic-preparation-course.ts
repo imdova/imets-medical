@@ -9,8 +9,7 @@ export const cic_preparation_course: FreeCourseType = {
   instructor: {
     id: "1",
     name: "",
-    image:
-      "",
+    image: "",
   },
 
   /// the videos at  the free course
@@ -56,15 +55,11 @@ export const cic_preparation_course: FreeCourseType = {
       duration: "11:00",
     },
   ],
-  courseMaterials: [
-    {
-      title: "CI Curriculum",
-      fileUrl: "/files/intro-to-nextjs.pdf",
-      fileType: "pdf",
-    },
-   
-    
-  ],
+  actionImage: {
+    image: "/images/cic.webp",
+    url: "/courses",
+  },
+  material: "/files/intro-to-nextjs.pdf",
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",

@@ -12,9 +12,5 @@ type LandingPageType = {
     };
   };
   slug: string;
-  metaTags: {
-    title: string;
-    description: string;
-    keywords: string[];
-  };
+  thankYouData: ThankYouData;
 };

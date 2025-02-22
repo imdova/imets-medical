@@ -16,15 +16,13 @@ export const landingPagesData: LandingPageType[] = [
         redirectUrl: "/thank-you",
       },
     },
-    metaTags: {
-      title: "IMETS Medical School - Apply Now",
-      description:
-        "Advance your career with IMETS Medical School offering premier healthcare job training and business programs.",
-      keywords: [
-        "imets medical school",
-        "apply now",
-        "healthcare job training",
-      ],
+    thankYouData: {
+      title: "Thanks You!",
+      WhatsAppNumber: "+201008815007",
+      whatsappMessage: "I have a Question",
+      telegramLink: "https://t.me/demo",
+      youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
+      freeCoursesLink: "/course-free/cphq-course",
     },
   },
   {
@@ -44,15 +42,13 @@ export const landingPagesData: LandingPageType[] = [
         redirectUrl: "/thank-you",
       },
     },
-    metaTags: {
-      title: "Healthcare Business Programs - IMETS Medical School",
-      description:
-        "Explore IMETS Medical School's specialized healthcare business programs designed to empower medical professionals and entrepreneurs.",
-      keywords: [
-        "healthcare business programs",
-        "medical professionals",
-        "entrepreneurs",
-      ],
+    thankYouData: {
+      title: "Thanks You!",
+      WhatsAppNumber: "+201008815007",
+      whatsappMessage: "I have a Question",
+      telegramLink: "https://t.me/demo",
+      youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
+      freeCoursesLink: "/course-free/cic-preparation-course",
     },
   },
 ];

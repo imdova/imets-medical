@@ -24,7 +24,7 @@ const ProgressTabs: React.FC<ProgressTabsProps> = ({
       {tabs.map((tab) => (
         <div
           key={tab.title}
-          className="scroll-bar-minimal max-h-[300px] overflow-auto"
+          className="scroll-bar-minimal max-h-[200px] overflow-auto"
         >
           <div
             className="sticky top-0 mb-2 flex cursor-pointer items-center justify-between rounded-md border bg-white p-3"

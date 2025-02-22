@@ -70,9 +70,9 @@ export default function Home() {
               </p>
               <Link
                 href={`/courses/category/all`}
-                className="group gap-2 text-nowrap rounded-xl bg-orange-primary px-12 py-3 text-white transition-all duration-150 ease-in-out hover:scale-105 hover:bg-yellow-400"
+                className="group gap-2 text-nowrap rounded-xl bg-orange-primary px-12 py-3 text-white transition-all duration-150 ease-in-out hover:scale-105 hover:bg-yellow-600"
               >
-                Explore All Courser
+                Explore All Courses
               </Link>
             </div>
             <div className="hidden flex-1 lg:block">

@@ -84,7 +84,7 @@ const CourseCard: React.FC<CourseType & GeoInfo & { loading: boolean }> = ({
         <div className="flex items-center justify-between">
           <Link
             href={`/courses/${slug}`}
-            className="group gap-2 self-end text-nowrap rounded-lg bg-orange-primary p-2 px-12 text-white hover:bg-yellow-400"
+            className="group gap-2 self-end text-nowrap rounded-lg bg-orange-primary p-2 px-12 text-white hover:bg-yellow-600"
           >
             Details
             <ArrowRight className="mb-1 ml-2 inline-block h-4 w-4 transition-transform duration-300 group-hover:translate-x-4" />

@@ -11,6 +11,7 @@ import React, { useState } from "react";
 const LandingApply: React.FC<LandingPageType & { className?: string }> = ({
   button,
   className,
+  slug,
 }) => {
   const formData =
     formsData.find((x) => x.name === button.formData.name) || formsData[0];
@@ -37,7 +38,7 @@ const LandingApply: React.FC<LandingPageType & { className?: string }> = ({
         showNotification("success", formData.successMessage);
         // onClose();
         if (button.formData.redirectUrl) {
-          router.push(button.formData.redirectUrl);
+          router.push(`${button.formData.redirectUrl}?q=${slug}`);
         }
       } else {
         setError("Failed to send your data ");

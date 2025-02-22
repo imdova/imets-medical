@@ -89,8 +89,12 @@ type FreeCourseType = {
     name: string;
     image: string;
   };
+  actionImage: {
+    image: string;
+    url: string;
+  };
   videos: CourseVideo[];
-  courseMaterials: CourseMaterial[];
+  material: string;
   rating: number;
   status: string;
   startDate: string;

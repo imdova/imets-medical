@@ -1,14 +1,23 @@
 import React from "react";
-import { Send } from "lucide-react"; // Lucide icons
-import Image from "next/image";
 import {
   Telegram_Icon,
   WhatsApp_Icon,
   Youtube_Icon,
 } from "@/assets/icons/icons";
-import { thankYouData } from "@/constants/thank-you.data";
+import { thankYouData as initialThankYouData } from "@/constants/thank-you.data";
+import { landingPagesData } from "@/constants/landing-page.data";
+import { BookMarked } from "lucide-react";
+import Link from "next/link";
 
-const Page: React.FC = () => {
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const { q: slug } = await searchParams;
+  const thankYouData =
+    landingPagesData.find((page) => page.slug === slug)?.thankYouData ||
+    initialThankYouData;
   const cleanedNumber = thankYouData.WhatsAppNumber.replace(/\D/g, "");
   const encodedMessage = encodeURIComponent(thankYouData.whatsappMessage);
 
@@ -91,9 +100,26 @@ const Page: React.FC = () => {
             Don't forget to subscribe to our YouTube channel.
           </p>
         </a>
+        {thankYouData.freeCoursesLink && (
+          <Link
+            href={thankYouData.freeCoursesLink}
+            className="w-72 transform rounded-3xl border border-neutral-100 bg-white p-6 shadow-2xl transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-orange-primary"
+          >
+            <div className="mb-4 flex justify-center">
+              <BookMarked className="h-14 w-14 animate-pulse text-orange-primary" />
+            </div>
+            <h2 className="mb-4 text-center text-2xl font-semibold text-gray-800">
+              Watch A free lecture{" "}
+              <span className="text-2xl font-semibold text-orange-primary">
+                Now
+              </span>
+            </h2>
+            <p className="mb-4 text-center text-gray-600">
+              Watch one of our free lectures to get started.
+            </p>
+          </Link>
+        )}
       </div>
     </div>
   );
-};
-
-export default Page;
+}

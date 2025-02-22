@@ -1,56 +1,9 @@
 import Image from "next/image";
 import CourseBackground from "@/assets/images/courseOverview-1.jpg";
-import Button from "@/components/Forms/buttons/Button";
 import YouTubePlayer from "@/components/YouTubePlayer";
 import { landingPagesData } from "@/constants/landing-page.data";
 import { notFound } from "next/navigation";
 import LandingApply from "./landing-apply";
-import { Metadata } from "next";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const page = landingPagesData.find((page) => page.slug === slug);
-  if (!page) return notFound();
-  return {
-    title: page.metaTags.title || page.title,
-    description: page.metaTags.description || page.description,
-    keywords: page.metaTags.keywords,
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-      },
-    },
-    openGraph: {
-      title: page.metaTags.title || page.title,
-      images: [
-        {
-          url: page.imageUrl,
-          width: 1200,
-          height: 630,
-        },
-      ],
-      videos: [
-        {
-          url: page.videoUrl,
-          width: 1920,
-          height: 1080,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: page.metaTags.title,
-      images: [page.imageUrl],
-    },
-  };
-}
 
 const parseTitle = (text: string) => {
   const parts = text.split(/(\*.*?\*)/g); // Split by *word*
