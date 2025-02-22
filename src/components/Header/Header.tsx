@@ -41,7 +41,7 @@ const Header: React.FC<BaseHeaderProps> = () => {
           <div className="flex items-center gap-4">
             <Link
               href="#"
-              className="rounded-xl border border-orange-primary px-4 py-2 font-medium text-orange-primary hover:bg-orange-primary hover:text-white"
+              className="hidden rounded-xl border border-orange-primary px-4 py-2 font-medium text-orange-primary hover:bg-orange-primary hover:text-white md:block"
             >
               Become Instructor
             </Link>

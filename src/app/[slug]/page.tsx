@@ -1,0 +1,126 @@
+import Image from "next/image";
+import CourseBackground from "@/assets/images/courseOverview-1.jpg";
+import Button from "@/components/Forms/buttons/Button";
+import YouTubePlayer from "@/components/YouTubePlayer";
+import { landingPagesData } from "@/constants/landing-page.data";
+import { notFound } from "next/navigation";
+import LandingApply from "./landing-apply";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const page = landingPagesData.find((page) => page.slug === slug);
+  if (!page) return notFound();
+  return {
+    title: page.metaTags.title || page.title,
+    description: page.metaTags.description || page.description,
+    keywords: page.metaTags.keywords,
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
+    openGraph: {
+      title: page.metaTags.title || page.title,
+      images: [
+        {
+          url: page.imageUrl,
+          width: 1200,
+          height: 630,
+        },
+      ],
+      videos: [
+        {
+          url: page.videoUrl,
+          width: 1920,
+          height: 1080,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.metaTags.title,
+      images: [page.imageUrl],
+    },
+  };
+}
+
+const parseTitle = (text: string) => {
+  const parts = text.split(/(\*.*?\*)/g); // Split by *word*
+
+  return parts.map((part, index) => {
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return (
+        <span
+          key={index}
+          className="bg-clip-text text-4xl font-bold text-orange-primary sm:text-5xl"
+        >
+          {part.slice(1, -1)}
+        </span>
+      );
+    }
+    return part;
+  });
+};
+
+const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+  const page = landingPagesData.find((page) => page.slug === slug);
+  if (!page) return notFound();
+  const title = parseTitle(page.title);
+  return (
+    <section className="relative py-12 md:pb-8 md:pt-6">
+      <Image
+        className="absolute left-0 top-0 z-[-1] h-full object-cover"
+        src={CourseBackground}
+        alt="Course Background"
+      />
+      <div className="absolute left-0 top-0 z-[-1] h-full w-full bg-[#042c76ec]"></div>
+      <div className="container mx-auto flex flex-col items-center md:min-h-[80vh] md:flex-row md:justify-between lg:max-w-[1170px]">
+        {/* Left Side: Title, Description, and Button */}
+        <div className="p-4 text-center md:w-1/2 md:pr-8 md:text-left">
+          <h1 className="mb-6 text-4xl font-bold text-white sm:text-5xl">
+            {title}
+          </h1>
+          <p className="mb-8 text-lg text-white">{page.description}</p>
+          <LandingApply
+            className="hidden px-8 py-3 font-semibold md:block"
+            {...page}
+          />
+        </div>
+
+        {/* Right Side: YouTube Video */}
+        <div className="aspect-video w-full p-4 md:w-1/2">
+          {page.videoUrl ? (
+            <YouTubePlayer
+              videoUrl={page.videoUrl}
+              priority={true}
+              autoPlay={true}
+            />
+          ) : (
+            <Image
+              src={page.imageUrl}
+              alt={page.title}
+              width={450}
+              height={450}
+              className="h-full w-full object-cover"
+            />
+          )}
+        </div>
+        <LandingApply
+          className="mb-10 block px-8 py-3 font-semibold md:hidden"
+          {...page}
+        />
+      </div>
+    </section>
+  );
+};
+
+export default Page;

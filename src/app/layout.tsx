@@ -69,7 +69,6 @@ export default function RootLayout({
         <NotificationProvider>
           <main className="pt-[70px]">{children}</main>
         </NotificationProvider>
-        <Footer />
       </body>
     </html>
   );

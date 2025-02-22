@@ -2,6 +2,7 @@
 
 import { commonLinks } from "@/constants/header";
 import { whatsAppData } from "@/constants/social-media.data";
+import { UserCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -9,7 +10,10 @@ import { useEffect, useState } from "react";
 const MobileMenu: React.FC = () => {
   const [menu, setMenu] = useState(false);
   const closeMenu = () => setMenu(false);
-  const whatsappUrl = `https://wa.me/${whatsAppData.number}?text=${encodeURIComponent(whatsAppData.message)}`;
+  const cleanedNumber = whatsAppData.number.replace(/\D/g, "");
+  const encodedMessage = encodeURIComponent(whatsAppData.message);
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${cleanedNumber}&text=${encodedMessage}`;
+
   useEffect(() => {
     if (menu) {
       document.body.classList.add("max-md:overflow-hidden");
@@ -27,7 +31,7 @@ const MobileMenu: React.FC = () => {
       <button
         onClick={() => setMenu((prevState) => !prevState)}
         aria-expanded={menu}
-        className="group w-[56px] text-2xl text-primary focus:outline-none sm:w-[76px] sm:text-3xl lg:hidden"
+        className="group text-2xl text-primary focus:outline-none sm:w-[76px] sm:text-3xl lg:hidden"
         aria-label={menu ? "Close menu" : "Open menu"}
       >
         <svg
@@ -67,7 +71,7 @@ const MobileMenu: React.FC = () => {
       <div
         style={
           menu
-            ? { left: "10px", height: "50vh", width: "60vw" }
+            ? { left: "10px", height: "60vh", width: "60vw" }
             : { left: "-20vw", height: "0", width: "0", top: "0" }
         }
         className="text-background fixed top-[80px] z-20 flex w-[50vw] max-w-[400px] overflow-hidden rounded-[25px] bg-white duration-700 ease-in-out md:hidden"
@@ -89,6 +93,13 @@ const MobileMenu: React.FC = () => {
               </Link>
             );
           })}
+          <button
+            onClick={closeMenu}
+            className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-lg text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-600"
+          >
+            <UserCheck className="h-5 w-5 text-orange-primary" />
+            <span>Become Instructor</span>
+          </button>
 
           <a target="_blank" href={whatsappUrl}>
             <div
@@ -102,7 +113,7 @@ const MobileMenu: React.FC = () => {
                 alt="whats app"
                 className="mr-2 inline-block"
               />
-              <span> Chat</span>
+              <span> Chat With IMETS</span>
             </div>
           </a>
           {/* <Link

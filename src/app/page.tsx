@@ -22,6 +22,7 @@ import { categories } from "@/constants/categories";
 import Link from "next/link";
 import useGeoInfo from "@/hooks/useGeoInfo";
 import Head from "next/head";
+import Footer from "@/components/Footer/footer";
 
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `${process.env.NEXT_PUBLIC_VERCEL_URL}`
@@ -287,6 +288,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
