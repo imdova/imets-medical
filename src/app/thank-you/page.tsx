@@ -5,9 +5,27 @@ import {
   Youtube_Icon,
 } from "@/assets/icons/icons";
 import { thankYouData as initialThankYouData } from "@/constants/thank-you.data";
-import { landingPagesData } from "@/constants/landing-page.data";
+import {
+  freeCourseTitle,
+  landingPagesData,
+} from "@/constants/landing-page.data";
 import { BookMarked } from "lucide-react";
 import Link from "next/link";
+
+const parseTitle = (text: string) => {
+  const parts = text.split(/(\*.*?\*)/g); // Split by *word*
+
+  return parts.map((part, index) => {
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return (
+        <span key={index} className="text-2xl text-orange-primary">
+          {part.slice(1, -1)}
+        </span>
+      );
+    }
+    return part;
+  });
+};
 
 export default async function Page({
   searchParams,
@@ -109,10 +127,7 @@ export default async function Page({
               <BookMarked className="h-14 w-14 animate-pulse text-orange-primary" />
             </div>
             <h2 className="mb-4 text-center text-2xl font-semibold text-gray-800">
-              Watch A free lecture{" "}
-              <span className="text-2xl font-semibold text-orange-primary">
-                Now
-              </span>
+              {parseTitle(freeCourseTitle)}
             </h2>
             <p className="mb-4 text-center text-gray-600">
               Watch one of our free lectures to get started.

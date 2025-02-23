@@ -3,6 +3,11 @@ export const hr_management: FreeCourseType = {
   slug: "healthcare-hr-management-diploma",
   image: "/images/cphq.webp",
   title: "Healthcare HR Management Diploma",
+  // هنا العنوان بالعربي
+  arTitle: "هنا العنوان بالعربي",
+
+  // lagging page url
+  url: "/apply-now",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",

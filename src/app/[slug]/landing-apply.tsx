@@ -8,11 +8,9 @@ import { sendDataToMailerLite } from "@/lib/mailerlite/mailer_lite";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
-const LandingApply: React.FC<LandingPageType & { className?: string }> = ({
-  button,
-  className,
-  slug,
-}) => {
+const LandingApply: React.FC<
+  LandingPageType & { className?: string; lang: Languages }
+> = ({ button, className, slug, lang }) => {
   const formData =
     formsData.find((x) => x.name === button.formData.name) || formsData[0];
 
@@ -35,10 +33,11 @@ const LandingApply: React.FC<LandingPageType & { className?: string }> = ({
       );
 
       if (response.success) {
-        showNotification("success", formData.successMessage);
         // onClose();
         if (button.formData.redirectUrl) {
           router.push(`${button.formData.redirectUrl}?q=${slug}`);
+        } else {
+          showNotification("success", formData.successMessage);
         }
       } else {
         setError("Failed to send your data ");
@@ -68,7 +67,7 @@ const LandingApply: React.FC<LandingPageType & { className?: string }> = ({
         </Modal>
       )}
       <Button onClick={open} className={className}>
-        {button.label}
+        {button.label[lang]}
       </Button>
     </React.Fragment>
   );

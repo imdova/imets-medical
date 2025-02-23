@@ -3,6 +3,11 @@ export const strategic_management: FreeCourseType = {
   slug: "strategic-management-diploma",
   image: "/images/cphq.webp",
   title: "Healthcare Strategic Management Diploma",
+  // هنا العنوان بالعربي
+  arTitle: "هنا العنوان بالعربي",
+
+  // lagging page url
+  url: "/apply-now",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",
@@ -58,9 +63,9 @@ export const strategic_management: FreeCourseType = {
     },
   ],
   material: "/files/intro-to-nextjs.pdf",
-  actionImage:{
-    image:"",
-    url:""
+  actionImage: {
+    image: "",
+    url: "",
   },
   socialMediaCards: {
     whatsApp: {

@@ -82,8 +82,10 @@ type Review = {
 type FreeCourseType = {
   id: string;
   slug: string;
+  url: string;
   image: string;
   title: string;
+  arTitle: string;
   instructor: {
     id: string;
     name: string;

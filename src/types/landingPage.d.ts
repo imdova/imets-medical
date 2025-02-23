@@ -1,10 +1,16 @@
 type LandingPageType = {
-  title: string;
-  description: string;
+  title: {
+    [key in Languages]: string;
+  };
+  description: {
+    [key in Languages]: string;
+  };
   videoUrl: string;
   imageUrl: string;
   button: {
-    label: string;
+    label: {
+      [key in Languages]: string;
+    };
     formData: {
       name: string;
       groupId: string;

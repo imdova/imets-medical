@@ -3,6 +3,11 @@ export const cphq_preparation_course: FreeCourseType = {
   slug: "cphq-course",
   image: "/images/cphq.webp",
   title: "CPHQ Preparation Course",
+  // هنا العنوان بالعربي
+  arTitle: "هنا العنوان بالعربي",
+
+  // lagging page url
+  url: "/apply-now",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",

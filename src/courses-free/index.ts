@@ -8,6 +8,13 @@ import { infection_prevention_and_control_diploma } from "./infection-prevention
 import { strategic_management } from "./strategic-management";
 import { supply_chain } from "./supplychain";
 
+export const freeCoursesContent: FreeCoursesContentType = {
+  title: {
+    en: "Free Lecture",
+    ar: "محاضرات مجانيه",
+  },
+};
+
 const freeCourses: FreeCourseType[] = [
   cic_preparation_course,
   cphq_preparation_course,

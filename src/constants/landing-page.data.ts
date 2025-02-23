@@ -1,15 +1,22 @@
+export const freeCourseTitle = "Watch A free lecture *NOW*";
+
 export const landingPagesData: LandingPageType[] = [
   {
-    title: "Apply for IMETS *Medical School*",
+    title: {
+      en: "Launch Your Career with IMETS *Medical School*",
+      ar: "ارتقِ بمستقبلك الطبي مع IMETS *الطبية*",
+    },
     slug: "apply-now",
-    description: `We’re thrilled to have you join the [Course Name] community. Your
-            application has been received, and we’ll be in touch soon with the
-            next steps. Get ready to embark on an exciting learning journey!`,
+    description: {
+      en: `Welcome aboard! Your spot in the [Course Name] community is reserved. 
+            Expect an update from us soon—your journey to mastering medical expertise starts here!`,
+      ar: "مرحبًا بك بيننا! لقد وصلنا طلبك للانضمام إلى مجتمع [Course Name]، وسنتواصل معك قريبًا لنبدأ معًا رحلة التميز الطبي التي تستحقها!",
+    },
     videoUrl: "",
     imageUrl:
       "https://img.freepik.com/free-photo/students-listening-lecture_23-2147649721.jpg?w=996",
     button: {
-      label: "Apply Now",
+      label: { ar: "انطلق الآن", en: "Get Started" },
       formData: {
         name: "form-speciality",
         groupId: "112929547",
@@ -17,7 +24,7 @@ export const landingPagesData: LandingPageType[] = [
       },
     },
     thankYouData: {
-      title: "Thanks You!",
+      title: "Thank You!",
       WhatsAppNumber: "+201008815007",
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
@@ -26,16 +33,21 @@ export const landingPagesData: LandingPageType[] = [
     },
   },
   {
-    title: "Healthcare Business Programs",
+    title: {
+      en: "Master Healthcare with IMETS *Medical School*",
+      ar: "أتقن فن الرعاية الصحية مع IMETS *الطبية*",
+    },
     slug: "healthcare-business-programs",
-    description: `We’re thrilled to have you join the [Course Name] community. Your
-            application has been received, and we’ll be in touch soon with the
-            next steps. Get ready to embark on an exciting learning journey!`,
+    description: {
+      en: `You’re in! Your application to join [Course Name] is confirmed. 
+            We’ll reach out soon—get set to elevate your healthcare career!`,
+      ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
+    },
     videoUrl: "",
     imageUrl:
       "https://img.freepik.com/free-photo/students-listening-lecture_23-2147649721.jpg?w=996",
     button: {
-      label: "Learn More",
+      label: { ar: "سجل فرصتك الآن", en: "Enroll Today" },
       formData: {
         name: "form-basic",
         groupId: "112929547",
@@ -43,7 +55,7 @@ export const landingPagesData: LandingPageType[] = [
       },
     },
     thankYouData: {
-      title: "Thanks You!",
+      title: "Thank You!",
       WhatsAppNumber: "+201008815007",
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",

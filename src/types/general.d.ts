@@ -1,3 +1,12 @@
+// header
+type LinkItemType = {
+  title: string;
+  arTitle?: string;
+  url: string;
+  icon?: React.ElementType; // Add an icon property
+  subLinks?: LinkItemType[];
+};
+
 interface Result<T = void> {
   success: boolean;
   message: string;
@@ -33,4 +42,12 @@ type CategoryType = {
     keywords: string;
   };
   htmlInput: string;
+};
+
+///
+type Languages = "en" | "ar";
+type FreeCoursesContentType = {
+  [key: string]: {
+    [key in Languages]: string;
+  };
 };

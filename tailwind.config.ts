@@ -22,6 +22,8 @@ export default {
         "hover-link": "var(--hover-link)",
       },
       fontFamily: {
+        geistSans: ["var(--font-geist-sans)"],
+        geistMono: ["var(--font-geist-mono)"],
         watad: ["var(--font-watad)"],
       },
       boxShadow: {

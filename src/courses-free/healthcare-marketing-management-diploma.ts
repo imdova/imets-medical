@@ -3,6 +3,12 @@ export const healthcare_marketing_management_diploma: FreeCourseType = {
   slug: "healthcare-marketing-management-diploma",
   image: "/images/marketing.webp",
   title: "Healthcare Marketing Management Diploma",
+  // هنا العنوان بالعربي
+  arTitle: "هنا العنوان بالعربي",
+
+  // lagging page url
+  url: "/apply-now",
+
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",

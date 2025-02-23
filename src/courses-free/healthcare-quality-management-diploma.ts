@@ -3,6 +3,11 @@ export const healthcare_quality_management_diploma: FreeCourseType = {
   slug: "healthcare-quality-management-diploma",
   image: "/images/quality diploma.webp",
   title: "Healthcare Quality Management Diploma",
+  // هنا العنوان بالعربي
+  arTitle: "هنا العنوان بالعربي",
+
+  // lagging page url
+  url: "/apply-now",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",

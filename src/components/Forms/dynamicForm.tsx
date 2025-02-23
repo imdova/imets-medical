@@ -103,7 +103,8 @@ const DynamicForm = ({
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full space-y-4 text-left"
+      dir="ltr"
+      className="font-geistSans w-full space-y-4 text-left"
       noValidate
     >
       <div>

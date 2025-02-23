@@ -88,7 +88,7 @@ const MobileMenu: React.FC = () => {
                 onClick={closeMenu}
                 className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-lg text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-600"
               >
-                <Icon className="h-5 w-5 text-orange-primary" />
+                {Icon && <Icon className="h-5 w-5 text-orange-primary" />}
                 <span>{link.title}</span>
               </Link>
             );

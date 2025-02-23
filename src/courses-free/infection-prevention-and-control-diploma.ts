@@ -3,6 +3,7 @@ export const infection_prevention_and_control_diploma: FreeCourseType = {
   slug: "infection-control-diploma",
   image: "/images/infection.webp",
   title: "Infection Control Diploma",
+  arTitle: "هنا العنوان بالعربي",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",
@@ -12,6 +13,7 @@ export const infection_prevention_and_control_diploma: FreeCourseType = {
     image:
       "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
   },
+  url: "/apply-now",
 
   videos: [
     {
