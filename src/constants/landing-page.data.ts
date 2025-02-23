@@ -3,23 +3,22 @@ export const freeCourseTitle = "Watch A free lecture *NOW*";
 export const landingPagesData: LandingPageType[] = [
   {
     title: {
-      en: "Launch Your Career with IMETS *Medical School*",
-      ar: "ارتقِ بمستقبلك الطبي مع IMETS *الطبية*",
+      en: "Advance Your Career in Healthcare Quality  *Enroll for FREE Today!*",
+      ar: "*طور مهاراتك في جودة الرعاية الصحية *سجّل الآن مجانًا!",
     },
-    slug: "apply-now",
+    slug: "apply-cphq-free",
     description: {
-      en: `Welcome aboard! Your spot in the [Course Name] community is reserved. 
-            Expect an update from us soon—your journey to mastering medical expertise starts here!`,
-      ar: "مرحبًا بك بيننا! لقد وصلنا طلبك للانضمام إلى مجتمع [Course Name]، وسنتواصل معك قريبًا لنبدأ معًا رحلة التميز الطبي التي تستحقها!",
+      en: `Ready to elevate your expertise in healthcare quality and patient safety? Join our FREE comprehensive course and gain essential skills to enhance healthcare standards and drive excellence in patient care`,
+      ar: "لا تفوّت هذه الفرصة لتطوير مهاراتك وتعزيز فرصك المهنية. سجّل الآن وابدأ رحلتك نحو التميز في جودة الرعاية الصحية!",
     },
     videoUrl: "",
     imageUrl:
-      "https://img.freepik.com/free-photo/students-listening-lecture_23-2147649721.jpg?w=996",
+      "/images/free/cphqfree.png",
     button: {
-      label: { ar: "انطلق الآن", en: "Get Started" },
+      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
         name: "form-speciality",
-        groupId: "112929547",
+        groupId: "112933289",
         redirectUrl: "/thank-you",
       },
     },

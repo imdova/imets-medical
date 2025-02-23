@@ -1,16 +1,16 @@
 export const cphq_preparation_course: FreeCourseType = {
   id: "1",
-  slug: "cphq-course",
+  slug: "cphq",
   image: "/images/cphq.webp",
   title: "CPHQ Preparation Course",
   // هنا العنوان بالعربي
-  arTitle: "هنا العنوان بالعربي",
+  arTitle: "البورد الأمريكي في جودة الرعاية الصحية - CPHQ",
 
   // lagging page url
-  url: "/apply-now",
+  url: "/apply-cphq-free",
   status: "BestSeller",
   rating: 5,
-  startDate: "2022-01-01",
+  startDate: "",
 
   /// instructor data
   instructor: {
@@ -27,7 +27,7 @@ export const cphq_preparation_course: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=SV3wK4hYwbc",
       // if locked make it true this is free access video
       locked: false,
-      duration: "1:00",
+      duration: "33:32",
     },
     {
       title: "Healthcare Quality Aspects",
@@ -35,7 +35,7 @@ export const cphq_preparation_course: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=kNitOV_x4dI",
       // if locked make it true this is free access video
       locked: false,
-      duration: "4:00",
+      duration: "7:46",
     },
     {
       title: "Healthcare Quality Dimensions",
@@ -43,24 +43,24 @@ export const cphq_preparation_course: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=qcMEQ_ZhtXk&t=9s",
       //  this is locked access video
       locked: false,
-      duration: "2:35",
+      duration: "28:01",
     },
   ],
-  material: "/files/intro-to-nextjs.pdf",
+  material: "https://drive.google.com/file/d/11OOo_EJNYzdSUOSsIRwb5KBAP6XJ6NrC/view?usp=sharing",
   actionImage: {
-    image: "/images/cic.webp",
-    url: "/courses",
+    image: "/images/cphqdesign.webp",
+    url: "/wa.me/201008815007",
   },
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",
-      message: "Hi, I'm interested in your course",
+      message: "Hi, I'm interested in your CPHQ course",
     },
     telegram: {
-      link: "https://t.me/imetsacademymedical",
+      link: "https://t.me/imetsmedicalschool",
     },
     youTube: {
-      link: "https://www.youtube.com/c/IMETSAcademyMedical",
+      link: "https://www.youtube.com/IMETSAcademyMedical/?sub_confirmation=1",
     },
   },
 };
