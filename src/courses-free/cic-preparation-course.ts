@@ -1,14 +1,14 @@
 export const cic_preparation_course: FreeCourseType = {
   id: "3",
-  slug: "cic-preparation-course",
+  slug: "cic",
   image: "/images/cic.webp",
   title: "CIC Preparation Course",
 
   // هنا العنوان بالعربي
-  arTitle: "هنا العنوان بالعربي",
+  arTitle: "البورد الأمريكي في مكافحة العدوي",
 
   // lagging page url
-  url: "/apply-now",
+  url: "/apply-cic-free",
 
   status: "BestSeller",
   rating: 5,
@@ -63,20 +63,20 @@ export const cic_preparation_course: FreeCourseType = {
     },
   ],
   actionImage: {
-    image: "/images/cic.webp",
-    url: "/courses",
+    image: "/images/free/cicdesign.jpg",
+    url: "https://wa.me/201008815007",
   },
   material: "/files/intro-to-nextjs.pdf",
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",
-      message: "Hi, I'm interested in your course",
+      message: "Hi, I'm interested in your CPHQ course",
     },
     telegram: {
-      link: "https://t.me/imetsacademymedical",
+      link: "https://t.me/imetsmedicalschool",
     },
     youTube: {
-      link: "https://www.youtube.com/c/IMETSAcademyMedical",
+      link: "https://www.youtube.com/IMETSAcademyMedical/?sub_confirmation=1",
     },
   },
 };

@@ -49,7 +49,7 @@ export const cphq_preparation_course: FreeCourseType = {
   material: "https://drive.google.com/file/d/11OOo_EJNYzdSUOSsIRwb5KBAP6XJ6NrC/view?usp=sharing",
   actionImage: {
     image: "/images/cphqdesign.webp",
-    url: "/wa.me/201008815007",
+    url: "http://wa.me/201008815007",
   },
   socialMediaCards: {
     whatsApp: {

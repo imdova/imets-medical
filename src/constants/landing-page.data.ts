@@ -23,20 +23,20 @@ export const landingPagesData: LandingPageType[] = [
       },
     },
     thankYouData: {
-      title: "Thank You!",
+      title: "Thank You for registration ... kindly check your email!",
       WhatsAppNumber: "+201008815007",
       whatsappMessage: "I have a Question",
-      telegramLink: "https://t.me/demo",
-      youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cphq-course",
+      telegramLink: "https://t.me/imetsmedicalschool",
+      youtubeLink: "https://www.youtube.com/IMETSAcademyMedical/?sub_confirmation=1",
+      freeCoursesLink: "/course-free/cphq",
     },
   },
   {
     title: {
-      en: "Master Healthcare with IMETS *Medical School*",
-      ar: "أتقن فن الرعاية الصحية مع IMETS *الطبية*",
+      en: "Advance Your Career in Infection Control *Enroll for FREE Today!*",
+      ar: "*طور مهاراتك في مجال مكافحة العدوي *سجّل الآن مجانًا!",
     },
-    slug: "healthcare-business-programs",
+    slug: "apply-cic-free",
     description: {
       en: `You’re in! Your application to join [Course Name] is confirmed. 
             We’ll reach out soon—get set to elevate your healthcare career!`,
@@ -44,9 +44,9 @@ export const landingPagesData: LandingPageType[] = [
     },
     videoUrl: "",
     imageUrl:
-      "https://img.freepik.com/free-photo/students-listening-lecture_23-2147649721.jpg?w=996",
+      "/images/free/cicfree.png",
     button: {
-      label: { ar: "سجل فرصتك الآن", en: "Enroll Today" },
+      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
         name: "form-basic",
         groupId: "112929547",
