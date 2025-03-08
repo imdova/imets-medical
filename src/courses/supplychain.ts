@@ -24,7 +24,7 @@ export const supply_chain: CourseType = {
   status: "BestSeller",
   type: "Healthcare Quality",
   video: {
-    url: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
+    url: "https://www.youtube.com/watch?v=vBD0zyAwczg",
   },
   duration: "12 weeks",
   languages: "EN - AR",

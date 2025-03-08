@@ -27,9 +27,9 @@ export const infection_prevention_and_control_diploma: CourseType = {
   status: "BestSeller",
   type: "Infection Control",
   video: {
-    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+    url: "https://www.youtube.com/watch?v=TXs_B_BzUiw",
     thumbnail:
-      "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
+      "",
   },
   duration: "18 weeks",
   languages: "EN - AR",
