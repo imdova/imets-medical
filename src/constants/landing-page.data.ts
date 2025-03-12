@@ -48,8 +48,8 @@ export const landingPagesData: LandingPageType[] = [
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
-        groupId: "112929547",
+        name: "form-speciality",
+        groupId: "112933292",
         redirectUrl: "/thank-you",
       },
     },
@@ -79,8 +79,8 @@ export const landingPagesData: LandingPageType[] = [
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
-        groupId: "112929547",
+        name: "form-speciality",
+        groupId: "112933295",
         redirectUrl: "/thank-you",
       },
     },
@@ -106,12 +106,12 @@ export const landingPagesData: LandingPageType[] = [
     },
     videoUrl: "",
     imageUrl:
-      "/images/mktfree.jpg",
+      "/images/hrfree.jpg",
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
-        groupId: "112929547",
+        name: "form-speciality",
+        groupId: "112933293",
         redirectUrl: "/thank-you",
       },
     },
@@ -141,8 +141,8 @@ export const landingPagesData: LandingPageType[] = [
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
-        groupId: "112929547",
+        name: "form-speciality",
+        groupId: "112933296",
         redirectUrl: "/thank-you",
       },
     },
@@ -172,8 +172,8 @@ export const landingPagesData: LandingPageType[] = [
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
-        groupId: "112929547",
+        name: "form-speciality",
+        groupId: "112933294",
         redirectUrl: "/thank-you",
       },
     },
@@ -203,8 +203,8 @@ export const landingPagesData: LandingPageType[] = [
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
-        groupId: "112929547",
+        name: "form-speciality",
+        groupId: "112933289",
         redirectUrl: "/thank-you",
       },
     },
@@ -234,7 +234,38 @@ export const landingPagesData: LandingPageType[] = [
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
+        name: "form-speciality",
+        groupId: "112933292",
+        redirectUrl: "/thank-you",
+      },
+    },
+    thankYouData: {
+      title: "Thank You!",
+      WhatsAppNumber: "+201008815007",
+      whatsappMessage: "I have a Question",
+      telegramLink: "https://t.me/demo",
+      youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
+      freeCoursesLink: "/course-free/cic-preparation-course",
+    },
+  },
+  {
+    title: {
+      en: "Advance Your Career in Hospital Management and Operational Excellence *Enroll for FREE Today!*",
+      ar: "*طور مهاراتك في مجال ادارة المستشفيات والمراكز الصحية *سجّل الآن مجانًا!",
+    },
+    slug: "apply-hosp-free",
+    description: {
+      en: `You’re in! Your application to join Healthcare and Hospital Management is confirmed. 
+            We’ll reach out soon—get set to elevate your healthcare career!`,
+      ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
+    },
+    videoUrl: "",
+    imageUrl:
+      "/images/hospfree.jpg",
+    button: {
+      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      formData: {
+        name: "form-speciality",
         groupId: "112929547",
         redirectUrl: "/thank-you",
       },
@@ -250,10 +281,10 @@ export const landingPagesData: LandingPageType[] = [
   },
   {
     title: {
-      en: "Advance Your Career in Healthcare Quality Management *Enroll for FREE Today!*",
-      ar: "*طور مهاراتك في مجال ادارة المستشفيات والمراكز الصحية *سجّل الآن مجانًا!",
+      en: "Advance Your Career in Healthcare Financial Management *Enroll for FREE Today!*",
+      ar: "*طور مهاراتك في مجال الادارة المالية للقطاع الصحي *سجّل الآن مجانًا!",
     },
-    slug: "apply-hosp-free",
+    slug: "apply-finance-free",
     description: {
       en: `You’re in! Your application to join Healthcare and Hospital Management is confirmed. 
             We’ll reach out soon—get set to elevate your healthcare career!`,
@@ -265,8 +296,8 @@ export const landingPagesData: LandingPageType[] = [
     button: {
       label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
       formData: {
-        name: "form-basic",
-        groupId: "112929547",
+        name: "form-speciality",
+        groupId: "112933299",
         redirectUrl: "/thank-you",
       },
     },
