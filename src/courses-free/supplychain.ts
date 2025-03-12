@@ -1,13 +1,13 @@
 export const supply_chain: FreeCourseType = {
   id: "7",
-  slug: "healthcare-supply-chain-diploma",
+  slug: "supplychain",
   image: "/images/supply-chain.webp",
   title: "Healthcare Supply Management Diploma",
   // هنا العنوان بالعربي
   arTitle: "هنا العنوان بالعربي",
 
   // lagging page url
-  url: "/apply-now",
+  url: "/apply-supplychain-free",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",

@@ -1,13 +1,13 @@
 export const hr_management: FreeCourseType = {
   id: "9",
-  slug: "healthcare-hr-management-diploma",
-  image: "/images/cphq.webp",
+  slug: "hr",
+  image: "/images/hrfree.jpg",
   title: "Healthcare HR Management Diploma",
   // هنا العنوان بالعربي
   arTitle: "هنا العنوان بالعربي",
 
   // lagging page url
-  url: "/apply-now",
+  url: "/apply-hr-free",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",
@@ -24,10 +24,10 @@ export const hr_management: FreeCourseType = {
     {
       title: "Introduction",
       progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
+      url: "https://www.youtube.com/watch?v=h31moKF7_m8&t=4s",
       // if locked make it true this is free access video
       locked: false,
-      duration: "1:00",
+      duration: "31:11",
     },
     {
       title: "Medical Terminology",
@@ -35,32 +35,25 @@ export const hr_management: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
       // if locked make it true this is free access video
       locked: false,
-      duration: "4:00",
+      duration: "33:15",
     },
     {
       title: "Medical Neuroscience",
       progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
+      url: "https://www.youtube.com/watch?v=pAgYIe0offw&t=5s",
       //  this is locked access video
       locked: false,
-      duration: "2:35",
+      duration: "26:22",
     },
     {
       title: "Trauma on EMT",
       progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
+      url: "https://www.youtube.com/watch?v=PPRM9MjLrWc&t=2s",
       //  this is locked access video
       locked: false,
-      duration: "7:00",
+      duration: "35:27",
     },
-    {
-      title: "Biomedical Visualization",
-      progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
-      //  this is locked access video
-      locked: false,
-      duration: "11:00",
-    },
+    
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {

@@ -1,13 +1,13 @@
 export const hospital_management_diploma: FreeCourseType = {
   id: "5",
-  slug: "Hospital-Management-Diploma",
+  slug: "hosp",
   image: "/images/hospital management.webp",
   title: "Hospital Management Diploma",
   // هنا العنوان بالعربي
   arTitle: "هنا العنوان بالعربي",
 
   // lagging page url
-  url: "/apply-now",
+  url: "/apply-hosp-free",
   status: "BestSeller",
   rating: 5,
   startDate: "2022-01-01",

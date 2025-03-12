@@ -1,6 +1,6 @@
 export const healthcare_marketing_management_diploma: FreeCourseType = {
   id: "6",
-  slug: "healthcare-marketing-management-diploma",
+  slug: "marketing",
   image: "/images/marketing.webp",
   title: "Healthcare Marketing Management Diploma",
   // هنا العنوان بالعربي
