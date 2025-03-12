@@ -24,43 +24,28 @@ export const strategic_management: FreeCourseType = {
     {
       title: "Introduction",
       progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
+      url: "https://www.youtube.com/watch?v=q4doMg7_bQQ",
       // if locked make it true this is free access video
       locked: false,
-      duration: "1:00",
+      duration: "40:34",
     },
     {
       title: "Medical Terminology",
       progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
+      url: "https://www.youtube.com/watch?v=EDqCDRYYgC4",
       // if locked make it true this is free access video
       locked: false,
-      duration: "4:00",
+      duration: "51:49",
     },
     {
       title: "Medical Neuroscience",
       progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
+      url: "https://www.youtube.com/watch?v=UMKi6akwGEQ",
       //  this is locked access video
       locked: false,
-      duration: "2:35",
+      duration: "60:01",
     },
-    {
-      title: "Trauma on EMT",
-      progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
-      //  this is locked access video
-      locked: false,
-      duration: "7:00",
-    },
-    {
-      title: "Biomedical Visualization",
-      progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
-      //  this is locked access video
-      locked: false,
-      duration: "11:00",
-    },
+    
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
