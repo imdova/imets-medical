@@ -49,7 +49,7 @@ export const supply_chain: FreeCourseType = {
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
-    image: "/images/cic.webp",
+    image: "/images/supplypromo.jpg",
     url: "/courses",
   },
   socialMediaCards: {

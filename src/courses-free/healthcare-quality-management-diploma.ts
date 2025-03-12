@@ -33,31 +33,11 @@ export const healthcare_quality_management_diploma: FreeCourseType = {
       locked: false,
       duration: "4:00",
     },
-    {
-      title: "Medical Neuroscience",
-      progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
-      locked: false,
-      duration: "2:35",
-    },
-    {
-      title: "Trauma on EMT",
-      progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
-      locked: false,
-      duration: "7:00",
-    },
-    {
-      title: "Biomedical Visualization",
-      progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
-      locked: false,
-      duration: "11:00",
-    },
+   
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
-    image: "/images/cic.webp",
+    image: "/images/qualitypromo.jpg",
     url: "/courses",
   },
   socialMediaCards: {

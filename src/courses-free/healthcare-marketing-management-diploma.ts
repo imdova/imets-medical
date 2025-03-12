@@ -45,7 +45,7 @@ export const healthcare_marketing_management_diploma: FreeCourseType = {
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
-    image: "/images/cic.webp",
+    image: "/images/marketingpromo.jpg",
     url: "/courses",
   },
   socialMediaCards: {

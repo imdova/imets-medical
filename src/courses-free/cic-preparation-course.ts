@@ -35,7 +35,7 @@ export const cic_preparation_course: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=kkvEfRWuOXU&t=2s",
       // if locked make it true this is free access video
       locked: false,
-      duration: "4:00",
+      duration: "21:02",
     },
     {
       title: "Introduction to CIC Preparation Part 3",
@@ -43,7 +43,7 @@ export const cic_preparation_course: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=iR0SM4lmoyA&t=4s",
       //  this is locked access video
       locked: false,
-      duration: "2:35",
+      duration: "8:13",
     },
     {
       title: "Introduction to CIC Preparation Part 4",
@@ -51,7 +51,15 @@ export const cic_preparation_course: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=4jwFOwtDEw4",
       //  this is locked access video
       locked: false,
-      duration: "7:00",
+      duration: "25:33",
+    },
+    {
+      title: "Introduction to CIC Preparation Part 4",
+      progress: 75,
+      url: "https://www.youtube.com/watch?v=4jwFOwtDEw4",
+      //  this is locked access video
+      locked: false,
+      duration: "38:56",
     },
     {
       title: "Introduction to CIC Preparation Part 5",
@@ -59,7 +67,7 @@ export const cic_preparation_course: FreeCourseType = {
       url: "https://www.youtube.com/watch?v=-ZRFDo25AYo&t=606s",
       //  this is locked access video
       locked: false,
-      duration: "11:00",
+      duration: "52:14",
     },
   ],
   actionImage: {

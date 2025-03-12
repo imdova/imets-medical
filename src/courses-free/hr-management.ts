@@ -57,7 +57,7 @@ export const hr_management: FreeCourseType = {
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
-    image: "/images/cic.webp",
+    image: "/images/hrpromo.jpg",
     url: "/courses",
   },
   socialMediaCards: {

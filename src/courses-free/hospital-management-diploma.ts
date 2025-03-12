@@ -57,7 +57,7 @@ export const hospital_management_diploma: FreeCourseType = {
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
-    image: "/images/cic.webp",
+    image: "/images/hosppromo.jpg",
     url: "/courses",
   },
   socialMediaCards: {

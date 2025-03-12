@@ -54,7 +54,7 @@ export const infection_prevention_and_control_diploma: FreeCourseType = {
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
-    image: "/images/cic.webp",
+    image: "/images/icpromo.jpg",
     url: "/courses",
   },
   socialMediaCards: {

@@ -49,7 +49,7 @@ export const strategic_management: FreeCourseType = {
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
-    image: "",
+    image: "/images/strategicpromo.jpg",
     url: "",
   },
   socialMediaCards: {
