@@ -62,4 +62,35 @@ export const landingPagesData: LandingPageType[] = [
       freeCoursesLink: "/course-free/cic-preparation-course",
     },
   },
+  {
+    title: {
+      en: "Advance Your Career in Healthcare Marketing *Enroll for FREE Today!*",
+      ar: "*طور مهاراتك في مجال التسويق الطبي *سجّل الآن مجانًا!",
+    },
+    slug: "apply-marketing-free",
+    description: {
+      en: `You’re in! Your application to join [Course Name] is confirmed. 
+            We’ll reach out soon—get set to elevate your healthcare career!`,
+      ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
+    },
+    videoUrl: "",
+    imageUrl:
+      "/images/mktfree.jpg",
+    button: {
+      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      formData: {
+        name: "form-basic",
+        groupId: "112929547",
+        redirectUrl: "/thank-you",
+      },
+    },
+    thankYouData: {
+      title: "Thank You!",
+      WhatsAppNumber: "+201008815007",
+      whatsappMessage: "I have a Question",
+      telegramLink: "https://t.me/demo",
+      youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
+      freeCoursesLink: "/course-free/cic-preparation-course",
+    },
+  },
 ];

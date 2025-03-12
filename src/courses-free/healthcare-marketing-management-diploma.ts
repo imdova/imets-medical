@@ -7,7 +7,7 @@ export const healthcare_marketing_management_diploma: FreeCourseType = {
   arTitle: "هنا العنوان بالعربي",
 
   // lagging page url
-  url: "/apply-now",
+  url: "/apply-marketing-free",
 
   status: "BestSeller",
   rating: 5,
@@ -20,40 +20,28 @@ export const healthcare_marketing_management_diploma: FreeCourseType = {
 
   videos: [
     {
-      title: "Introduction",
+      title: "Marketing Department Structure",
       progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
+      url: "https://www.youtube.com/watch?v=5N4M7TBlXkg&t=2s",
       locked: false,
-      duration: "1:00",
+      duration: "48:53",
     },
     {
-      title: "Medical Terminology",
+      title: "Marketing Titles and Role of Each",
       progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
+      url: "https://www.youtube.com/watch?v=pZ_0rOrpq9k&t=7s",
       locked: false,
-      duration: "4:00",
+      duration: "48:52",
     },
     {
-      title: "Medical Neuroscience",
+      title: "Digital Marketing",
       progress: 50,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=3",
+      url: "https://www.youtube.com/watch?v=yHB4s5gyaBs",
       locked: false,
-      duration: "2:35",
+      duration: "32:36",
     },
-    {
-      title: "Trauma on EMT",
-      progress: 75,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=4",
-      locked: false,
-      duration: "7:00",
-    },
-    {
-      title: "Biomedical Visualization",
-      progress: 100,
-      url: "https://www.youtube.com/watch?v=R-Hu5rdn-vc&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=5",
-      locked: false,
-      duration: "11:00",
-    },
+    
+    
   ],
   material: "/files/intro-to-nextjs.pdf",
   actionImage: {
