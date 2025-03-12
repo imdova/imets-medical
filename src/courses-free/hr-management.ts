@@ -32,7 +32,7 @@ export const hr_management: FreeCourseType = {
     {
       title: "Medical Terminology",
       progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
+      url: "https://www.youtube.com/watch?v=bAbYJHIoFJk",
       // if locked make it true this is free access video
       locked: false,
       duration: "33:15",
