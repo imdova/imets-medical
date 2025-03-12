@@ -22,7 +22,7 @@ export const supply_chain: FreeCourseType = {
   /// the videos at  the free course
   videos: [
     {
-      title: "Introduction",
+      title: "Operational Components of Healthcare SCM",
       progress: 10,
       url: "https://www.youtube.com/watch?v=r_PZeWjcosc",
       // if locked make it true this is free access video
@@ -30,7 +30,7 @@ export const supply_chain: FreeCourseType = {
       duration: "42:38",
     },
     {
-      title: "Medical Terminology",
+      title: "Qualitative Forecasting Methods",
       progress: 30,
       url: "https://www.youtube.com/watch?v=2KQmvnxGoWQ",
       // if locked make it true this is free access video
@@ -38,7 +38,7 @@ export const supply_chain: FreeCourseType = {
       duration: "37:58",
     },
     {
-      title: "Medical Neuroscience",
+      title: "Inventory Management",
       progress: 50,
       url: "https://www.youtube.com/watch?v=nurliSKJqdg&t=4s",
       //  this is locked access video

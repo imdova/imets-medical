@@ -22,7 +22,7 @@ export const strategic_management: FreeCourseType = {
   /// the videos at  the free course
   videos: [
     {
-      title: "Introduction",
+      title: "Strategic Management Model",
       progress: 10,
       url: "https://www.youtube.com/watch?v=q4doMg7_bQQ",
       // if locked make it true this is free access video
@@ -30,7 +30,7 @@ export const strategic_management: FreeCourseType = {
       duration: "40:34",
     },
     {
-      title: "Medical Terminology",
+      title: "Boston Consulting Group ( BCG Matrix )",
       progress: 30,
       url: "https://www.youtube.com/watch?v=EDqCDRYYgC4",
       // if locked make it true this is free access video
@@ -38,7 +38,7 @@ export const strategic_management: FreeCourseType = {
       duration: "51:49",
     },
     {
-      title: "Medical Neuroscience",
+      title: "Internal - External ( IE Matrix )",
       progress: 50,
       url: "https://www.youtube.com/watch?v=UMKi6akwGEQ",
       //  this is locked access video

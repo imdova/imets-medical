@@ -22,7 +22,7 @@ export const hr_management: FreeCourseType = {
   /// the videos at  the free course
   videos: [
     {
-      title: "Introduction",
+      title: "HR Management Road Map",
       progress: 10,
       url: "https://www.youtube.com/watch?v=h31moKF7_m8&t=4s",
       // if locked make it true this is free access video
@@ -30,7 +30,7 @@ export const hr_management: FreeCourseType = {
       duration: "31:11",
     },
     {
-      title: "Medical Terminology",
+      title: "Talent Management Process",
       progress: 30,
       url: "https://www.youtube.com/watch?v=bAbYJHIoFJk",
       // if locked make it true this is free access video
@@ -38,7 +38,7 @@ export const hr_management: FreeCourseType = {
       duration: "33:15",
     },
     {
-      title: "Medical Neuroscience",
+      title: "Collecting Job Analysis Information",
       progress: 50,
       url: "https://www.youtube.com/watch?v=pAgYIe0offw&t=5s",
       //  this is locked access video
@@ -46,7 +46,7 @@ export const hr_management: FreeCourseType = {
       duration: "26:22",
     },
     {
-      title: "Trauma on EMT",
+      title: "Uses of Job Analysis Information",
       progress: 75,
       url: "https://www.youtube.com/watch?v=PPRM9MjLrWc&t=2s",
       //  this is locked access video
