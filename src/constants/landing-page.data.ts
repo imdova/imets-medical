@@ -59,7 +59,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/cic",
     },
   },
   {
@@ -90,7 +90,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/marketing",
     },
   },
   {
@@ -121,7 +121,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/hr",
     },
   },
   {
@@ -152,7 +152,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/supplychain",
     },
   },
   {
@@ -183,7 +183,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/strategic",
     },
   },
   {
@@ -214,7 +214,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/quality",
     },
   },
   {
@@ -245,7 +245,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/ic",
     },
   },
   {
@@ -276,7 +276,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/hosp",
     },
   },
   {
@@ -307,7 +307,7 @@ export const landingPagesData: LandingPageType[] = [
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/demo",
       youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
-      freeCoursesLink: "/course-free/cic-preparation-course",
+      freeCoursesLink: "/course-free/finance",
     },
   },
 ];
