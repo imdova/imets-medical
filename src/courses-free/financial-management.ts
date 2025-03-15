@@ -2,7 +2,7 @@ export const supply_chain: FreeCourseType = {
   id: "7",
   slug: "finance",
   image: "/images/finance.webp",
-  title: "Healthcare Supply Management Diploma",
+  title: "Financial Management ",
   // هنا العنوان بالعربي
   arTitle: "هنا العنوان بالعربي",
 

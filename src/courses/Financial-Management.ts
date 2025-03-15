@@ -2,7 +2,7 @@ export const Financial_Management: CourseType = {
   id: "7",
   slug: "financial-management",
   image: "/images/supply-chain.webp",
-  title: "Healthcare Supply Management Diploma",
+  title: "Financial Management",
   meta: {
     meta_title: "here is the meta title",
     meta_description: "here is the meta description",

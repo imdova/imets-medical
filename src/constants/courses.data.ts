@@ -7,6 +7,7 @@ import { healthcare_marketing_management_diploma } from "@/courses/healthcare-ma
 import { supply_chain } from "@/courses/supplychain";
 import { strategic_management } from "@/courses/strategic-management";
 import { hr_management } from "@/courses/hr-management";
+import { Financial_Management } from "@/courses/Financial-Management";
 
 /// edit courses
 export const coursesList: CourseType[] = [
@@ -19,6 +20,7 @@ export const coursesList: CourseType[] = [
   hr_management,
   strategic_management,
   supply_chain,
+  Financial_Management,
 ];
 
 export const coursesSEOContent = {
