@@ -1,7 +1,7 @@
 export const Financial_Management: CourseType = {
   id: "7",
   slug: "financial-management",
-  image: "/images/supply-chain.webp",
+  image: "/images/finance.webp",
   title: "Financial Management",
   meta: {
     meta_title: "here is the meta title",
