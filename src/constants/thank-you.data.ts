@@ -4,7 +4,7 @@ export const thankYouData: ThankYouData = {
   content: "",
   WhatsAppNumber: "+201008815007",
   whatsappMessage: "I have a Question",
-  telegramLink: "https://t.me/demo",
+  telegramLink: "https://t.me/imetsmedicalschool",
   youtubeLink: "https://www.youtube.com/c/IMETSAcademyMedical",
   freeCoursesLink: "",
 };

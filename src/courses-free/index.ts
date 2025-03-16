@@ -8,6 +8,8 @@ import { infection_prevention_and_control_diploma } from "./infection-prevention
 import { strategic_management } from "./strategic-management";
 import { supply_chain } from "./supplychain";
 
+
+
 export const freeCoursesContent: FreeCoursesContentType = {
   title: {
     en: "Free Lecture",
@@ -25,5 +27,6 @@ const freeCourses: FreeCourseType[] = [
   infection_prevention_and_control_diploma,
   strategic_management,
   supply_chain,
+
 ];
 export default freeCourses;
