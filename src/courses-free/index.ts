@@ -7,8 +7,7 @@ import { hr_management } from "./hr-management";
 import { infection_prevention_and_control_diploma } from "./infection-prevention-and-control-diploma";
 import { strategic_management } from "./strategic-management";
 import { supply_chain } from "./supplychain";
-
-
+import { financial_management } from "./financial-management";
 
 export const freeCoursesContent: FreeCoursesContentType = {
   title: {
@@ -27,6 +26,6 @@ const freeCourses: FreeCourseType[] = [
   infection_prevention_and_control_diploma,
   strategic_management,
   supply_chain,
-
+  financial_management
 ];
 export default freeCourses;
