@@ -1,5 +1,5 @@
-export const supply_chain: FreeCourseType = {
-  id: "7",
+export const financial_management: FreeCourseType = { 
+  id: "8",
   slug: "finance",
   image: "/images/finance.webp",
   title: "Financial Management ",
