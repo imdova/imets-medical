@@ -2,7 +2,7 @@ export const supply_chain: FreeCourseType = {
   id: "7",
   slug: "supplychain",
   image: "/images/supply-chain.webp",
-  title: "Healthcare Supply Management Diploma",
+  title: "Healthcare Supply Chain Management Diploma",
   // هنا العنوان بالعربي
   arTitle: "هنا العنوان بالعربي",
 

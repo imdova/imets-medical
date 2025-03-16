@@ -2,7 +2,7 @@ export const supply_chain: CourseType = {
   id: "7",
   slug: "healthcare-supply-chain-diploma",
   image: "/images/supply-chain.webp",
-  title: "Healthcare Supply Management Diploma",
+  title: "Healthcare Supply Chain Management Diploma",
   meta: {
     meta_title: "here is the meta title",
     meta_description: "here is the meta description",
