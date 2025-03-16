@@ -58,7 +58,7 @@ export const strategic_management: FreeCourseType = {
       message: "Hi, I'm interested in your course",
     },
     telegram: {
-      link: "https://t.me/imetsacademymedical",
+      link: "https://t.me/imetsmedicalschool",
     },
     youTube: {
       link: "https://www.youtube.com/c/IMETSAcademyMedical",
