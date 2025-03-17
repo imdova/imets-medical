@@ -53,44 +53,60 @@ export const supply_chain: CourseType = {
     goals: [
       /// start goal
       {
-        title: "Understand healthcare quality system.",
+        title: "Learn how to develop, implement, and monitor strategic plans that align with organizational goals.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Establish leadership environment.",
+        title: "Develop the skills to lead diverse teams, inspire innovation, and drive organizational change.",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Monitor, analyze,  and improve performanc.",
+        title: "Master tools and frameworks for effective decision-making in complex healthcare environments.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Use statistics to make recommendations.",
+        title: "Examine the internal environment of a corporate: resources, capabilities, and activities",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "",
       },
       {
-        title: "Recognize accreditation process.",
+        title: "Apply PESTEL analysis to identify the macro characteristics of the external context",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
       {
-        title: "Monitor, analyze,  and improve performanc.",
+        title: "Develop a corporate strategy",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "",
       },
+        /// start goal
+        {
+          title: "Examine the internal environment of a corporate: resources, capabilities, and activities",
+          content:
+            "",
+        },
+        {
+          title: "Apply PESTEL analysis to identify the macro characteristics of the external context",
+          content:
+            "",
+        },
+        {
+          title: "Evaluate the quality of a firm’s strategy",
+          content:
+            "",
+        },
     ],
   },
 
