@@ -1,7 +1,7 @@
 export const infection_prevention_and_control_diploma: FreeCourseType = {
   id: "4",
   slug: "ic",
-  image: "/images/infection.webp",
+  image: "/images/ic.jpg",
   title: "Infection Control Diploma",
   arTitle: "هنا العنوان بالعربي",
   status: "BestSeller",

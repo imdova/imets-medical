@@ -99,13 +99,11 @@ export const supply_chain: CourseType = {
     /// start module
     {
       id: 1,
-      title: "Introduction to Healthcare Quality",
+      title: "Introduction to Healthcare Supply Chain Management",
       lessons: [
-        { id: 1, title: "Quality Concepts", url: "#" },
-        { id: 2, title: "Quality Dimensions", url: "#" },
-        { id: 3, title: "System Approach", url: "#" },
-        { id: 4, title: "Managed Care", url: "#" },
-        { id: 5, title: "Integrated Delivery System", url: "#" },
+        { id: 1, title: "Understand the fundamentals of supply chain management in healthcare.", url: "#" },
+        { id: 2, title: "Explore the unique challenges and opportunities in the healthcare supply chain.", url: "#" },
+        
       ],
     },
     /// end module
@@ -113,25 +111,16 @@ export const supply_chain: CourseType = {
     /// start module
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Procurement and Vendor Management",
       lessons: [
         {
           id: 1,
-          title: "Leadership versus Management",
+          title: "Learn how to source medical supplies and equipment efficiently.",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Leadership Styles", url: "#" },
-        {
-          id: 3,
-          title: "Strategic Management",
-          url: "#",
-        },
-        {
-          id: 4,
-          title: "Organizational Structure",
-          url: "#",
-        },
+        { id: 2, title: "Develop strategies for managing relationships with suppliers and vendors.", url: "#" },
+       
       ],
     },
     /// end module
@@ -139,48 +128,30 @@ export const supply_chain: CourseType = {
     /// start module
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Inventory Control and Warehouse Management",
       lessons: [
         {
           id: 1,
-          title: "Safety and Just Culture",
+          title: "Master techniques for managing inventory levels and reducing waste.",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Medical Errors", url: "#" },
-        {
-          id: 3,
-          title: "Patient Safety Programs",
-          url: "#",
-        },
+        { id: 2, title: "Understand best practices for warehouse operations in healthcare settings.", url: "#" },
+        
       ],
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Logistics and Distribution in Healthcare",
       lessons: [
         {
           id: 1,
-          title: "Performance Measurement",
+          title: "Learn how to manage the transportation and distribution of medical supplies.",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Performance Improvement Approaches", url: "#" },
-        {
-          id: 3,
-          title: "Clinical Performance Measurement",
-          url: "#",
-        },
-        {
-          id: 4,
-          title: "Utilization Management",
-          url: "#",
-        },
-        {
-          id: 5,
-          title: "Risk Management",
-          url: "#",
-        },
+        { id: 2, title: "Explore strategies for ensuring timely delivery and cost efficiency.", url: "#" },
+        
       ],
     },
     /// end module
@@ -188,11 +159,17 @@ export const supply_chain: CourseType = {
     /// start module
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Healthcare Supply Chain Analytics",
       lessons: [
         {
           id: 1,
-          title: "Quality Review and Accountability",
+          title: "Use data and analytics to optimize supply chain processes.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 2,
+          title: "Make data-driven decisions to improve efficiency and reduce costs.",
           url: "#",
           preview: true,
         },
@@ -203,14 +180,21 @@ export const supply_chain: CourseType = {
     /// start module
     {
       id: 6,
-      title: "Population Health and Care Transitions",
+      title: "Sustainability in Healthcare Supply Chain",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Explore strategies for creating environmentally sustainable supply chains.",
           url: "#",
           preview: true,
         },
+        {
+          id: 2,
+          title: "Learn how to balance cost efficiency with social and environmental responsibility.",
+          url: "#",
+          preview: true,
+        },
+
       ],
     },
     /// end module
@@ -218,57 +202,43 @@ export const supply_chain: CourseType = {
     /// start module
     {
       id: 7,
-      title: "Regulatory and Accreditation",
+      title: "Emerging Trends in Healthcare Supply Chain",
       lessons: [
         {
           id: 1,
-          title: "Regulatory and Accreditation",
+          title: "Stay ahead of the curve with insights into digital supply chain solutions, AI, and blockchain technology.",
           url: "#",
           preview: true,
         },
+        {
+          id: 2,
+          title: "Understand how innovation is transforming healthcare supply chains.",
+          url: "#",
+          preview: true,
+        },
+
       ],
     },
     /// end module
     ///
     /// start module
-    {
-      id: 8,
-      title: "Health Data Analytics",
-      lessons: [
-        {
-          id: 1,
-          title: "Sampling and Population",
-          url: "#",
-          preview: true,
-        },
-        { id: 2, title: "Basic Statistics", url: "#" },
-        {
-          id: 3,
-          title: "Display Techniques",
-          url: "#",
-        },
-        {
-          id: 4,
-          title: "Quality Tools",
-          url: "#",
-        },
-      ],
-    },
+   
     /// end module
   ],
   whoCanAttend: {
     content:
       "Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.",
     items: [
-      "QualityProfessionals",
+      "Healthcare Professionals",
       "Medical and Nursing Directors",
       "Doctors",
       "Pharmacists",
       "Nursing Specialists",
-      "Professionals interested in managerial or quality jobs",
+      "Medical and Nursing Directors",
       "Healthcare Administrators and Managers",
-      "Risk Managers",
-      "Medical Technologists",
+      "Supply Chain Professionals",
+      "Hospital & Clinic Owners",
+      "Entrepreneurs",
     ],
   },
   //
