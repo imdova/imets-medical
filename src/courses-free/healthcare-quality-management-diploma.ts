@@ -20,19 +20,35 @@ export const healthcare_quality_management_diploma: FreeCourseType = {
 
   videos: [
     {
-      title: "Introduction",
+      title: "Healthcare Quality Diploma Part1",
       progress: 10,
-      url: "https://www.youtube.com/watch?v=XDuWyYxksXU&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS",
+      url: "https://www.youtube.com/watch?v=SV3wK4hYwbc",
       locked: false,
-      duration: "1:00",
+      duration: "33:32",
     },
     {
-      title: "Medical Terminology",
+      title: "Healthcare Quality Diploma Part2",
       progress: 30,
-      url: "https://www.youtube.com/watch?v=jOUb09iiO20&list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&index=2",
+      url: "https://www.youtube.com/watch?v=kNitOV_x4dI",
       locked: false,
-      duration: "4:00",
+      duration: "07:46",
     },
+    {
+      title: "Healthcare Quality Diploma Part3",
+      progress: 30,
+      url: "https://www.youtube.com/watch?v=qcMEQ_ZhtXk",
+      locked: false,
+      duration: "28:01",
+    },
+    {
+      title: "Healthcare Quality Diploma Part4",
+      progress: 30,
+      url: "https://www.youtube.com/watch?v=324ZFl8eNPo",
+      locked: false,
+      duration: "56:22",
+    },
+   
+   
    
   ],
   material: "/files/intro-to-nextjs.pdf",
