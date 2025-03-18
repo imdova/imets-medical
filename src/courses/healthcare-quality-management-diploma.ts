@@ -38,7 +38,7 @@ export const healthcare_quality_management_diploma: CourseType = {
   form: {
     name: "form-speciality",
     groupId: "112928224",
-    redirect: "/",
+    redirect: "https://t.me/imetsmedicalschool",
   },
   description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
       you know how to manage and advance healthcare Quality and safety.

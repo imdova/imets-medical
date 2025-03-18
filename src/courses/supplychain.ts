@@ -34,7 +34,7 @@ export const supply_chain: CourseType = {
   form: {
     name: "form-speciality",
     groupId: "112929547",
-    redirect: "www.imetsacademy.com",
+    redirect: "https://t.me/imetsmedicalschool",
   },
   //
   //// tab over view

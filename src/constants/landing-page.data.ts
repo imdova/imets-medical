@@ -3,7 +3,7 @@ export const freeCourseTitle = "Watch A free lecture *NOW*";
 export const landingPagesData: LandingPageType[] = [
   {
     title: {
-      en: "Advance Your Career in Healthcare Quality  *Enroll for FREE Today!*",
+      en: "Advance Your Career in Healthcare Quality ",
       ar: "*طور مهاراتك في جودة الرعاية الصحية *سجّل الآن مجانًا!",
     },
     slug: "apply-cphq-free",
@@ -38,8 +38,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-cic-free",
     description: {
-      en: `You’re in! Your application to join [Course Name] is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in infection prevention and control? Join our FREE comprehensive course and gain essential skills to enhance healthcare safety, reduce infection risks, and protect patients and staff.!`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -69,8 +68,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-marketing-free",
     description: {
-      en: `You’re in! Your application to join [Course Name] is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in healthcare marketing? Join our FREE comprehensive course and gain essential skills to create impactful campaigns, engage patients, and drive growth for healthcare organizations.`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -100,8 +98,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-hr-free",
     description: {
-      en: `You’re in! Your application to join [Course Name] is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in healthcare human resources? Join our FREE comprehensive course and gain essential skills to manage healthcare teams, improve employee engagement, and drive organizational success.`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -131,8 +128,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-supplychain-free",
     description: {
-      en: `You’re in! Your application to join [Course Name] is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in healthcare supply chain management? Join our FREE comprehensive course and gain essential skills to optimize supply chains, reduce costs, and ensure the seamless delivery of medical supplies and equipment.!`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -162,8 +158,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-strategic-free",
     description: {
-      en: `You’re in! Your application to join [Course Name] is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in healthcare leadership and strategy? Join our FREE comprehensive course and gain essential skills to develop and implement strategies that improve patient outcomes and drive organizational success.!`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -193,8 +188,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-quality-free",
     description: {
-      en: `You’re in! Your application to join Healthcare Quality Management is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in healthcare quality and patient safety? Join our FREE comprehensive course and gain essential skills to enhance healthcare standards and drive excellence in patient care!`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -224,8 +218,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-ic-free",
     description: {
-      en: `You’re in! Your application to join Healthcare Quality Management is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in infection prevention and control? Join our FREE comprehensive course and gain essential skills to enhance healthcare safety, reduce infection risks, and protect patients and staff.!`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -255,8 +248,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-hosp-free",
     description: {
-      en: `You’re in! Your application to join Healthcare and Hospital Management is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in hospital administration? Join our FREE comprehensive course and gain essential skills to manage healthcare facilities, improve operational efficiency, and deliver exceptional patient care.`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
@@ -286,8 +278,7 @@ export const landingPagesData: LandingPageType[] = [
     },
     slug: "apply-finance-free",
     description: {
-      en: `You’re in! Your application to join Healthcare and Hospital Management is confirmed. 
-            We’ll reach out soon—get set to elevate your healthcare career!`,
+      en: `Ready to elevate your expertise in healthcare finance? Join our FREE comprehensive course and gain essential skills to manage budgets, optimize financial performance, and ensure the sustainability of healthcare organizations.!`,
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",

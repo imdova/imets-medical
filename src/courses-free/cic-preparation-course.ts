@@ -78,7 +78,7 @@ export const cic_preparation_course: FreeCourseType = {
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",
-      message: "Hi, I'm interested in your CPHQ course",
+      message: "Hi, I'm interested in your CIC Preparation course",
     },
     telegram: {
       link: "https://t.me/imetsmedicalschool",

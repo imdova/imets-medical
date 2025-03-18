@@ -54,7 +54,7 @@ export const cphq_preparation_course: FreeCourseType = {
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",
-      message: "Hi, I'm interested in your CPHQ course",
+      message: "Hi, I'm interested in your CPHQ Preparation course",
     },
     telegram: {
       link: "https://t.me/imetsmedicalschool",

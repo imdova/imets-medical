@@ -55,7 +55,7 @@ export const financial_management: FreeCourseType = {
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",
-      message: "Hi, I'm interested in your course",
+      message: "Hi, I'm interested in your Financial Management course",
     },
     telegram: {
       link: "https://t.me/imetsmedicalschool",

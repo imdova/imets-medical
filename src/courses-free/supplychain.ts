@@ -55,7 +55,7 @@ export const supply_chain: FreeCourseType = {
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",
-      message: "Hi, I'm interested in your course",
+      message: "Hi, I'm interested in your Supply Chain Management course",
     },
     telegram: {
       link: "https://t.me/imetsmedicalschool",

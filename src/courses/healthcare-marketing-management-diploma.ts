@@ -35,7 +35,7 @@ export const healthcare_marketing_management_diploma: CourseType = {
   form: {
     name: "form-speciality",
     groupId: "112930561",
-    redirect: "/",
+    redirect: "https://t.me/imetsmedicalschool",
   },
   description: ` Are you looking to specialize in healthcare marketing and make a real impact in the industry? The Marketing Management Diploma in healthcare is designed for individuals passionate about connecting healthcare providers with the people they serve. Whether you’re a marketing professional aiming to focus on healthcare or a healthcare provider wanting to learn how to market services effectively, this diploma provides the knowledge and skills you need to succeed.`,
   courseGoals: {

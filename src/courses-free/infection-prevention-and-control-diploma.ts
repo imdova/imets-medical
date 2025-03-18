@@ -47,7 +47,7 @@ export const infection_prevention_and_control_diploma: FreeCourseType = {
   socialMediaCards: {
     whatsApp: {
       number: "+201008815007",
-      message: "Hi, I'm interested in your course",
+      message: "Hi, I'm interested in your Infection Control Diploma",
     },
     telegram: {
       link: "https://t.me/imetsmedicalschool",

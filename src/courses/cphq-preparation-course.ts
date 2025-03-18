@@ -37,7 +37,7 @@ export const cphq_preparation_course: CourseType = {
   form: {
     name: "form-speciality",
     groupId: "112929547",
-    redirect: "http://wa.me/201022995596",
+    redirect: "https://t.me/imetsmedicalschool",
   },
   //
   //// tab over view
