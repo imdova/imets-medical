@@ -48,43 +48,53 @@ export const strategic_management: CourseType = {
     goals: [
       /// start goal
       {
-        title: "Foundations of Healthcare Strategic Management:",
+        title: "Learn how to develop, implement, and monitor strategic plans that align with organizational goals.",
         content:
-          "et to grips with the essentials of strategic management tailored to healthcare. You’ll learn how to navigate the complex world of healthcare policies, regulations, and patient-centered care, laying the groundwork for your strategic thinking.",
+          " ",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Healthcare Environment Analysis: ",
+        title: "Develop the skills to lead diverse teams, inspire innovation, and drive organizational change. ",
         content:
-          "Understanding your market is key. This module dives into market trends, patient demographics, competition, and regulations in healthcare. You’ll use tools like SWOT analysis, PESTEL analysis, and Porter’s Five Forces to identify both opportunities and challenges, so you can make informed decisions.",
+          " ",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Strategic Planning in Healthcare:",
+        title: "Examine the internal environment of a corporate: resources, capabilities, and activities.",
         content:
-          "Learn how to create actionable strategic plans that align with an organization’s mission and vision. You’ll focus on setting long-term goals, enhancing patient care, improving operational efficiency, and ensuring financial stability.",
+          " ",
+      },
+      {
+        title: "You’ll use tools like SWOT analysis, PESTEL analysis, and Porter’s Five Forces to identify both opportunities and challenges, so you can make informed decisions.",
+        content:
+          " ",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Implementing Healthcare Strategies: ",
+        title: "Learn how to create actionable strategic plans that align with an organization’s mission and vision. ",
         content:
-          "A strategic plan means nothing without proper execution. This section will show you how to implement strategies effectively, manage resources, and collaborate with healthcare teams to meet organizational goals.",
+          " ",
       },
       {
-        title: "Performance Measurement in Healthcare:",
+        title: "You will learn how to implement strategies effectively, manage resources, and collaborate with healthcare teams to meet organizational goals.",
         content:
-          "How do you know if your strategies are working? This module covers key performance indicators (KPIs), patient satisfaction metrics, and other evaluation tools that help you track progress, make data-driven decisions, and continuously improve.",
+          "",
       },
       {
-        title: "Leadership in Healthcare: ",
+        title: "You will learn how to develop leadership skills, including communication, team motivation, and strategic decision-making that puts patient care and organizational goals first. ",
         content:
-          "Great strategies need strong leaders. This module focuses on developing your leadership skills, including communication, team motivation, and strategic decision-making that puts patient care and organizational goals first.",
+          "",
+      },
+      {
+        title: "You will learn how to Evaluate the quality of a firm’s strategy ",
+        content:
+          "",
       },
     ],
   },
@@ -94,13 +104,11 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 1,
-      title: "Introduction to Strategic Management",
+      title: "Introduction to Healthcare Strategic Management",
       lessons: [
-        { id: 1, title: "Quality Concepts", url: "#" },
-        { id: 2, title: "Quality Dimensions", url: "#" },
-        { id: 3, title: "System Approach", url: "#" },
-        { id: 4, title: "Managed Care", url: "#" },
-        { id: 5, title: "Integrated Delivery System", url: "#" },
+        { id: 1, title: "Understand the fundamentals of strategic management in healthcare.", url: "#" },
+        { id: 2, title: "Explore the unique challenges and opportunities in the healthcare industry.", url: "#" },
+        
       ],
     },
     /// end module

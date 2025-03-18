@@ -26,7 +26,7 @@ export const supply_chain: CourseType = {
   video: {
     url: "https://www.youtube.com/watch?v=vBD0zyAwczg",
   },
-  duration: "12 weeks",
+  duration: "8 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
 
@@ -40,20 +40,17 @@ export const supply_chain: CourseType = {
   //// tab over view
   //
   // the description at the description page  at here ===> Course Description
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` The Healthcare Supply Chain Management Diploma is more than just a program—it’s an opportunity to transform your career and make a lasting impact in the healthcare industry. Whether you’re looking to launch your career, switch fields, or advance to a leadership role, this diploma will provide you with the knowledge, skills, and confidence to succeed.
+Don’t wait to take the next step in your career. Enroll today and become a leader in healthcare supply chain management!
+`,
 
   // the data at this part ===> What you'll learn in this course?
   courseGoals: {
-    content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
+    content: `The Healthcare Supply Chain Management Diploma is designed to provide you with practical, industry-relevant knowledge and skills. Here’s what you’ll gain:`,
     goals: [
       /// start goal
       {
-        title: "Learn how to develop, implement, and monitor strategic plans that align with organizational goals.",
+        title: "Understand the key principles and processes of supply chain management in healthcare.",
         content:
           "",
       },
@@ -61,7 +58,7 @@ export const supply_chain: CourseType = {
       ///
       /// start goal
       {
-        title: "Develop the skills to lead diverse teams, inspire innovation, and drive organizational change.",
+        title: "Learn how to source medical supplies, equipment, and pharmaceuticals efficiently.",
         content:
           "",
       },
@@ -69,7 +66,7 @@ export const supply_chain: CourseType = {
       ///
       /// start goal
       {
-        title: "Master tools and frameworks for effective decision-making in complex healthcare environments.",
+        title: "Develop strategies for building and maintaining strong relationships with suppliers and vendors.",
         content:
           "",
       },
@@ -77,33 +74,33 @@ export const supply_chain: CourseType = {
       ///
       /// start goal
       {
-        title: "Examine the internal environment of a corporate: resources, capabilities, and activities",
+        title: "Master techniques for managing inventory levels, reducing waste, and ensuring product availability.",
         content:
           "",
       },
       {
-        title: "Apply PESTEL analysis to identify the macro characteristics of the external context",
+        title: "Understand best practices for warehouse operations in healthcare settings.",
         content:
           "",
       },
       {
-        title: "Develop a corporate strategy",
+        title: "Explore strategies for ensuring timely delivery, cost efficiency, and patient safety.",
         content:
           "",
       },
         /// start goal
         {
-          title: "Examine the internal environment of a corporate: resources, capabilities, and activities",
+          title: "Use data and analytics to optimize supply chain processes and improve decision-making.",
           content:
             "",
         },
         {
-          title: "Apply PESTEL analysis to identify the macro characteristics of the external context",
+          title: "Learn how to measure performance, identify trends, and implement data-driven solutions.",
           content:
             "",
         },
         {
-          title: "Evaluate the quality of a firm’s strategy",
+          title: "Stay ahead of the curve with insights into digital supply chain solutions, AI, and blockchain technology.",
           content:
             "",
         },
