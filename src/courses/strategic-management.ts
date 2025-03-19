@@ -289,19 +289,7 @@ export const strategic_management: CourseType = {
     /// end module
     ///
     /// start module
-    {
-      id: 8,
-      title: "",
-      lessons: [
-        {
-          id: 1,
-          title: "",
-          url: "#",
-          preview: true,
-        },
-        
-      ],
-    },
+  
     /// end module
   ],
   whoCanAttend: {
