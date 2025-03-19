@@ -116,23 +116,23 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 2,
-      title: "Businesses Matrics - BCG Matrix and GE Matrix",
+      title: "External Environment Analysis",
       lessons: [
         {
           id: 1,
-          title: "Leadership versus Management",
+          title: "Analyzing the political, economic, social, and technological (PEST) factors affecting healthcare.",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Leadership Styles", url: "#" },
+        { id: 2, title: "Understanding competitive forces and market dynamics in the healthcare industry.", url: "#" },
         {
           id: 3,
-          title: "Strategic Management",
+          title: "Identifying opportunities and threats in the external environment.t",
           url: "#",
         },
         {
           id: 4,
-          title: "Organizational Structure",
+          title: "Tools for environmental scanning and trend analysis.",
           url: "#",
         },
       ],
@@ -142,48 +142,49 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 3,
-      title: "Businesses Matrices - McKinsey Matrix and Shell Matrix",
+      title: "Internal Environment Analysis",
       lessons: [
         {
           id: 1,
-          title: "Safety and Just Culture",
+          title: "Assessing organizational strengths and weaknesses.",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Medical Errors", url: "#" },
+        { id: 2, title: "Evaluating resources, capabilities, and core competencies.", url: "#" },
         {
           id: 3,
-          title: "Patient Safety Programs",
+          title: "Understanding the value chain in healthcare organizations.",
+          url: "#",
+        },
+        {
+          id: 4,
+          title: "Using SWOT analysis to align internal capabilities with external opportunities.",
           url: "#",
         },
       ],
     },
     {
       id: 4,
-      title: "Decision Making Process and Corporate Planning",
+      title: "Strategic Analysis and Choice",
       lessons: [
         {
           id: 1,
-          title: "Performance Measurement",
+          title: "Exploring strategic frameworks such as BCG Matrix and GE-McKinsey Matrix.",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Performance Improvement Approaches", url: "#" },
+        { id: 2, title: "Evaluating strategic options and decision-making criteria.", url: "#" },
         {
           id: 3,
-          title: "Clinical Performance Measurement",
+          title: "Balancing short-term and long-term strategic goals.",
           url: "#",
         },
         {
           id: 4,
-          title: "Utilization Management",
+          title: "Aligning strategic choices with organizational mission and vision.",
           url: "#",
         },
-        {
-          id: 5,
-          title: "Risk Management",
-          url: "#",
-        },
+        
       ],
     },
     /// end module
@@ -191,11 +192,29 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 5,
-      title: "Business Strategy",
+      title: " Business Level Strategies",
       lessons: [
         {
           id: 1,
-          title: "Quality Review and Accountability",
+          title: "Understanding cost leadership, differentiation, and focus strategies.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 2,
+          title: "Applying Porter’s Generic Strategies to healthcare organizations.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 3,
+          title: "Developing competitive advantage in healthcare services.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 4,
+          title: "Case studies of successful business-level strategies in healthcare.",
           url: "#",
           preview: true,
         },
@@ -206,11 +225,29 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 6,
-      title: "Corporate Strategy",
+      title: "Corporate Level Strategies",
       lessons: [
         {
           id: 1,
-          title: "Population Health and Care Transitions",
+          title: "Exploring diversification, vertical integration, and strategic alliances.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 2,
+          title: "Understanding mergers, acquisitions, and partnerships in healthcare.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 3,
+          title: "Managing multi-business healthcare organizations.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 4,
+          title: "Evaluating growth strategies and portfolio management.",
           url: "#",
           preview: true,
         },
@@ -221,11 +258,29 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 7,
-      title: "Implementing Strategy",
+      title: "Strategic Implementation and Evaluation",
       lessons: [
         {
           id: 1,
-          title: "Regulatory and Accreditation",
+          title: "Developing action plans and setting measurable objectives.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 2,
+          title: "Aligning organizational structure, culture, and resources with strategy.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 3,
+          title: "Monitoring and evaluating strategic performance using KPIs.",
+          url: "#",
+          preview: true,
+        },
+        {
+          id: 4,
+          title: "Managing change and overcoming resistance during implementation.",
           url: "#",
           preview: true,
         },
@@ -236,25 +291,15 @@ export const strategic_management: CourseType = {
     /// start module
     {
       id: 8,
-      title: "Evaluation of Strategy",
+      title: "",
       lessons: [
         {
           id: 1,
-          title: "Sampling and Population",
+          title: "",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Basic Statistics", url: "#" },
-        {
-          id: 3,
-          title: "Display Techniques",
-          url: "#",
-        },
-        {
-          id: 4,
-          title: "Quality Tools",
-          url: "#",
-        },
+        
       ],
     },
     /// end module
