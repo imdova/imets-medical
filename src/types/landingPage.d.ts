@@ -13,7 +13,7 @@ type LandingPageType = {
     };
     formData: {
       name: string;
-      groupId: string;
+      groupId: Record<string, string>;
       redirectUrl: string;
     };
   };

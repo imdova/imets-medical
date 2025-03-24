@@ -37,7 +37,7 @@ export const healthcare_quality_management_diploma: CourseType = {
   certificate: "International Certificate",
   form: {
     name: "form-speciality",
-    groupId: "112928224",
+    groupId: { EG: "112928224", other: "112928224" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   description: ` Becoming CPHQ certified demonstrates to employers and colleagues that

@@ -12,13 +12,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "لا تفوّت هذه الفرصة لتطوير مهاراتك وتعزيز فرصك المهنية. سجّل الآن وابدأ رحلتك نحو التميز في جودة الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/free/cphqfree.png",
+    imageUrl: "/images/free/cphqfree.png",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933289",
+        groupId: { EG: "112933289", other: "112933289" },
         redirectUrl: "/thank-you",
       },
     },
@@ -27,7 +29,8 @@ export const landingPagesData: LandingPageType[] = [
       WhatsAppNumber: "+201008815007",
       whatsappMessage: "I have a Question",
       telegramLink: "https://t.me/imetsmedicalschool",
-      youtubeLink: "https://www.youtube.com/IMETSAcademyMedical/?sub_confirmation=1",
+      youtubeLink:
+        "https://www.youtube.com/IMETSAcademyMedical/?sub_confirmation=1",
       freeCoursesLink: "/course-free/cphq",
     },
   },
@@ -42,13 +45,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/free/cicfree.png",
+    imageUrl: "/images/free/cicfree.png",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933292",
+        groupId: { EG: "112933292", other: "112933292" },
         redirectUrl: "/thank-you",
       },
     },
@@ -72,13 +77,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/mktfree.jpg",
+    imageUrl: "/images/mktfree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933295",
+        groupId: { EG: "112933295", other: "112933295" },
         redirectUrl: "/thank-you",
       },
     },
@@ -102,13 +109,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/hrfree.jpg",
+    imageUrl: "/images/hrfree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933293",
+        groupId: { EG: "112933293", other: "112933293" },
         redirectUrl: "/thank-you",
       },
     },
@@ -132,13 +141,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/supplyfree.jpg",
+    imageUrl: "/images/supplyfree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933296",
+        groupId: { EG: "112933296", other: "112933296" },
         redirectUrl: "/thank-you",
       },
     },
@@ -162,13 +173,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/strategicfree.jpg",
+    imageUrl: "/images/strategicfree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933294",
+        groupId: { EG: "112933294", other: "112933294" },
         redirectUrl: "/thank-you",
       },
     },
@@ -192,13 +205,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/qualityfree.jpg",
+    imageUrl: "/images/qualityfree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933289",
+        groupId: { EG: "112933289", other: "112933289" },
         redirectUrl: "/thank-you",
       },
     },
@@ -222,13 +237,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/icfree.jpg",
+    imageUrl: "/images/icfree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933292",
+        groupId: { EG: "112933292", other: "112933292" },
         redirectUrl: "/thank-you",
       },
     },
@@ -252,13 +269,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/hospfree.jpg",
+    imageUrl: "/images/hospfree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112929547",
+        groupId: { EG: "112929547", other: "112929547" },
         redirectUrl: "/thank-you",
       },
     },
@@ -282,13 +301,15 @@ export const landingPagesData: LandingPageType[] = [
       ar: "تهانينا الحارة! طلبك للالتحاق بـ [Course Name] في IMETS *الطبية* تم تثبيته، ترقب تواصلنا لنرفع معًا مستوى طموحك في عالم الرعاية الصحية!",
     },
     videoUrl: "",
-    imageUrl:
-      "/images/financefree.jpg",
+    imageUrl: "/images/financefree.jpg",
     button: {
-      label: { ar: "انضم الي المحاضرة المجانية من هنا", en: "Take me to FREE Lecture NOW !" },
+      label: {
+        ar: "انضم الي المحاضرة المجانية من هنا",
+        en: "Take me to FREE Lecture NOW !",
+      },
       formData: {
         name: "form-speciality",
-        groupId: "112933299",
+        groupId: { EG: "112933299", other: "112933299" },
         redirectUrl: "/thank-you",
       },
     },

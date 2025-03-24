@@ -68,7 +68,7 @@ type CourseType = {
   form: {
     name: string;
     redirect: string;
-    groupId: string;
+    groupId: Record<string, string>;
   };
   price: Record<string, Price>;
 };

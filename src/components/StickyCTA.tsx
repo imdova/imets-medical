@@ -1,13 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useNotification } from "./UI/NotificationComponent";
 import { sendDataToMailerLite } from "@/lib/mailerlite/mailer_lite";
 import Modal from "./UI/Modal";
 import DynamicForm from "./Forms/dynamicForm";
-import { formFields } from "@/constants/fields";
-import Button from "./Forms/buttons/Button";
 import formsData from "@/forms";
 
 const StickyCTA: React.FC<{

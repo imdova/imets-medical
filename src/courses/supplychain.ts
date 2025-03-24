@@ -33,7 +33,7 @@ export const supply_chain: CourseType = {
   /// here you can add the form id that you want
   form: {
     name: "form-speciality",
-    groupId: "112929547",
+    groupId: { EG: "112929547", other: "112929547" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   //

@@ -33,7 +33,7 @@ export const strategic_management: CourseType = {
   /// here you can add the form id that you want
   form: {
     name: "form-speciality",
-    groupId: "112930555",
+    groupId: { EG: "112930555", other: "112930555" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   //

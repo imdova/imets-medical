@@ -4,6 +4,7 @@ import DynamicForm from "@/components/Forms/dynamicForm";
 import Modal from "@/components/UI/Modal";
 import { useNotification } from "@/components/UI/NotificationComponent";
 import formsData from "@/forms";
+import useGeoInfo from "@/hooks/useGeoInfo";
 import { sendDataToMailerLite } from "@/lib/mailerlite/mailer_lite";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -11,6 +12,8 @@ import React, { useState } from "react";
 const LandingApply: React.FC<
   LandingPageType & { className?: string; lang: Languages }
 > = ({ button, className, slug, lang }) => {
+  const { data: geoDat } = useGeoInfo();
+
   const formData =
     formsData.find((x) => x.name === button.formData.name) || formsData[0];
 
@@ -26,11 +29,11 @@ const LandingApply: React.FC<
   const onSubmit = async (data: Record<string, unknown>) => {
     setLoading(true);
     setError("");
+    const groupId =
+      button.formData.groupId[geoDat.country_code2] ||
+      button.formData.groupId.other;
     try {
-      const response = await sendDataToMailerLite(
-        data,
-        button.formData.groupId,
-      );
+      const response = await sendDataToMailerLite(data, groupId);
 
       if (response.success) {
         // onClose();

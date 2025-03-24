@@ -1,14 +1,11 @@
 "use client";
 import Image from "next/image";
-import { use } from "react";
 import CourseBackground from "@/assets/images/courseOverview-1.jpg";
 import {
   BookCopy,
   Calendar,
-  ChartNoAxesColumnIncreasing,
   Clock,
   Coins,
-  DollarSign,
   GraduationCap,
   Puzzle,
   SquareChartGantt,
@@ -20,16 +17,12 @@ import OverviewTab from "./OverviewTab";
 import InstructorsTab from "./InstructorsTab";
 import ReviewsTab from "./ReviewsTab";
 import StudentsTab from "./StudentsTab";
-import NotFoundPage from "@/app/not-found";
 import { coursesList } from "@/constants/courses.data";
 import CourseApply from "@/components/courses/CourseApply";
 import StickyCTA from "@/components/StickyCTA";
 import useGeoInfo from "../../../hooks/useGeoInfo";
 import CourseCard from "@/components/CourseCard";
-import { Carousel } from "@/components/UI/Carousel";
 import SliderHead from "@/components/UI/SliderHead";
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
 
 interface SingleCourseProps {
   params: Promise<{ slug: string }>;
@@ -57,6 +50,8 @@ export default function CourseView({ course }: { course: CourseType }) {
       content: <StudentsTab {...course} />,
     },
   ];
+  const groupId =
+    course.form.groupId[data.country_code2] || course.form.groupId.other;
   return (
     <main>
       {/* Course Review Content  */}
@@ -187,6 +182,7 @@ export default function CourseView({ course }: { course: CourseType }) {
                 <CourseApply
                   className="px-10 py-3 text-xl md:px-8 md:py-2 md:text-lg"
                   {...course.form}
+                  groupId={groupId}
                 >
                   Apply Now
                 </CourseApply>
@@ -200,7 +196,7 @@ export default function CourseView({ course }: { course: CourseType }) {
         <div className="container relative mx-auto px-6 lg:max-w-[1170px]">
           <Tabs tabs={tabData} />
         </div>
-        <StickyCTA {...course.form} />
+        <StickyCTA {...course.form} groupId={groupId} />
       </section>
       <section className="container mx-auto mb-12 px-4 lg:max-w-[1170px]">
         <h2 className="mb-4 text-3xl font-bold">Relevant Courses </h2>

@@ -37,7 +37,7 @@ export const hospital_management_diploma: CourseType = {
   certificate: "International Certificate",
   form: {
     name: "form-speciality",
-    groupId: "112930551",
+    groupId: { EG: "112930551", other: "112930551" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   description: ` The Healthcare Hospital Management Diploma at IMETS Medical School is a specialized program designed to equip you with the skills and knowledge needed to effectively manage hospitals and healthcare facilities. This program combines theoretical knowledge with practical applications, ensuring that you are well-prepared to tackle the unique challenges of hospital management.`,

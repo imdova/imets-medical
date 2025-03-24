@@ -3,7 +3,6 @@
 import { useState } from "react";
 import DynamicForm from "../Forms/dynamicForm";
 import Modal from "../UI/Modal";
-import { formFields } from "@/constants/fields";
 import { useNotification } from "../UI/NotificationComponent";
 import { sendDataToMailerLite } from "@/lib/mailerlite/mailer_lite";
 import { useRouter } from "next/navigation";

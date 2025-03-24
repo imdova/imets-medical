@@ -36,7 +36,7 @@ export const infection_prevention_and_control_diploma: CourseType = {
   certificate: "International Certificate",
   form: {
     name: "form-speciality",
-    groupId: "112928224",
+    groupId: { EG: "112928224", other: "112928224" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   description: ` The Infection Control Diploma at IMETS Medical School is a comprehensive program designed to equip healthcare professionals and aspiring infection control specialists with the knowledge and skills needed to prevent, manage, and control infections in healthcare settings. This diploma combines theoretical knowledge with practical applications, ensuring that graduates are well-prepared to tackle real-world challenges in infection prevention and control.`,

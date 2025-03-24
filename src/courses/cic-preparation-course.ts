@@ -36,7 +36,7 @@ export const cic_preparation_course: CourseType = {
   certificate: "International Certificate",
   form: {
     name: "form-speciality",
-    groupId: "112930550",
+    groupId: { EG: "112930550", other: "112930550" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   description: ` The “Certified in Infection Control (CIC)” course is designed for healthcare professionals who aim to enhance their knowledge and expertise in preventing and controlling the spread of infections within healthcare settings. This course covers key principles of infection prevention, including epidemiology, microbiology, sterilization, disinfection, and regulatory compliance, in alignment with international infection control standards.H`,

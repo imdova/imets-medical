@@ -35,7 +35,7 @@ export const hr_management: CourseType = {
   form: {
     // name: "",
     name: "form-speciality",
-    groupId: "112930552",
+    groupId: { EG: "112930552", other: "112930552" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   //

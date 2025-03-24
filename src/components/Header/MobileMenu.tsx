@@ -74,7 +74,7 @@ const MobileMenu: React.FC = () => {
             ? { left: "10px", height: "60vh", width: "60vw" }
             : { left: "-20vw", height: "0", width: "0", top: "0" }
         }
-        className="text-background fixed top-[80px] z-20 flex w-[50vw] max-w-[400px] overflow-hidden rounded-[25px] bg-white duration-700 ease-in-out md:hidden"
+        className="text-background fixed top-[80px] z-20 flex w-[50vw] max-w-[400px] overflow-hidden rounded-[25px] bg-white duration-700 ease-in-out lg:hidden"
         id="mobile-menu"
         aria-label="Mobile navigation"
       >

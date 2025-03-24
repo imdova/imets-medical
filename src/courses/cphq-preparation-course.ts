@@ -36,7 +36,7 @@ export const cphq_preparation_course: CourseType = {
   /// here you can add the form id that you want
   form: {
     name: "form-speciality",
-    groupId: "112929547",
+    groupId: { EG: "112929547", other: "112929547" },
     redirect: "https://t.me/imetsmedicalschool",
   },
   //
@@ -108,7 +108,11 @@ export const cphq_preparation_course: CourseType = {
         { id: 2, title: "Quality Dimensions", url: "#" },
         { id: 3, title: "System Approach", url: "#" },
         { id: 4, title: "Process Variation", url: "#" },
-        { id: 5, title: "Integrated Delivery System and Managed Care", url: "#" },
+        {
+          id: 5,
+          title: "Integrated Delivery System and Managed Care",
+          url: "#",
+        },
       ],
     },
     /// end module
@@ -329,8 +333,7 @@ export const cphq_preparation_course: CourseType = {
   videosGrid: [
     {
       videoUrl: "https://www.youtube.com/watch?v=EXnm42VAv98",
-      thumbnail:
-        "",
+      thumbnail: "",
       title: "Skyfall",
       author: "By Author Name",
       views: "10k Views",
@@ -338,8 +341,7 @@ export const cphq_preparation_course: CourseType = {
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=XbcyZHHQvZg",
-      thumbnail:
-        "",
+      thumbnail: "",
     },
     {
       videoUrl: "https://www.youtube.com/watch?v=HT9wtHncGDQ",

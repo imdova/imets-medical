@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import CourseApply from "./courses/CourseApply";
+import useGeoInfo from "@/hooks/useGeoInfo";
 
 const count = 10;
 const LimitedCounterOffer: React.FC<{ form: CourseType["form"] }> = ({
   form,
 }) => {
+  const { data: geoData } = useGeoInfo();
   const [timeLeft, setTimeLeft] = useState(8000);
 
   useEffect(() => {
@@ -25,7 +27,7 @@ const LimitedCounterOffer: React.FC<{ form: CourseType["form"] }> = ({
   };
 
   const { hours, minutes, secs } = formatTime(timeLeft);
-
+  const groupId = form.groupId[geoData.country_code2] || form.groupId.other;
   return (
     <div className="rounded-[50px] bg-primary p-4 text-white md:m-12">
       <div className="flex flex-col items-center justify-center gap-6 rounded-[40px] border border-dashed border-orange-primary p-4 lg:flex-row">
@@ -56,6 +58,7 @@ const LimitedCounterOffer: React.FC<{ form: CourseType["form"] }> = ({
         <CourseApply
           className="link-smooth m-auto block text-nowrap rounded-3xl bg-orange-primary px-6 py-4 text-xl font-bold text-white hover:bg-yellow-600"
           {...form}
+          groupId={groupId}
         >
           Apply Now
         </CourseApply>
