@@ -60,7 +60,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER} />
       <head>
         {/* Add the MetaPixel component with your Pixel ID */}
-        <MetaPixel />
+        <MetaPixel  />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${watad.variable} antialiased`}

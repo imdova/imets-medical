@@ -20,7 +20,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933289", other: "112933289" },
+        groupId: { EG: "112933289", other: "112958428" },
         redirectUrl: "/thank-you",
       },
     },
@@ -53,7 +53,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933292", other: "112933292" },
+        groupId: { EG: "112933292", other: "112958429" },
         redirectUrl: "/thank-you",
       },
     },
@@ -85,7 +85,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933295", other: "112933295" },
+        groupId: { EG: "112933295", other: "112958427" },
         redirectUrl: "/thank-you",
       },
     },
@@ -117,7 +117,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933293", other: "112933293" },
+        groupId: { EG: "112933293", other: "112958427" },
         redirectUrl: "/thank-you",
       },
     },
@@ -149,7 +149,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933296", other: "112933296" },
+        groupId: { EG: "112933296", other: "112958427" },
         redirectUrl: "/thank-you",
       },
     },
@@ -181,7 +181,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933294", other: "112933294" },
+        groupId: { EG: "112933294", other: "112958427" },
         redirectUrl: "/thank-you",
       },
     },
@@ -213,7 +213,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933289", other: "112933289" },
+        groupId: { EG: "112933289", other: "112958428" },
         redirectUrl: "/thank-you",
       },
     },
@@ -245,7 +245,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933292", other: "112933292" },
+        groupId: { EG: "112933292", other: "112958429" },
         redirectUrl: "/thank-you",
       },
     },
@@ -277,7 +277,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112929547", other: "112929547" },
+        groupId: { EG: "112929547", other: "112958427" },
         redirectUrl: "/thank-you",
       },
     },
@@ -309,7 +309,7 @@ export const landingPagesData: LandingPageType[] = [
       },
       formData: {
         name: "form-speciality",
-        groupId: { EG: "112933299", other: "112933299" },
+        groupId: { EG: "112933299", other: "112958427" },
         redirectUrl: "/thank-you",
       },
     },
