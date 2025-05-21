@@ -40,12 +40,7 @@ export const Financial_Management: CourseType = {
   //// tab over view
   //
   // the description at the description page  at here ===> Course Description
-  description: ` Becoming CPHQ certified demonstrates to employers and colleagues that
-      you know how to manage and advance healthcare Quality and safety.
-      Effective preparation for the CPHQ exam is critical to earning the
-      credential. The CPHQ certification incorporates the body of knowledge in
-      the healthcare Quality profession. It covers the following seven
-      domains:H`,
+  description: ` The Healthcare Financial Management course at IMETS Medical School provides students with essential financial skills tailored to the healthcare sector. This program covers budgeting, revenue cycle management, cost control, and financial reporting, ensuring participants can effectively manage finances in hospitals and healthcare organizations.`,
 
   // the data at this part ===> What you'll learn in this course?
   courseGoals: {
