@@ -198,17 +198,16 @@ export const Financial_Management: CourseType = {
   ],
   whoCanAttend: {
     content:
-      "Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.",
+      "The Healthcare Financial Management course at IMETS Medical School is designed to give you practical, career-boosting skills tailored to the healthcare sector. Here's why this program stands out:",
     items: [
-      "QualityProfessionals",
-      "Medical and Nursing Directors",
+      "Clinicians (doctors, nurses) transitioning to admin roles",
+      " Hospital managers needing financial literacy",
       "Doctors",
-      "Pharmacists",
-      "Nursing Specialists",
-      "Professionals interested in managerial or quality jobs",
-      "Healthcare Administrators and Managers",
-      "Risk Managers",
-      "Medical Technologists",
+      "Finance professionals entering healthcare",
+      "Students pursuing healthcare administration degrees",
+      "Professionals interested in managerial or Finance Field jobs",
+      "Entrepreneurs launching medical practices or startups",
+      
     ],
   },
   //
@@ -218,34 +217,18 @@ export const Financial_Management: CourseType = {
     /// start
     {
       id: "1",
-      name: "DR/Mohamed Farag",
-      job: "Healthcare Quality Manager",
-      image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
+      name: "DR/Mohamed Abbas",
+      job: "Finance lecturer at Arab Academy for Science, Technology and Maritime Transport.",
+      image:"/images/abbas.jpg",
+      certification: "PHQ in Finance, Master of Science Degree in Finance ",
       experience: 15,
       location: "Cairo, Eqypt",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      rating: 4,
-    },
-    /// end
-    ///
-    /// start
-    {
-      id: "2",
-      name: "DR/Mohamed Ahmed",
-      job: "Healthcare Quality Manager",
-      image:
-        "https://img.freepik.com/free-photo/attractive-girl-portrait-white-shirt_158595-1446.jpg?t=st=1739104305~exp=1739107905~hmac=14da9b6d83c29cd03d523b3826c0a556d1048bc10e255d3ad2361c906a2d450d&w=740",
-      certification: "MBA - CPHQ - HMD",
-      experience: 10,
-      location: "Asyut, Eqypt",
-      content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Dynamic lecturer of finance and investment with more than 15 years broad experience in all aspects of corporate finance, financial institutions, econometrics, international finance, investment and financial markets within highly reputable universities. Excellent competencies in executing a number of tasks simultaneously including strong background in banking sector and advanced academic research. Works effectively on teams as well as independently with strong organizational, communication, analytical, problem solving, stimulated mind, time management, and IT skills.",
       rating: 5,
     },
     /// end
+    
   ],
   videosGrid: [
     {
