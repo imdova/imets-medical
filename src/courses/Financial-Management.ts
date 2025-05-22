@@ -4,12 +4,12 @@ export const Financial_Management: CourseType = {
   image: "/images/finance.webp",
   title: "Financial Management",
   meta: {
-    meta_title: "here is the meta title",
-    meta_description: "here is the meta description",
-    meta_keywords: "here is the meta keyword",
+    meta_title: "Healthcare Financial Management Course | Master Hospital Budgeting & Revenue | IMETS Medical School",
+    meta_description: "Online course in healthcare finance. Understand hospital budgets, pricing, ROI analysis & financial statements. Boost your healthcare leadership skills today!",
+    meta_keywords: "healthcare financial management course, hospital budgeting and finance, healthcare revenue cycle training, medical cost control strategies, financial statements for healthcare, healthcare ROI analysis, online healthcare finance diploma, IMETS Medical School courses  ",
   },
   rating: 5,
-  reviewsNumber: 600,
+  reviewsNumber: 630,
   price: {
     EG: { old: "15000 EGP", new: "7500 EGP" },
     SA: { old: "2600 SAR", new: "1300 SAR" },
@@ -44,48 +44,44 @@ export const Financial_Management: CourseType = {
 
   // the data at this part ===> What you'll learn in this course?
   courseGoals: {
-    content: `Earning your CPHQ certification is more than just passing an exam—it s about showing your commitment to excellence in healthcare. This credential not only boosts your professional credibility but also equips you with the skills to make a real impact in the healthcare world.`,
+    content: `By the end of the Healthcare Financial Management course at IMETS Medical School, students will be able to:`,
     goals: [
       /// start goal
       {
-        title: "Understand healthcare quality system.",
+        title: "Analyze Healthcare Financial System.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Explain the unique financial structures of hospitals, clinics, and health systems.Also You will be able to Evaluate the impact of insurance models (Medicare, Medicaid, private payers) on revenue streams.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Establish leadership environment.",
+        title: "Develop and Manage Healthcare Budgets.",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "Differentiate between operating and capital budgets. Also You will be able to develop a basic department/clinic budget and track costs.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Monitor, analyze,  and improve performanc.",
+        title: "Optimize Revenue Cycle Processes.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "You will be able to implement best practices for medical billing, coding, and claims processing.",
       },
       /// end goal
       ///
       /// start goal
       {
-        title: "Use statistics to make recommendations.",
+        title: "Implement Cost-Control Strategies.",
         content:
-          "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+          "Analyze financial statements (e.g., balance sheets, income statements) to identify cost-saving opportunities.Also You will be able to recommend data-driven strategies to reduce waste while maintaining quality care.",
       },
       {
-        title: "Recognize accreditation process.",
+        title: "Implement Pricing and Revenue in Medical Services.",
         content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "Describe how pricing models (insurance, government, private) impact revenue.Also You will be able to explain the revenue cycle and its link to patient satisfaction.",
       },
-      {
-        title: "Monitor, analyze,  and improve performanc.",
-        content:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      },
+     
     ],
   },
 
@@ -94,13 +90,13 @@ export const Financial_Management: CourseType = {
     /// start module
     {
       id: 1,
-      title: "Introduction to Healthcare Quality",
+      title: "Introduction to Financial Basics",
       lessons: [
-        { id: 1, title: "Quality Concepts", url: "#" },
-        { id: 2, title: "Quality Dimensions", url: "#" },
-        { id: 3, title: "System Approach", url: "#" },
-        { id: 4, title: "Managed Care", url: "#" },
-        { id: 5, title: "Integrated Delivery System", url: "#" },
+        { id: 1, title: "	Importance of finance in healthcare", url: "#" },
+        { id: 2, title: "	Key finance terms and concepts", url: "#" },
+        { id: 3, title: " The role of finance in medical decision-making", url: "#" },
+        { id: 4, title: "•	Understanding costs vs. value in healthcare", url: "#" },
+        
       ],
     },
     /// end module
@@ -108,23 +104,23 @@ export const Financial_Management: CourseType = {
     /// start module
     {
       id: 2,
-      title: "Quality Leadership and Integration",
+      title: "Financial Statements Simplified",
       lessons: [
         {
           id: 1,
-          title: "Leadership versus Management",
+          title: "•	Income Statement (Profit & Loss): revenue, expenses, profit",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Leadership Styles", url: "#" },
+        { id: 2, title: "•	Balance Sheet: assets, liabilities, equity", url: "#" },
         {
           id: 3,
-          title: "Strategic Management",
+          title: "•	Cash Flow Statement: how money moves in and out",
           url: "#",
         },
         {
           id: 4,
-          title: "Organizational Structure",
+          title: "•	Real-life examples from hospitals and clinics",
           url: "#",
         },
       ],
@@ -134,48 +130,39 @@ export const Financial_Management: CourseType = {
     /// start module
     {
       id: 3,
-      title: "Patient Safety",
+      title: "Healthcare Budgeting & Cost Management",
       lessons: [
         {
           id: 1,
-          title: "Safety and Just Culture",
+          title: "•	Budget types: operating vs. capital budgets",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Medical Errors", url: "#" },
+        { id: 2, title: "•	Building and managing a department/clinic budget", url: "#" },
         {
           id: 3,
-          title: "Patient Safety Programs",
+          title: "•	Identifying and managing direct vs. indirect costs",
           url: "#",
         },
       ],
     },
     {
       id: 4,
-      title: "Performance and Process Improvement",
+      title: "Financial Decision-Making in Healthcare",
       lessons: [
         {
           id: 1,
-          title: "Performance Measurement",
+          title: "•	Return on Investment (ROI) in medical equipment or services",
           url: "#",
           preview: true,
         },
-        { id: 2, title: "Performance Improvement Approaches", url: "#" },
+        { id: 2, title: "•	Break-even analysis for new services", url: "#" },
         {
           id: 3,
-          title: "Clinical Performance Measurement",
+          title: "•	Cost-benefit analysis for patient services",
           url: "#",
         },
-        {
-          id: 4,
-          title: "Utilization Management",
-          url: "#",
-        },
-        {
-          id: 5,
-          title: "Risk Management",
-          url: "#",
-        },
+        
       ],
     },
     /// end module
@@ -183,73 +170,31 @@ export const Financial_Management: CourseType = {
     /// start module
     {
       id: 5,
-      title: "Quality Review and Accountability",
+      title: "Pricing and Revenue in Medical Services",
       lessons: [
         {
           id: 1,
-          title: "Quality Review and Accountability",
+          title: "How medical services are priced (insurance, government, private)",
           url: "#",
           preview: true,
         },
-      ],
-    },
-    /// end module
-    ///
-    /// start module
-    {
-      id: 6,
-      title: "Population Health and Care Transitions",
-      lessons: [
         {
-          id: 1,
-          title: "Population Health and Care Transitions",
+          id: 2,
+          title: "Revenue cycle in healthcare",
           url: "#",
           preview: true,
         },
-      ],
-    },
-    /// end module
-    ///
-    /// start module
-    {
-      id: 7,
-      title: "Regulatory and Accreditation",
-      lessons: [
-        {
-          id: 1,
-          title: "Regulatory and Accreditation",
-          url: "#",
-          preview: true,
-        },
-      ],
-    },
-    /// end module
-    ///
-    /// start module
-    {
-      id: 8,
-      title: "Health Data Analytics",
-      lessons: [
-        {
-          id: 1,
-          title: "Sampling and Population",
-          url: "#",
-          preview: true,
-        },
-        { id: 2, title: "Basic Statistics", url: "#" },
         {
           id: 3,
-          title: "Display Techniques",
+          title: "Financial impact of patient satisfaction and efficiency)",
           url: "#",
-        },
-        {
-          id: 4,
-          title: "Quality Tools",
-          url: "#",
+          preview: true,
         },
       ],
     },
     /// end module
+    ///
+    
   ],
   whoCanAttend: {
     content:
