@@ -15,7 +15,7 @@ export const cphq_preparation_course: CourseType = {
 
   price: {
     EG: { old: "18000 EGP", new: "9000 EGP" },
-    SA: { old: "3600 SAR", new: "1800 SAR" },
+    SA: { old: "3600 SAR", new: "2000 SAR" },
     /// add country here
     // other work for any other country the default price
     other: { old: "900$", new: "450$" },

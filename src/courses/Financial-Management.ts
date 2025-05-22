@@ -17,7 +17,7 @@ export const Financial_Management: CourseType = {
     // other work for any other country the default price
     other: { old: "700$", new: "350$" },
   },
-  lectures: 10,
+  lectures: 8,
   lecture_date: "1 Lecture-Weekly",
   lecture_Method: "Online-Zoom",
   students: 3200,
@@ -26,7 +26,7 @@ export const Financial_Management: CourseType = {
   video: {
     url: "https://www.youtube.com/watch?v=QkkJACvS-2A&t=1s",
   },
-  duration: "6 weeks",
+  duration: "8 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
 
@@ -220,7 +220,7 @@ export const Financial_Management: CourseType = {
       name: "DR/Mohamed Abbas",
       job: "Finance lecturer at Arab Academy for Science, Technology and Maritime Transport.",
       image:"/images/abbas.jpg",
-      certification: "PHQ in Finance, Master of Science Degree in Finance ",
+      certification: "PHD in Finance, Master of Science Degree in Finance ",
       experience: 15,
       location: "Cairo, Eqypt",
       content:
