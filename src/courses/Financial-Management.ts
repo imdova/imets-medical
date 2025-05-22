@@ -9,7 +9,7 @@ export const Financial_Management: CourseType = {
     meta_keywords: "healthcare financial management course, hospital budgeting and finance, healthcare revenue cycle training, medical cost control strategies, financial statements for healthcare, healthcare ROI analysis, online healthcare finance diploma, IMETS Medical School courses  ",
   },
   rating: 5,
-  reviewsNumber: 630,
+  reviewsNumber: 650,
   price: {
     EG: { old: "15000 EGP", new: "7500 EGP" },
     SA: { old: "2600 SAR", new: "1300 SAR" },
