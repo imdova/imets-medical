@@ -15,7 +15,7 @@ export const healthcare_quality_management_diploma: CourseType = {
 
   reviewsNumber: 1800,
   price: {
-    EG: { old: "24000 EGP", new: "12000 EGP" },
+    EG: { old: "24000 EGP", new: "14000 EGP" },
     SA: { old: "6400 SAR", new: "3200 SAR" },
     /// add country here
     // other work for any other country the default price
