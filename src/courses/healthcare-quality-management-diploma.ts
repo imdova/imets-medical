@@ -21,7 +21,7 @@ export const healthcare_quality_management_diploma: CourseType = {
     // other work for any other country the default price
     other: { old: "1300$", new: "650$" },
   },
-  lectures: 16,
+  lectures: 17,
   lecture_date: "1 Lecture-Weekly",
   lecture_Method: "Online-Zoom",
   students: 1250,
@@ -32,7 +32,7 @@ export const healthcare_quality_management_diploma: CourseType = {
     thumbnail:
       "https://img.freepik.com/free-photo/medium-shot-young-woman-listening-to-podcast-with-headphones_23-2149386566.jpg?t=st=1739104145~exp=1739107745~hmac=2fc96c73c86add85c536193ff63570c3fb88e3e17330a570994930f8cb399217&w=996",
   },
-  duration: "12 weeks",
+  duration: "17 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {

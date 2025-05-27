@@ -29,7 +29,7 @@ export const cphq_preparation_course: CourseType = {
   video: {
     url: "https://www.youtube.com/watch?v=NSXeTYUjCI4",
   },
-  duration: "12 weeks",
+  duration: "10 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
 

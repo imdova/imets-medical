@@ -21,7 +21,7 @@ export const cic_preparation_course: CourseType = {
     // other work for any other country the default price
     other: { old: "900 $", new: "450 $" },
   },
-  lectures: 16,
+  lectures: 12,
   lecture_date: "1 Lecture-Weekly",
   lecture_Method: "Online-Zoom",
   students: 1400,
@@ -31,7 +31,7 @@ export const cic_preparation_course: CourseType = {
     url: "https://www.youtube.com/watch?v=mjRm7APezfA&t",
     thumbnail: "",
   },
-  duration: "16 weeks",
+  duration: "12 weeks",
   languages: "EN - AR",
   certificate: "International Certificate",
   form: {
