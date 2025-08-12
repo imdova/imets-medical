@@ -14,7 +14,7 @@ export const infection_prevention_and_control_diploma: CourseType = {
   rating: 5,
   reviewsNumber: 2150,
   price: {
-    EG: { old: "24000 EGP", new: "14000 EGP" },
+    EG: { old: "24000 EGP", new: "15000 EGP" },
     SA: { old: "5600 SAR", new: "3200 SAR" },
     /// add country here
     // other work for any other country the default price

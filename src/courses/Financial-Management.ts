@@ -11,7 +11,7 @@ export const Financial_Management: CourseType = {
   rating: 5,
   reviewsNumber: 650,
   price: {
-    EG: { old: "15000 EGP", new: "7500 EGP" },
+    EG: { old: "15000 EGP", new: "8500 EGP" },
     SA: { old: "2600 SAR", new: "1600 SAR" },
     /// add country here
     // other work for any other country the default price

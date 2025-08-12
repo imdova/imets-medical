@@ -15,7 +15,7 @@ export const cic_preparation_course: CourseType = {
   reviewsNumber: 1700,
 
   price: {
-    EG: { old: "18000 EGP", new: "10000 EGP" },
+    EG: { old: "18000 EGP", new: "11000 EGP" },
     SA: { old: "3600 SAR", new: "2000 SAR" },
     /// add country here
     // other work for any other country the default price
